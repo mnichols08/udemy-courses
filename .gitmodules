@@ -1,0 +1,8 @@
+[submodule "jonas.io"]
+	path = jonas.io
+	url = https://github.com/mnichols08/jonas.io
+
+[submodule "colt-steele"]
+	path = colt-steele
+	url = https://github.com/mnichols08/colt-steele
+
