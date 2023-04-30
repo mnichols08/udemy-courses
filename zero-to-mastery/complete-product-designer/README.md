@@ -8,26 +8,26 @@ A designer's goals are aligned with the user experience and they support develop
 
 # Designing Key Elements
 1. Graphic Design
-    Colors
-    Color Theory
-    Sketching
-    Imagry
-    Telling a story to convey a specific feelins
-    Visuals
+ - Colors
+ - Color Theory
+ - Sketching
+ - Imagry
+ - Telling a story to convey a specific feelins
+ - Visuals
 2. User Experience
-    Art and science of proving users with the best possible experience
-    How can we enable users to flow through our product with enjoyment?
+ - Art and science of proving users with the best possible experience
+ - How can we enable users to flow through our product with enjoyment?
 3. Goal Conversion
-    How to design a product that clients end up converting customers
-    This is when a user takes a desired action
-    There is a science to this
+ - How to design a product that clients end up converting customers
+ - This is when a user takes a desired action
+ - There is a science to this
 4. Platform Development
-    A design is only a design without an app designed around it, but we want to be able to create app designs that can be achieved with our platform 
+-  A design is only a design without an app designed around it, but we want to be able to create app designs that can be achieved with our platform 
 
-As a designer expect three types of environments
-Freelance
-Working at Agency
-In House
+### As a designer expect three types of environments
+- Freelance
+- Working at Agency
+- In House
 
 [Section 2](./section-02.md) - Introduction
 [Section 3](./section-03.md) - Inspiration
