@@ -29,4 +29,5 @@ Freelance
 Working at Agency
 In House
 
-[Section 2](./section-02.md)
+[Section 2](./section-02.md) - Introduction
+[Section 3](./section-03.md) - Inspiration
