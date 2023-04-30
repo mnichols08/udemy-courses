@@ -21,3 +21,17 @@ Add annotations...again - the more notes the better
 Use Numbers to label different layouts
 And arrows!
 Add Gestures if you want.
+
+![Image](./krita_assets/sketching-user-flows.png.jpg)
+![Image](./krita_assets/sketching-user-flows-2.png.jpg)
+
+## Sketching Tips
+1. Dont be afraid to be messy. Just keep going. Create quickly. Be lean. Be agile. Sketch quickly and save yourself some time instead of worrying about the details.
+2. It takes practice to sketch well. Just use simple shapes to convey messages.
+3. Take care of your sketches. Keep a folder for them or store them digitally if possible.
+4. Keep your tablet or notebook by your side at all times. You never know when a new idea will come to you.
+5. Hang up your sketches so you can look at them while you are standing.
+6. Communicate.
+7. Get a white board and use it.
+8. Grab a sketch and try to exaggerate how users feel throughout the process
+
