@@ -31,3 +31,4 @@ In House
 
 [Section 2](./section-02.md) - Introduction
 [Section 3](./section-03.md) - Inspiration
+[Section 4](./section-04.md) - Figma Basics
