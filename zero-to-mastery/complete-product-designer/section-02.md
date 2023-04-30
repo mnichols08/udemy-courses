@@ -22,8 +22,8 @@ Use Numbers to label different layouts
 And arrows!
 Add Gestures if you want.
 
-![Image](./krita_assets/sketching-user-flows.png.jpg)
-![Image](./krita_assets/sketching-user-flows-2.png.jpg)
+![Image](./krita_assets/sketching-user-flows.png)
+![Image](./krita_assets/sketching-user-flows-2.png)
 
 ## Sketching Tips
 1. Dont be afraid to be messy. Just keep going. Create quickly. Be lean. Be agile. Sketch quickly and save yourself some time instead of worrying about the details.
