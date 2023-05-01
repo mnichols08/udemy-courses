@@ -19,3 +19,23 @@ After the code is converted into an AST, we provide the code to the interpreter.
 - Node.js
 
 - Single Threaded Model
+
+We can create a simplified Javscript by writing something like this
+const jsEngine = code => code.split(/\s+/)
+jsEngine('var a = 5')
+
+There is a list of ECMAScript engines found at [https://en.wikipedia.org/wiki/List_of_ECMAScript_engines](https://en.wikipedia.org/wiki/List_of_ECMAScript_engines)
+
+The V8 Engine is the most popular of them all.
+
+In programming there are generally two ways of converting / translating text into machine language (code that a computer can understand)
+
+The interpreter is a tool that translates and read javascript files line by line
+For example, we have a function that does some calculation `const someCalc = (x, y) => x + y`
+Then we have a loop that runs a thousand times 
+```
+for (let i = 0; i < 1000; i++){
+    someCalc(i,1)
+}
+```
+A compiler is faster because
