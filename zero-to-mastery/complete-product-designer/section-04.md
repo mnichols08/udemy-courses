@@ -11,3 +11,28 @@ Figma is available for mobile, desktop, and web.
 
 # Structure Of Dashboard
 The dashboard is the menu presnted upon initial loading of Figma. This includes account settings, an overview of your projects. You can find recent projects on the left sidebar along with drafts. Try to name you pojects appropriately.
+
+You can star any file which adds it to your favorites and makes it appear on the left panel
+
+Files in Figma can be a little tricky to understand but using the resouces available in this course will help you be successful.
+
+We want to open up Figma Basics file given to us and create a duplicate draft of the original.
+
+## Toolbar
+- Menu has quick action => to search for pretty much anything at any time
+    and a variety of settings but a very useful tool is going down to help and then into keyboard shortcuts and getting familiar with keyboard commands
+- Move & Scale
+- Frame Tool
+- Shapes Tool
+- View other collaborators
+- Share with others
+- Play Prototype
+- Zoom & View Settings
+
+## Left Sidebar
+- Layers (shapes, images, gifs, content)
+- Frames
+- Groups
+- Components
+
+## 
