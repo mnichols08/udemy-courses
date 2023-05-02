@@ -31,11 +31,24 @@ The V8 Engine is the most popular of them all.
 In programming there are generally two ways of converting / translating text into machine language (code that a computer can understand)
 
 The interpreter is a tool that translates and read javascript files line by line
-For example, we have a function that does some calculation `const someCalc = (x, y) => x + y`
-Then we have a loop that runs a thousand times 
-```
-for (let i = 0; i < 1000; i++){
-    someCalc(i,1)
-}
-```
-A compiler is faster because
+
+A compiler is faster because it calculates code before it presents it to the user. 
+
+The Javascript engine has what is called a JIT Compiler. Which stands for Just In Time Compiler What this does is it interprets code but it also compiles and optimizes the code constantly
+
+Because of this we have to avoid doing a few things that might slow down the compiling process
+Some things we should avoid using are
+- eval()
+- arguments
+- for in
+- with
+- delete
+
+- hidden classes - because our engine utilizes hidden classes - by adding or changing property values on objects created using the new keyword, we are de-optimizing our code
+- inline caching - When we change values on objects we are causing inline caching to have to re load
+
+## Why not just use machine code from the beginning?
+Either compilation would have to be lightning fast - or the competing browsers would have to agree on some binary executable format or standard that could understand this format.
+
+## [WebAssembly](https://webassembly.org/getting-started/developers-guide/)
+
