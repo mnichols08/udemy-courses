@@ -52,3 +52,38 @@ Either compilation would have to be lightning fast - or the competing browsers w
 
 ## [WebAssembly](https://webassembly.org/getting-started/developers-guide/)
 
+## Call Stack
+The Javascript engine does a lot of work for us. The biggest thing is reading our code and executing it. The major components that allow the engine to do this are the call stack and the memory heap. The call stack is a place to keep track of where we are in the code so that the code runs in order.
+## Memory Heap
+The memory heap is where the memory allocation happens. This is where information is stored. With these two things the javascript engine is able to  read our code and execute it.
+
+## Stack Overflow
+When we exceed maximum stack 
+
+## Garbage Collection
+Garbage collection is done by the mark and sweep algorighm. 
+There are many variables which point to various objects. The gargage collector has a chance of missing things if we change variables
+
+## Memory Leaks
+Infinite loops,
+Global Variables
+Adding Event Listeners Without Removing Them
+SetInterval that reference objects
+
+## Memory is Limited
+
+Javascript is a single threaded programming language, it is not doing more than one thing at once.
+This is shown by referencing the call stack.
+What problems are there with syncronous code? It is really difficult if we have a bunch of long tasks to complete.
+The Web API comes with a browser and provide a javascript runtime
+
+## Javascript is syncronous 
+JS is single threaded but you can use asyncronous functions.
+
+## 
+A js file is kind of like notes on a sheet in music
+an engine is like the composer that
+A runtime is like the orchestra
+
+Node.js is a runtime - a lot like a web browser and it even relies on the v8 Engine. It also relies on LibUV to write code that our computer can understand which gives us access to all sorts of cool things.
+
