@@ -7,6 +7,9 @@ Taught by Dr. Angela Yu
 Course Length 12 Weeks
 Course Fee $18,000
 
+## Section Notes
+[Section 2: Introduction to HTML](./section-02.md)
+
 ## Web Development Fundamentals
 - Understand how websites work and how HTML, CSS and JavaScript contribute.
 - Understand how the internet works and how websites are served.
