@@ -12,3 +12,4 @@ The `<li>` HTML element is used to represent an item in a list. It must be conta
 
 ## Nesting and Indentation
 We can nest lists inside of lists or really any number of many combinations.
+This allows us to really add structure to our documents
