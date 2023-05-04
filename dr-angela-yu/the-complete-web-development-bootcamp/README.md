@@ -9,6 +9,7 @@ Course Fee $18,000
 
 ## Section Notes
 [Section 2: Introduction to HTML](./section-02.md)
+[Section 3: Intermediate HTML](./section-03.md)
 
 ## Web Development Fundamentals
 - Understand how websites work and how HTML, CSS and JavaScript contribute.
