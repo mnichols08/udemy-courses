@@ -14,3 +14,4 @@ Paragraphs are block-level elements, and notably will automatically close if ano
 
 ## Self Closing Tags
 Void Elements are elements that are forbidden from generating any content whatsoever suchas a horizontal rule `<hr />` 
+Another common example of self closing elements are line breaks `<br />`
