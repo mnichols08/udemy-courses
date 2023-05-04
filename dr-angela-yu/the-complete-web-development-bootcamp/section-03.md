@@ -20,3 +20,8 @@ This allows us to really add structure to our documents
 The `<a>` HTML element (or anchor element), with its href attribute, creates a hyperlink to web pages, files, email addresses, locations in the same page, or anything else a URL can address.
 
 Content within each `<a>` should indicate the link's destination. If the href attribute is present, pressing the enter key while focused on the `<a>` element will activate it.
+
+### [Attribute](https://developer.mozilla.org/en-US/docs/Glossary/Attribute)
+An attribute extends an HTML or XML element, changing its behavior or providing metadata.
+An attribute always has the form name="value" (the attribute's identifier followed by its associated value).
+You may see attributes without the equals sign or a value. That is a shorthand for providing the empty string in HTML, or the attribute's name in XML.
