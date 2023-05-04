@@ -25,3 +25,9 @@ Content within each `<a>` should indicate the link's destination. If the href at
 An attribute extends an HTML or XML element, changing its behavior or providing metadata.
 An attribute always has the form name="value" (the attribute's identifier followed by its associated value).
 You may see attributes without the equals sign or a value. That is a shorthand for providing the empty string in HTML, or the attribute's name in XML.
+
+## [Images](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img)
+- The `<img>` HTML element embeds an image into the document.
+- The src attribute is required, and contains the path to the image you want to embed.
+- The alt attribute holds a text description of the image, which isn't mandatory but is incredibly useful for accessibility — screen readers read this description out to their users so they know what the image means. Alt text is also displayed on the page if the image can't be loaded for some reason: for example, network errors, content blocking, or linkrot.
+- A Self Closing Tag - making it a void elemnent
