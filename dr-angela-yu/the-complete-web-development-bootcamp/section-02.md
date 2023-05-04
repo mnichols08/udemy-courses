@@ -20,3 +20,5 @@ Another common example of self closing elements are line breaks `<br />`
 We will build a simple website which tracks our very favorite top 3 movies of all time.
 We will need a Heading, a sub heading, and a horizontal rule then, we need a sub sub heading with some paragraph elements 
 The content will of course be a list of my top three favorite movies
+
+## Tips to keep the journey going strong. See PDF
