@@ -31,3 +31,6 @@ You may see attributes without the equals sign or a value. That is a shorthand f
 - The src attribute is required, and contains the path to the image you want to embed.
 - The alt attribute holds a text description of the image, which isn't mandatory but is incredibly useful for accessibility — screen readers read this description out to their users so they know what the image means. Alt text is also displayed on the page if the image can't be loaded for some reason: for example, network errors, content blocking, or linkrot.
 - A Self Closing Tag - making it a void elemnent
+
+## Birthday Party Invite
+Aiming for a retro 90s style website to tell people it's our birthday! We are gonna add in some dates some lists and all sorts os fun stuff!
