@@ -87,3 +87,14 @@ The scope is the current context of execution in which values and expressions ar
 * Module scope: The scope for code running in module mode.
 * Function scope: The scope created with a function.
 * In addition, variables declared with let or const can belong to an additional scope
+
+## JS is Weird
+
+```
+const function = () => {
+  height = 50;
+  return height;
+}
+```
+
+JS will automatically add var height to this but it may not be ideal - we can use `use-strict` to prevent this from happening
