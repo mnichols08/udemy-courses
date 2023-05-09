@@ -26,5 +26,23 @@ Without styles, we only have styles - and developers would be forced to style ev
 ## CSS Selectors
 
 ```
-=>h1<= {}
+=>p<= {}
 ```
+
+### Class Selector
+
+* Using the `.` as a prefix declares a class to apply styles to
+
+### ID Selector
+
+* Using the `#` as a previx declares an ID to apply styles to
+
+* IDs are unique -- classes are broad and can be used as often as necessary
+
+### Attribute Selector
+
+* Use bracket notation to select elements with particular attribute or value like so `p[draggable]{color:red}`
+
+### Universal Selector
+
+* Just an Asterisk `*` - means select all
