@@ -37,7 +37,7 @@ Non-primitive values like objects are pass by reference - we point to the object
 * These create shallow clones so if there are objects within these objects then they will no longer be dynamic so you can only clone the first layer
   or we can do something like this:
 
-## Deep Clones
+### Deep Clones
 
 ```
 var c = [1,2,3];
@@ -72,7 +72,7 @@ console.log(superClone)
 
 Doing deep clones can have performance implications if the object is large so it is rather uncommmon
 
-## Exercise: Compare Objects
+### Exercise: Compare Objects
 
 * How would you compare two objects if they are pointing to a different location in memory but still have the same properties?
 
@@ -82,6 +82,34 @@ var user2 = {name : "nerd", org: "dev"};
 var eq = JSON.stringify(user1) == JSON.stringify(user2);
 alert(eq); // gives false
 
+```
+
+### Exercise: Pass By Reference
+
+```
+const number = 100
+const string = "Jay"
+let obj1 = {
+  value: "a"
+}
+let obj2 = {
+  value: "b"
+}
+let obj3 = obj2;
+ 
+function change(number, string, obj1, obj2) {
+    number = number * 10;
+    string = "Pete";
+    obj1 = obj2;
+    obj2.value = "c";
+}
+ 
+change(number, string, obj1, obj2);
+ 
+//Guess the outputs here before you run the code: 
+console.log(number); // 100
+console.log(string); // Jay
+console.log(obj1.value); // a
 ```
 
 ## Static vs Dynamically Typed
