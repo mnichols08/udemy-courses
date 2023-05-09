@@ -166,6 +166,26 @@ obj.someFunc(this) // this refers to obj in this case
 
 * Basically the `this` keyword is the context that it is called within.
 
-<!---->
-
 * `this` is usually determined by what called it and acts as a placeholder that refers to whichever object called the method.
+
+## Dynamic Scope vs. Lexical Scope
+
+```
+const a = function() {
+  console.log('a',this)
+  const b =  function() {
+    console.log('b',this)
+    const c = {
+      hi: function() {
+        console.log('c',this)
+      }
+    }c.hi() // {hi: fn}
+  }
+  b() // Window
+}
+a() // Window
+```
+
+Remember that in JS, our lexical scope determines our available variables. Except for the `this` keyword.
+Arrow functions allow us to bind the this keyword
+which lets us skip a traditional step of binding the keyword using `.bind(this)`
