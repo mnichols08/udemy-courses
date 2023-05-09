@@ -8,7 +8,7 @@ Section 1: Introduction
 [Section 2: Javascript Foundations](./section-02.md)
 [Section 3: Javascript Foundations Cont'd](./section-03.md)
 [Section 4: Types in Javascript](./section-04.md)
-Section 5: The 2 Pillars: Closures and Protypal Inhritance
+[Section 5: The 2 Pillars: Closures and Protypal Inhritance](./section-05.md)
 Section 6: Object Oriented Programming
 Section 7: Functional Programming
 Section 8: Object Oriented vs Functional Programming

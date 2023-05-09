@@ -1,5 +1,3 @@
-# The Two Pillars
-
 ## Static vs Dynamically Typed
 
 * Static types are
