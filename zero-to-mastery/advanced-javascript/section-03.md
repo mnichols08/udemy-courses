@@ -238,3 +238,21 @@ const multiply = (a,b) =>  a * b
 let multiplyByTwo = multiply.bind(this, 2) // we don't care about the this keyword here it is the window but who cares.
 console.log(multiplyByTwo(4))
 ```
+
+```
+var b = {
+  name: 'jay',
+  say() { console.log(this) }
+}
+var c = {
+  name: 'jay',
+  say() {return function() { console.log(this)}}
+}
+var d = {
+  name: 'jay',
+  say() {return () => console.log(this)}
+}
+b.say() // this
+c.say()() // Window
+d.say()() // this
+```
