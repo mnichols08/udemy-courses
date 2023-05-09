@@ -8,4 +8,4 @@
 
 ## Functions vs Objects
 
-## Schheme + Java
+## Scheme + Java
