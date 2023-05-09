@@ -98,3 +98,55 @@ const function = () => {
 ```
 
 JS will automatically add var height to this but it may not be ideal - we can use `use-strict` to prevent this from happening
+
+## Block Scope
+
+```
+if (5 > 4) {
+  let secret = '12345';
+}
+console.log(secret) // undefined
+```
+
+## Function Scope
+
+```
+if (5 > 4) {
+  var secret = '12345';
+}
+console.log(secret) // '12345'
+```
+
+## Block Exercise
+
+```
+function loop() {
+  for (let i = 0; i < 5; i++){
+    console.log(i) 0 1 2 3 4
+  }
+  console.log('final',i) // i is undefined
+}
+loop() // error
+```
+
+## Block Exercise
+
+```
+function loop() {
+  for (var i = 0; i < 5; i++){
+    console.log(i)
+  }
+  console.log('final',i)
+}
+loop() // 0 1 2 3 4 final 5
+```
+
+* `let` and `const` offer the ability to use block scoping because unlike `var` the keywords are block scoped
+
+* We should minimalize our usage of global variables. Othwerwise we risk collision. A great way to minimize global is by using something called an IIFE or Immediately Invoked Function Experession.
+
+```
+(() => )()
+```
+
+Enable us to attach private data to a function and creates a fresh environment for us so that we do not pollute our global execution context.
