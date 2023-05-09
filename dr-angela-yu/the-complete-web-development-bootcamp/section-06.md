@@ -219,3 +219,22 @@ h1 {
 ### CSS Box Model
 
 * Margin, Padding, and Border
+
+* Width and Height determine the size of a box.
+
+* Border is the area surrounding a box
+
+* Margin is the area surrounding a border
+
+* Padding is the area on the outside of a box
+
+#### Defining a Border
+
+```
+border: 30px solid black;;
+border-top: 0px;
+```
+
+#### Padding
+
+Creating any padding will push a border away from the content
