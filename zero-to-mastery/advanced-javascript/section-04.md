@@ -32,6 +32,46 @@ This is what we call pass by value - we copy value and create that value somewhe
 vs
 Non-primitive values like objects are pass by reference - we point to the object wherever it is within memory - and it might have any number of pointers within
 
+* because of this we must be careful not to overwrite properties values accidentally
+  We can clone objects using the `Object.assign({}, obj)` or spread operator `{...obj}`
+* These create shallow clones so if there are objects within these objects then they will no longer be dynamic so you can only clone the first layer
+  or we can do something like this:
+
+## Deep Clones
+
+```
+var c = [1,2,3];
+var d = c;
+d.push( 4 );
+
+console.log(c);   // [1,2,3,4]
+console.log(d);   // [1,2,3,4]
+
+var a = 5;
+var b = a;
+
+b++;
+
+let obj = {
+  a: 'a',
+  b: 'b',
+  c: {
+    deep: 'try and copy me'
+  }
+};
+let clone = Object.assign({}, obj);
+let clone2 = {...obj}
+let superClone = JSON.parse(JSON.stringify(obj))
+
+obj.c.deep = 'hahaha';
+console.log(obj)
+console.log(clone)
+console.log(clone2)
+console.log(superClone)
+```
+
+Doing deep clones can have performance implications if the object is large so it is rather uncommmon
+
 ## Static vs Dynamically Typed
 
 ## Primintive Types
