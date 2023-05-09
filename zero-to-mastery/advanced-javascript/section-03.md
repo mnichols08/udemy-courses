@@ -271,3 +271,7 @@ const giveMeTheCharacterNOW = () => character.getCharacter();
 //How Would you fix this?
 console.log('?', giveMeTheCharacterNOW()); //this should return 'Simon' but doesn't
 ```
+
+## Context vs. Scope
+
+Scope means what is in the variable environment where context is what determines the this keyword. Context is most often determined by how an function is invoked and scope refers to the visibility of variables.
