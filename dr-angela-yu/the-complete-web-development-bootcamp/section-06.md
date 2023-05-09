@@ -214,3 +214,4 @@ h1 {
 ### Inspecting CSS
 
 * We can use Chrome Developer Tools to inspect a page and see the CSS live and make changes to preview changes as well!
+* [Pesticide](https://chrome.google.com/webstore/detail/pesticide-for-chrome/bakpbgckdnepkmkeaiomhmfcnejndkbi/related) is a useful tool for breaking down CSS
