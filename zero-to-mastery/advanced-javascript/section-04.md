@@ -120,4 +120,9 @@ console.log(obj1.value); // a
 
 ## Type Coercion
 
+If we are using `==` for loose equality and are checking against one value to another it will do something we call _type coercison_ on the value. For example if we are checking `if ('1' == 1)` then we will get true even though one is a string as well as a number. If we use three equals `===` then we are saying strictly check. And it is almost always better to just use three equals.
+
+* [Equality Comparisons](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness)
+* We can use `Object.is` to check if an object is a not a number or not by using `NaN === Object.is(NaN)`
+
 ## Arrays, Functions, Objects
