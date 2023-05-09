@@ -181,3 +181,32 @@ Basic colors have standard, easy-to-remember names:
 | whitesmoke           | #f5f5f5                      |
 | yellow               | #ffff00                      |
 | yellowgreen          | #9acd32                      |
+
+### Font Properties
+
+* Changing the appearance of text
+
+```
+h1 {
+  color: blue;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: sans-serif;
+}
+```
+
+#### Font Size
+
+* What does 20px mean? 1px is about 1/96" of an inch, or `0.26mm`
+* literally tiny cube
+* A common alternative in using px when defining size in CSS is to use a point
+* 1 Point is the equivalent of 1/72" of a inch or `0.35mm`
+* 1em is 100% of it's parent
+* Basically a relative size
+* 1rem is 100% of the root
+* also relative, but to the root of the html file instead
+
+##### So, what is the difference?
+
+Ems change based on their parent properties and rems change based upon the root element
+Usually rems are more consistent
