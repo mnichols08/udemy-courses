@@ -189,3 +189,41 @@ a() // Window
 Remember that in JS, our lexical scope determines our available variables. Except for the `this` keyword.
 Arrow functions allow us to bind the this keyword
 which lets us skip a traditional step of binding the keyword using `.bind(this)`
+
+## Call, Bind, Apply
+
+```
+const wizard = {
+  name: 'Merlin',
+  health: 50,
+  heal() {
+    return this.health = 100
+  }
+}
+
+const archer = {
+  name: 'Robin Hood',
+  health: 30
+}
+
+wizard.heal.apply(archer) // allows you to use the heal method from wizard on the archer
+
+```
+
+* Bind allows us to return a new function with certext and parameters.
+
+```
+wizard.heal.bind(archer) // returns a function (allows us to save this function to a variable to use at another time)
+```
+
+## Exercise
+
+```
+const array = [1,2,3];
+ 
+function getMaxNumber(arr){
+  return arr.sort()[arr.length - 1] 
+}
+ 
+getMaxNumber(array) // should return 3
+```
