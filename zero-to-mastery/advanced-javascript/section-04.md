@@ -1,5 +1,7 @@
 # The Two Pillars
 
+## Static vs Dynamically Typed
+
 * Static types are
 
 * Numbers
@@ -18,6 +20,8 @@
 
 * In Javascript we can use the `typeof` to determine the type of something. If we check what an array is, it is actually an object. As well as `null` but there is an actual error within JS that. Even a function is an object even though that typeof disagrees with us.
 
+## Primintive Types
+
 There are primitive and non-primitive. Primitive types are data that only represent a single value.
 
 * A non-primitive type does not contain the value directly.
@@ -26,6 +30,8 @@ There are primitive and non-primitive. Primitive types are data that only repres
 
 They say that everything is an object in Javascript because behind the scenes everything gets wrapped in an Object, which provides them with some methods like `.toString()` for example.
 Now in JS we have access to `Array.isArray()` which lets us check if something is an array.
+
+## Pass By Reference vs. Pass By Value
 
 Primitive values are immutable
 This is what we call pass by value - we copy value and create that value somewhere else in memory
@@ -111,12 +117,6 @@ console.log(number); // 100
 console.log(string); // Jay
 console.log(obj1.value); // a
 ```
-
-## Static vs Dynamically Typed
-
-## Primintive Types
-
-## Pass By Reference vs. Pass By Value
 
 ## Type Coercion
 
