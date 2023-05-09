@@ -22,3 +22,9 @@ Without styles, we only have styles - and developers would be forced to style ev
 3. External
 
 * A best practice, when we import CSS directly from another file
+
+## CSS Selectors
+
+```
+=>h1<= {}
+```
