@@ -275,3 +275,7 @@ console.log('?', giveMeTheCharacterNOW()); //this should return 'Simon' but does
 ## Context vs. Scope
 
 Scope means what is in the variable environment where context is what determines the this keyword. Context is most often determined by how an function is invoked and scope refers to the visibility of variables.
+
+## Review
+
+We learned about the Javascript Engine, the compilers, and how it is read and executed. Then we learned about execution context and the lexical environment. We learned about the scope chain and a weird thing called hoisting which can be escaped in ES6 by using the let and const keywords. We learned about function scope and block scope. We learned about Lexical and Dynamic scope and that the this keyword is the only place where Javascript has dynamic scope. We learned about call and bind and apply. In addition we learned about Immediately Invoked Function Expressions and this this keyword.
