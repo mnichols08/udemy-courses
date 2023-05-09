@@ -16,6 +16,7 @@ This course provides us with access to over 55+ Hours of course content. It assu
 * [Section 4: Multi-Page Websites](./section-04.md)
 * [HTML Capstone Project](./capstone-project-1.html)
 * [Section 5: Introduction to CSS](./section-05.md)
+* [Section 6: CSS Properties](./section-06.md)
 
 ## Web Development Fundamentals
 
