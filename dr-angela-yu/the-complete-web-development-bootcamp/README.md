@@ -5,16 +5,17 @@ This course provides us with access to over 55+ Hours of course content. It assu
 
 ## [Course Syllabus](./resources/syllabus.pdf)
 
-Taught by Dr. Angela Yu
-Course Length 12 Weeks
-Course Fee $18,000
+* Taught by Dr. Angela Yu
+* Course Length 12 Weeks
+* Course Fee $18,000
 
 ## Section Notes
 
-[Section 2: Introduction to HTML](./section-02.md)
-[Section 3: Intermediate HTML](./section-03.md)
-[Section 4: Multi-Page Websites](./section-04.md)
-[HTML Capstone Project](./capstone-project-1.html)
+* [Section 2: Introduction to HTML](./section-02.md)
+* [Section 3: Intermediate HTML](./section-03.md)
+* [Section 4: Multi-Page Websites](./section-04.md)
+* [HTML Capstone Project](./capstone-project-1.html)
+* [Section 5: Introduction to CSS](./section-05.md)
 
 ## Web Development Fundamentals
 
