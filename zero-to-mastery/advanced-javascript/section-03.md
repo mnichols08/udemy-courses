@@ -98,3 +98,184 @@ const function = () => {
 ```
 
 JS will automatically add var height to this but it may not be ideal - we can use `use-strict` to prevent this from happening
+
+## Block Scope
+
+```
+if (5 > 4) {
+  let secret = '12345';
+}
+console.log(secret) // undefined
+```
+
+## Function Scope
+
+```
+if (5 > 4) {
+  var secret = '12345';
+}
+console.log(secret) // '12345'
+```
+
+## Block Exercise
+
+```
+function loop() {
+  for (let i = 0; i < 5; i++){
+    console.log(i) 0 1 2 3 4
+  }
+  console.log('final',i) // i is undefined
+}
+loop() // error
+```
+
+## Block Exercise
+
+```
+function loop() {
+  for (var i = 0; i < 5; i++){
+    console.log(i)
+  }
+  console.log('final',i)
+}
+loop() // 0 1 2 3 4 final 5
+```
+
+* `let` and `const` offer the ability to use block scoping because unlike `var` the keywords are block scoped
+
+* We should minimalize our usage of global variables. Othwerwise we risk collision. A great way to minimize global is by using something called an IIFE or Immediately Invoked Function Experession.
+
+```
+(() => )()
+```
+
+Enable us to attach private data to a function and creates a fresh environment for us so that we do not pollute our global execution context.
+
+## Strict Mode
+
+More about [strict mode](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode)
+
+## [this Keyword](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this)
+
+* A function's this keyword behaves a little differently in JavaScript compared to other languages. It also has some differences between strict mode and non-strict mode.
+* In most cases, the value of this is determined by how a function is called (runtime binding). It can't be set by assignment during execution, and it may be different each time the function is called. The bind() method can set the value of a function's this regardless of how it's called, and arrow functions don't provide their own this binding (it retains the this value of the enclosing lexical context).
+
+```
+obj.someFunc(this) // this refers to obj in this case
+```
+
+* Basically the `this` keyword is the context that it is called within.
+
+* `this` is usually determined by what called it and acts as a placeholder that refers to whichever object called the method.
+
+## Dynamic Scope vs. Lexical Scope
+
+```
+const a = function() {
+  console.log('a',this)
+  const b =  function() {
+    console.log('b',this)
+    const c = {
+      hi: function() {
+        console.log('c',this)
+      }
+    }c.hi() // {hi: fn}
+  }
+  b() // Window
+}
+a() // Window
+```
+
+Remember that in JS, our lexical scope determines our available variables. Except for the `this` keyword.
+Arrow functions allow us to bind the this keyword
+which lets us skip a traditional step of binding the keyword using `.bind(this)`
+
+## Call, Bind, Apply
+
+```
+const wizard = {
+  name: 'Merlin',
+  health: 50,
+  heal() {
+    return this.health = 100
+  }
+}
+
+const archer = {
+  name: 'Robin Hood',
+  health: 30
+}
+
+wizard.heal.apply(archer) // allows you to use the heal method from wizard on the archer
+
+```
+
+* Bind allows us to return a new function with certext and parameters.
+
+```
+wizard.heal.bind(archer) // returns a function (allows us to save this function to a variable to use at another time)
+```
+
+## Exercise
+
+```
+const array = [1,2,3];
+ 
+function getMaxNumber(arr){
+  return arr.sort()[arr.length - 1] 
+}
+ 
+getMaxNumber(array) // should return 3
+```
+
+## Currying
+
+* Curring refers to only giving one parameter to a function
+
+```
+const multiply = (a,b) =>  a * b
+
+let multiplyByTwo = multiply.bind(this, 2) // we don't care about the this keyword here it is the window but who cares.
+console.log(multiplyByTwo(4))
+```
+
+```
+var b = {
+  name: 'jay',
+  say() { console.log(this) }
+}
+var c = {
+  name: 'jay',
+  say() {return function() { console.log(this)}}
+}
+var d = {
+  name: 'jay',
+  say() {return () => console.log(this)}
+}
+b.say() // this
+c.say()() // Window
+d.say()() // this
+```
+
+## Exercise II
+
+```
+const character = {
+  name: 'Simon',
+  getCharacter() {
+    return this.name;
+  }
+};
+const giveMeTheCharacterNOW = () => character.getCharacter();
+ 
+//How Would you fix this?
+console.log('?', giveMeTheCharacterNOW()); //this should return 'Simon' but doesn't
+```
+
+## Context vs. Scope
+
+Scope means what is in the variable environment where context is what determines the this keyword. Context is most often determined by how an function is invoked and scope refers to the visibility of variables.
+
+## Review
+
+We learned about the Javascript Engine, the compilers, and how it is read and executed. Then we learned about execution context and the lexical environment. We learned about the scope chain and a weird thing called hoisting which can be escaped in ES6 by using the let and const keywords. We learned about function scope and block scope. We learned about Lexical and Dynamic scope and that the this keyword is the only place where Javascript has dynamic scope. We learned about call and bind and apply. In addition we learned about Immediately Invoked Function Expressions and this this keyword.
