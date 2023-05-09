@@ -27,6 +27,11 @@ There are primitive and non-primitive. Primitive types are data that only repres
 They say that everything is an object in Javascript because behind the scenes everything gets wrapped in an Object, which provides them with some methods like `.toString()` for example.
 Now in JS we have access to `Array.isArray()` which lets us check if something is an array.
 
+Primitive values are immutable
+This is what we call pass by value - we copy value and create that value somewhere else in memory
+vs
+Non-primitive values like objects are pass by reference - we point to the object wherever it is within memory - and it might have any number of pointers within
+
 ## Static vs Dynamically Typed
 
 ## Primintive Types
