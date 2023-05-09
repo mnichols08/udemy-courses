@@ -125,4 +125,29 @@ If we are using `==` for loose equality and are checking against one value to an
 * [Equality Comparisons](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness)
 * We can use `Object.is` to check if an object is a not a number or not by using `NaN === Object.is(NaN)`
 
-## Arrays, Functions, Objects
+### Exercise Type Coercion
+
+* JS can be weird when it comes to type coercion. Try to guess what the output for each of the lines below are:
+
+```
+false == "" // true  
+false == []  // true
+false == {}  // false
+"" == 0      // true
+"" == []     // true
+"" == {}     // false
+0 == []      // true
+0 == {}      // false
+0 == null  // false
+```
+
+### JTS: Dynamic vs Static Typing
+
+* In a static typed language like C++ we have to define a variable explicitly as its type.
+* Dynamically typed languages are not bound to this constrain - Typechecking is done at runtime during the Just In Time Compilation process
+* Javascript is weakly typed by default
+* We can however leverage a popular subset of JavaScript known as TypeScript.
+  * Not the only one there is also Reason ML popular coming out of Facebook - own language but very simlar to JS
+  * Flow is used very commonly with React projects and works by providing typecheckers - actually prebuilt into create-react-app
+  * ELM is another tool to enforce static types in javascript
+* Typescript is different because it compiles itself. It adds functionality on top of itself.
