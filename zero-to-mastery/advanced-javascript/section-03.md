@@ -150,3 +150,22 @@ loop() // 0 1 2 3 4 final 5
 ```
 
 Enable us to attach private data to a function and creates a fresh environment for us so that we do not pollute our global execution context.
+
+## Strict Mode
+
+More about [strict mode](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode)
+
+## [this Keyword](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this)
+
+* A function's this keyword behaves a little differently in JavaScript compared to other languages. It also has some differences between strict mode and non-strict mode.
+* In most cases, the value of this is determined by how a function is called (runtime binding). It can't be set by assignment during execution, and it may be different each time the function is called. The bind() method can set the value of a function's this regardless of how it's called, and arrow functions don't provide their own this binding (it retains the this value of the enclosing lexical context).
+
+```
+obj.someFunc(this) // this refers to obj in this case
+```
+
+* Basically the `this` keyword is the context that it is called within.
+
+<!---->
+
+* `this` is usually determined by what called it and acts as a placeholder that refers to whichever object called the method.
