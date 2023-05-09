@@ -208,5 +208,9 @@ h1 {
 
 ##### So, what is the difference?
 
-Ems change based on their parent properties and rems change based upon the root element
-Usually rems are more consistent
+* Ems change based on their parent properties and rems change based upon the root element
+* Usually rems are more consistent
+
+### Inspecting CSS
+
+* We can use Chrome Developer Tools to inspect a page and see the CSS live and make changes to preview changes as well!
