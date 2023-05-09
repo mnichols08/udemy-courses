@@ -227,3 +227,14 @@ function getMaxNumber(arr){
  
 getMaxNumber(array) // should return 3
 ```
+
+## Currying
+
+* Curring refers to only giving one parameter to a function
+
+```
+const multiply = (a,b) =>  a * b
+
+let multiplyByTwo = multiply.bind(this, 2) // we don't care about the this keyword here it is the window but who cares.
+console.log(multiplyByTwo(4))
+```
