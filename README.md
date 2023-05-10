@@ -1,5 +1,9 @@
 # Educational Course Directory
 
+## Academind
+
+* [Web Components and Stencil JS](./academind/web-components-and-stenciljs/)
+
 ## Christine Maisel
 
 * [Complete SEO Guide](./christine-maisel/complete-seo-guide/README.md)
@@ -22,6 +26,14 @@
 ## Eazl
 
 * [Career Hacking](./eazl/career-hacking/README.md)
+
+## Jonas.io
+
+* [Build Responsive Real World Websites with HTML and CSS](./jonas.io/responsive-real-world-websites-wtih-html-and-css/README.md)
+
+## Scrimba
+
+* [Learn Svelte](./scrimba/learn-svelte/README.md)
 
 ## Zero To Mastery
 
