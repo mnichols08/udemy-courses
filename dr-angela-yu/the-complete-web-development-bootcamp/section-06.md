@@ -181,3 +181,62 @@ Basic colors have standard, easy-to-remember names:
 | whitesmoke           | #f5f5f5                      |
 | yellow               | #ffff00                      |
 | yellowgreen          | #9acd32                      |
+
+### Font Properties
+
+* Changing the appearance of text
+
+```
+h1 {
+  color: blue;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: sans-serif;
+}
+```
+
+#### Font Size
+
+* What does 20px mean? 1px is about 1/96" of an inch, or `0.26mm`
+* literally tiny cube
+* A common alternative in using px when defining size in CSS is to use a point
+* 1 Point is the equivalent of 1/72" of a inch or `0.35mm`
+* 1em is 100% of it's parent
+* Basically a relative size
+* 1rem is 100% of the root
+* also relative, but to the root of the html file instead
+
+##### So, what is the difference?
+
+* Ems change based on their parent properties and rems change based upon the root element
+* Usually rems are more consistent
+
+### Inspecting CSS
+
+* We can use Chrome Developer Tools to inspect a page and see the CSS live and make changes to preview changes as well!
+* [Pesticide](https://chrome.google.com/webstore/detail/pesticide-for-chrome/bakpbgckdnepkmkeaiomhmfcnejndkbi/related) is a useful tool for breaking down CSS
+
+### CSS Box Model
+
+* Margin, Padding, and Border
+
+* Width and Height determine the size of a box.
+
+* Border is the area surrounding a box
+
+* Margin is the area surrounding a border
+
+* Padding is the area on the outside of a box
+
+#### Defining a Border
+
+```
+border: 30px solid black;;
+border-top: 0px;
+```
+
+#### Padding
+
+Creating any padding will push a border away from the content
+
+## [Project - Motivational Poster Website](./resources/6.4%20Motivation%20Meme%20Project/index.html)
