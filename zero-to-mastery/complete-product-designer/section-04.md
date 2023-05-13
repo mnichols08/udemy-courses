@@ -62,3 +62,5 @@ We want to open up Figma Basics file given to us and create a duplicate draft of
 * Create Prototype
 
 ### Export Code
+
+## Frames
