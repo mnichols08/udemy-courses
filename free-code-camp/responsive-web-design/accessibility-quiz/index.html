@@ -63,6 +63,11 @@ Give each fieldset an adequate name attribute. Then, give both unordered lists a
 
 Finally, use the legend to caption the content of the fieldset by placing a true/false question as the text content.
 
+Step 29
+To provide the functionality of the true/false questions, we need a set of inputs which do not allow both to be selected at the same time.
+
+Within each list element, nest one label element, and within each label element, nest one input element with the appropriate type.
+
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -129,8 +134,12 @@ Finally, use the legend to caption the content of the fieldset by placing a true
             <fieldset name="1" class="question">
               <legend>1</legend>
               <ul class="answers-list">
-                <li></li>
-                <li></li>
+                <li>
+                  <label for=""><input name="question-1" type="radio" /></label>
+                </li>
+                <li>
+                  <label for=""><input name="question-1" type="radio" /></label>
+                </li>
               </ul>
             </fieldset>
           </div>
@@ -139,8 +148,12 @@ Finally, use the legend to caption the content of the fieldset by placing a true
             <fieldset name="2" class="question">
               <legend>2</legend>
               <ul class="answers-list">
-                <li></li>
-                <li></li>
+                <li>
+                  <label for=""><input name="question-2" type="radio" /></label>
+                </li>
+                <li>
+                  <label for=""><input name="question-2" type="radio" /></label>
+                </li>
               </ul>
             </fieldset>
           </div>
