@@ -42,6 +42,13 @@ Now replace the position property value of your .cat-head with fixed. Leave both
 
 After that, scroll up and down to see how the fixed value works.
 
+Step 15
+The last position property value is sticky. sticky positioning is a hybrid of relative and fixed positioning. It allows an element to stick to a specific position within its containing element or viewport, based on the scroll position.
+
+Change the value of the position property of .cat-head to sticky, set top to 0, then remove left and its value.
+
+Note: To see how sticky works, you have to place a couple of texts before and after your .cat-head div element. If you scroll up after that, you'll see that the .cat-head gets stuck to the top and remains there.
+
 */
 * {
     box-sizing: border-box;
@@ -52,9 +59,8 @@ body {
 }
 
 .cat-head {
-    position: fixed;
-    top: 100px;
-    left: 100px;
+    position: sticky;
+    top: 0;
     width: 205px;
     height: 180px;
     border: 1px solid #000;
