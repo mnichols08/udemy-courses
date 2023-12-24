@@ -196,6 +196,9 @@ Using a class selector, move the .cat-whisker-left-top element into place with a
 Step 72
 Rotate the left top whisker at 10 degrees.
 
+Step 73
+Use a class selector to target the .cat-whisker-left-middle element. Then move it into place with a position property set to absolute, a top of 127px, and a left of 52px.
+
 */
 * {
   box-sizing: border-box;
@@ -365,4 +368,10 @@ body {
     top: 120px;
     left: 52px;
     transform:rotate(10deg);
+}
+
+.cat-whisker-left-middle {
+    position: absolute;
+    top: 127px;
+    left: 52px;
 }
