@@ -15,6 +15,9 @@ Screen readers announce HTML elements based on the document flow. We will eventu
 
 Give your existing span the class attribute set to flex, and add two span elements within it. Give the first the text AcmeWidgetCorp. Give the second the text Balance Sheet. You will use CSS to reverse the order of the text on the page, but the HTML order will make more sense for a screen reader.
 
+Step 5
+Below your h1 element, create a div element. Give it an id attribute set to years. You want this particular element to be hidden from screen readers, so give it the aria-hidden attribute set to true.
+
  -->
 <!DOCTYPE html>
 <html lang="en">
@@ -32,6 +35,7 @@ Give your existing span the class attribute set to flex, and add two span elemen
             ><span>AcmeWidgetCorp</span><span>Balance Sheet</span></span
           >
         </h1>
+        <div id="years" aria-hidden="true"></div>
       </section>
     </main>
   </body>
