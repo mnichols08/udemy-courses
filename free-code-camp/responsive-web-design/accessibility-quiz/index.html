@@ -68,6 +68,9 @@ To provide the functionality of the true/false questions, we need a set of input
 
 Within each list element, nest one label element, and within each label element, nest one input element with the appropriate type.
 
+Step 30
+Add an id to all of your radio inputs so you can link your labels to them. Give the first one an id of q1-a1. Give the rest of them ids of q1-a2, q2-a1, and q2-a2, respectively.
+
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -135,10 +138,14 @@ Within each list element, nest one label element, and within each label element,
               <legend>1</legend>
               <ul class="answers-list">
                 <li>
-                  <label for=""><input name="question-1" type="radio" /></label>
+                  <label for="q1-a1"
+                    ><input name="question-1" type="radio" id="q1-a1"
+                  /></label>
                 </li>
                 <li>
-                  <label for=""><input name="question-1" type="radio" /></label>
+                  <label for="q1-a2"
+                    ><input name="question-1" type="radio" id="q1-a2"
+                  /></label>
                 </li>
               </ul>
             </fieldset>
@@ -149,10 +156,14 @@ Within each list element, nest one label element, and within each label element,
               <legend>2</legend>
               <ul class="answers-list">
                 <li>
-                  <label for=""><input name="question-2" type="radio" /></label>
+                  <label for="q2-a1"
+                    ><input name="question-2" type="radio" id="q2-a1"
+                  /></label>
                 </li>
                 <li>
-                  <label for=""><input name="question-2" type="radio" /></label>
+                  <label for="q2-a2"
+                    ><input name="question-2" type="radio" id="q2-a2"
+                  /></label>
                 </li>
               </ul>
             </fieldset>
