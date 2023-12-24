@@ -69,6 +69,8 @@ Set the width of the section elements to 80% of their parent container. Then, us
 
 Also, ensure the section elements cannot be larger than 600px in width.
 
+Step 52
+Replace the top margin of the h2 elements with 60px of top padding.
  */
 body {
   background: #f5f6f7;
@@ -106,6 +108,12 @@ h1 {
   text-align: center;
 }
 
+h2 {
+    border-bottom: 4px solid #dfdfe2;
+    margin-top: 0;
+    padding-top: 60px;
+  }
+
 main {
   padding-top: 25px;
 }
@@ -114,10 +122,6 @@ section {
   width: 80%;
   margin: 0 auto 10px;
   max-width: 600px;
-}
-
-h2 {
-  border-bottom: 4px solid #dfdfe2;
 }
 
 nav {
