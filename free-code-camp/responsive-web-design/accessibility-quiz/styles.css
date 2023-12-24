@@ -38,6 +38,12 @@ Step 46
 On the topic of visual accessibility, contrast between elements is a key factor. For example, the contrast between the text and the background of a heading should be at least 4.5:1.
 
 Change the font color of all the anchor elements within the list elements to something with a contrast ratio of at least 7:1.
+
+Step 47
+To make the navigation buttons look more like typical buttons, remove the underline from the anchor tags.
+
+Then, create a new selector targeting the navigation list elements so that when the cursor hovers over them, the background color and text color are switched, and the cursor becomes a pointer.
+
  */
 body {
   background: #f5f6f7;
@@ -108,5 +114,12 @@ nav li {
 }
 
 li > a {
-    color: #dfdfe2
+  color: inherit;
+  text-decoration: none;
+}
+
+nav li:hover {
+  background-color: #dfdfe2;
+  color: #1b1b32;
+  cursor: pointer;
 }
