@@ -134,6 +134,9 @@ border: 3px solid #3b3b4f;
 Step 63
 Set the footer background color to #2a2a40, and use Flexbox to horizontally center the text.
 
+Step 64
+Now, we cannot read the text. Target the footer and the anchor element within to set the font color to a color of adequate contrast ratio.
+
  */
 body {
   background: #f5f6f7;
@@ -298,4 +301,8 @@ footer {
     background-color: #2a2a40;
     display: flex;
     justify-content: center;
+}
+
+footer a, footer {
+    color: #fff;
 }
