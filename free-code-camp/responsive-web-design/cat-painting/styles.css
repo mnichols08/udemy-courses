@@ -34,6 +34,9 @@ The next position property is absolute. When you use the absolute value for your
 
 Set the position property of your .cat-head element to absolute, then set top and left properties to any pixel value.
 
+Step 13
+Use a class selector to give your .box element a width of 200px, a height of 600px, and a background color of #000. Also, give it a position of absolute, a top of 800px and a left of 650px.
+
 */
 * {
     box-sizing: border-box;
@@ -52,4 +55,13 @@ body {
     border: 1px solid #000;
     border-radius: 46%;
     background: linear-gradient(#5e5e5e 85%, #45454f 100%);
+}
+
+.box {
+    width: 200px;
+    height: 600px;
+    background: #000;
+    position: absolute;
+    top: 800px;
+    left:650px;
 }
