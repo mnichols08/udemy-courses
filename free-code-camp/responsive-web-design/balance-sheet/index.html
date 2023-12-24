@@ -26,6 +26,15 @@ Below your existing div element, add a new div element with a class set to table
 
 Within that, add three table elements. You will be using CSS to style these into a single table, but using separate tables will help screen readers understand the document flow.
 
+Step 8
+HTML tables use the caption element to describe what the table is about. The caption element should always be the first child of a table, but can be positioned with the caption-side CSS property.
+
+Add a caption element to your first table, and give it the text Assets.
+
+Step 9
+The thead and tbody elements are used to indicate which portion of your table is the header, and which portion contains the primary data or content.
+
+Add a thead and tbody to your first table, below the caption element.
  -->
 <!DOCTYPE html>
 <html lang="en">
@@ -54,6 +63,8 @@ Within that, add three table elements. You will be using CSS to style these into
             <caption>
               Assets
             </caption>
+            <thead></thead>
+            <tbody></tbody>
           </table>
           <table></table>
           <table></table>
