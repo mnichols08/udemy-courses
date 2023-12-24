@@ -74,6 +74,13 @@ Replace the top margin of the h2 elements with 60px of top padding.
 
 Step 53
 Add padding to the top and left of the .info elements, and set the other values to 0.
+
+Step 54
+Give the .formrow elements top margin, and left and right padding. The other padding values should be 0.
+
+Then, increase the font size for all input elements.
+
+
  */
 body {
   background: #f5f6f7;
@@ -159,9 +166,19 @@ p::before {
 }
 
 .info {
-  padding: 60px 0 0 60px;
+  padding: 10px 0 0 5px;
 }
 
+.formrow {
+  margin-top: 10px;
+  padding: 0 10px 0 10px;
+}
+input {
+  font-size: 14px;
+}
+input {
+  font-size: 1.1em;
+}
 nav li {
   color: #dfdfe2;
   margin: 0 0.2rem;
