@@ -120,6 +120,17 @@ ul {
 }
 Remove the default styling for the .answers-list items by setting its style to none, and remove the unordered list padding.
 
+Step 62
+Give the submit button a freeCodeCamp-style design, with the following CSS properties:
+
+display: block;
+margin: 40px auto;
+width: 40%;
+padding: 15px;
+font-size: 23px;
+background: #d0d0d5;
+border: 3px solid #3b3b4f;
+
  */
 body {
   background: #f5f6f7;
@@ -268,4 +279,14 @@ p {
   margin-top: 5px;
   padding-left: 15px;
   font-size: 20px;
+}
+
+button {
+  display: block;
+  margin: 40px auto;
+  width: 40%;
+  padding: 15px;
+  font-size: 23px;
+  background: #d0d0d5;
+  border: 3px solid #3b3b4f;
 }
