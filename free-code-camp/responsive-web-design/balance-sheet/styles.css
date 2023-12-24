@@ -99,6 +99,10 @@ Now target the th elements within your table body, and give them a width of the 
 
 Step 55
 The [attribute="value"] selector targets any element that has an attribute with a specific value. Create a tr[class="total"] selector to target specifically your tr elements with the total class. Give it a bottom border of 4px double #0a0a23 and make the font bold.
+
+Step 56
+Using the same selector syntax, target the th elements within your table rows where the class is total. Align the text to the left, and give them a padding of 0.5rem 0 0.25rem 0.5rem.
+
 */
 
 span[class~="sr-only"] {
@@ -205,4 +209,9 @@ tbody th {
 tr[class="total"] {
   border-bottom: 4px double #0a0a23;
   font-weight: bold;
+}
+
+tr[class="total"] th {
+  text-align: left;
+  padding: 0.5rem 0 0.25rem 0.5rem;
 }
