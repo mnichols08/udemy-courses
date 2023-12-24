@@ -37,6 +37,11 @@ Set the position property of your .cat-head element to absolute, then set top an
 Step 13
 Use a class selector to give your .box element a width of 200px, a height of 600px, and a background color of #000. Also, give it a position of absolute, a top of 800px and a left of 650px.
 
+Step 14
+Now replace the position property value of your .cat-head with fixed. Leave both top and left as they are.
+
+After that, scroll up and down to see how the fixed value works.
+
 */
 * {
     box-sizing: border-box;
@@ -47,7 +52,7 @@ body {
 }
 
 .cat-head {
-    position: absolute;
+    position: fixed;
     top: 100px;
     left: 100px;
     width: 205px;
