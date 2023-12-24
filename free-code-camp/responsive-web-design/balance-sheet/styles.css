@@ -45,6 +45,10 @@ You wrapped your table in a section element - now you can style that to give you
 
 Step 40
 The last part of your table heading is your years. Create a #years selector, and enable flexbox. Justify the content to the end of the flex direction, and make the element sticky. Fix it to the top of its container with top: 0.
+
+Step 41
+Now apply some color to your #years. Make the text #fff and the background #0a0a23.
+
 */
 
 span[class~="sr-only"] {
@@ -100,4 +104,6 @@ section {
     justify-content: flex-end;
     position: sticky;
     top: 0;
+    color: #fff;
+    background: #0a0a23;
 }
