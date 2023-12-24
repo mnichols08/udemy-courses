@@ -100,6 +100,10 @@ Step 32
 That's not the behavior you want. You should make the ears display over the head so the borders that overlap with them don't show.
 
 Instead of -1, set the z-index property of the left ear to 1.
+
+Step 33
+Set the z-indexproperty of the right ear to 1 so it always stays over the head.
+
 */
 * {
     box-sizing: border-box;
@@ -140,6 +144,7 @@ body {
     position: absolute;
     top: -26px;
     left: 163px;
+    z-index: 1;
     transform: rotate(45deg);
     border-top-left-radius: 90px;
     border-top-right-radius: 10px;
