@@ -8,6 +8,11 @@ Give your body element a background-color of #c9d2fc.
 Step 7
 Using a class selector, give the .cat-head element a width of 205px and a height of 180px. Also, give it a border of 1px solid #000 and a border-radius of 46%.
 
+Step 8
+To see the cat-head element, give it a linear gradient background with #5e5e5e at 85% and #45454f at 100%.
+
+You might not notice the difference between these two colors, but they are there.
+
 */
 * {
     box-sizing: border-box;
@@ -22,4 +27,5 @@ body {
     height: 180px;
     border: 1px solid #000;
     border-radius: 46%;
+    background: linear-gradient(#5e5e5e 85%, #45454f 100%)
 }
