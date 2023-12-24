@@ -1,3 +1,37 @@
+<!-- 
+Step 15
+To increase the page accessibility, the role attribute can be used to indicate the purpose behind an element on the page to assistive technologies. The role attribute is a part of the Web Accessibility Initiative (WAI), and accepts preset values.
+
+Give each of the section elements the region role. 
+
+
+Step 16
+Every region role requires a label, which helps screen reader users understand the purpose of the region. One method for adding a label is to add a heading element inside the region and then reference it with the aria-labelledby attribute.
+
+Add the following aria-labelledby attributes to the section elements:
+
+student-info
+html-questions
+css-questions
+Then, within each section element, nest one h2 element with an id matching the corresponding aria-labelledby attribute. Give each h2 suitable text content. -->
+<!-- Step 18
+To be able to navigate within the page, give each anchor element an href corresponding to the id of the h2 elements. 
+
+Step 18
+To be able to navigate within the page, give each anchor element an href corresponding to the id of the h2 elements.
+
+Step 19
+Filling out the content of the quiz, below #student-info, add three div elements with a class of info.
+
+Then, within each div nest one label element, and one input element.
+
+Step 20
+It is important to link each input to the corresponding label element. This provides assistive technology users with a visual reference to the input.
+
+This is done by giving the label a for attribute, which contains the id of the input.
+
+This section will take a student's name, email address, and date of birth. Give the label elements appropriate for attributes, as well as text content. Then, link the input elements to the corresponding label elements.
+-->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -19,9 +53,9 @@
       <h1>HTML/CSS Quiz</h1>
       <nav>
         <ul>
-          <li><a>INFO</a></li>
-          <li><a>HTML</a></li>
-          <li><a>CSS</a></li>
+          <li><a href="#student-info">INFO</a></li>
+          <li><a href="#html-questions">HTML</a></li>
+          <li><a href="#css-questions">CSS</a></li>
         </ul>
       </nav>
     </header>
@@ -30,27 +64,24 @@
         method="post"
         action="https://freecodecamp.org/practice-project/accessibility-quiz"
       >
-        <!-- Step 15
-To increase the page accessibility, the role attribute can be used to indicate the purpose behind an element on the page to assistive technologies. The role attribute is a part of the Web Accessibility Initiative (WAI), and accepts preset values.
-
-Give each of the section elements the region role. -->
-<!-- Step 16
-Every region role requires a label, which helps screen reader users understand the purpose of the region. One method for adding a label is to add a heading element inside the region and then reference it with the aria-labelledby attribute.
-
-Add the following aria-labelledby attributes to the section elements:
-
-student-info
-html-questions
-css-questions
-Then, within each section element, nest one h2 element with an id matching the corresponding aria-labelledby attribute. Give each h2 suitable text content. -->
         <section role="region" aria-labelledby="student-info">
-            <h2 id="student-info">Student Info</h2>
+          <h2 id="student-info">Student Info</h2>
+          <div class="info">
+            <label for="name">Name</label><input id="name" type="text" />
+          </div>
+          <div class="info">
+            <label for="email">Email</label><input id="email" type="email" />
+          </div>
+          <div class="info">
+            <label for="birthday">Birthday</label
+            ><input id="birthday" type="text" />
+          </div>
         </section>
         <section role="region" aria-labelledby="html-questions">
-            <h2 id="html-questions">HTML Questions</h2>
+          <h2 id="html-questions">HTML Questions</h2>
         </section>
         <section role="region" aria-labelledby="css-questions">
-            <h2 id="css-questions">CSS Questions</h2>
+          <h2 id="css-questions">CSS Questions</h2>
         </section>
       </form>
     </main>
