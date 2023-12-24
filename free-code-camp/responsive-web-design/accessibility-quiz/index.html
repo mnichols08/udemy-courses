@@ -76,6 +76,10 @@ Although not required for label elements with a nested input, it is still best-p
 
 Now, add a for attribute to each of your four labels that links the label to its corresponding radio input.
 
+Step 32
+Give the label elements text such that the input comes before the text. Then, give the input elements a value matching the text.
+
+The text should either be True or False.
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -144,13 +148,21 @@ Now, add a for attribute to each of your four labels that links the label to its
               <ul class="answers-list">
                 <li>
                   <label for="q1-a1"
-                    ><input name="question-1" type="radio" id="q1-a1"
-                  /></label>
+                    ><input
+                      name="question-1"
+                      type="radio"
+                      id="q1-a1"
+                    />True</label
+                  >
                 </li>
                 <li>
                   <label for="q1-a2"
-                    ><input name="question-1" type="radio" id="q1-a2"
-                  /></label>
+                    ><input
+                      name="question-1"
+                      type="radio"
+                      id="q1-a2"
+                    />False</label
+                  >
                 </li>
               </ul>
             </fieldset>
@@ -162,13 +174,21 @@ Now, add a for attribute to each of your four labels that links the label to its
               <ul class="answers-list">
                 <li>
                   <label for="q2-a1"
-                    ><input name="question-2" type="radio" id="q2-a1"
-                  /></label>
+                    ><input
+                      name="question-2"
+                      type="radio"
+                      id="q2-a1"
+                    />True</label
+                  >
                 </li>
                 <li>
                   <label for="q2-a2"
-                    ><input name="question-2" type="radio" id="q2-a2"
-                  /></label>
+                    ><input
+                      name="question-2"
+                      type="radio"
+                      id="q2-a2"
+                    />False</label
+                  >
                 </li>
               </ul>
             </fieldset>
