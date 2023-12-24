@@ -164,6 +164,8 @@ Using a class selector, give your .cat-nose element a left and right border of 1
 Step 55
 Move the nose into position with a position property of absolute, a top of 108px, and a left of 85px.
 
+Step 56
+Remove the sharp edges of the nose with border radius of 50% each on the top-left, bottom-right, and bottom-left corners. Also, rotate it at 180 degrees.
 */
 * {
   box-sizing: border-box;
@@ -287,6 +289,8 @@ body {
     position: absolute;
     top: 108px;
     left: 85px;
+    border-radius: 50%;
+    transform: rotate(180deg);
     border-left: 15px solid transparent;
     border-right: 15px solid transparent;
     border-bottom: 20px solid #442c2c;
