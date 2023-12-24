@@ -80,6 +80,9 @@ Now you can work on the right ear of the cat. You have the HTML for it already.
 
 Using a class selector, give the .cat-right-ear element a left and right border of 35px solid transparent each. Also, set the bottom border to 70px solid #5e5e5e.
 
+Step 28
+Move the right ear into position with a position property set to absolute, a top of -26px, and a left of 163px.
+
 */
 * {
     box-sizing: border-box;
@@ -116,6 +119,9 @@ body {
 }
 
 .cat-right-ear {
+    position: absolute;
+    top: -26px;
+    left: 163px;
     border-left: 35px solid transparent;
     border-right: 35px solid transparent;
     border-bottom: 70px solid #5e5e5e;
