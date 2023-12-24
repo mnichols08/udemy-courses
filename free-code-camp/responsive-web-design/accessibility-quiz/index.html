@@ -47,6 +47,17 @@ Append a span element with a class of sr-only to the current text content of the
 
 Step 24
 Within the span element, add the text (Date of Birth).
+
+Step 26
+Within the second section element, add two div elements with a class of question-block.
+
+Then, within each div.question-block element, add one p element with text of incrementing numbers, starting at 1, and one fieldset element with a class of question.
+
+Step 27
+Each fieldset will contain a true/false question.
+
+Within each fieldset, nest one legend element, and one ul element with two options.
+
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -96,7 +107,8 @@ Within the span element, add the text (Date of Birth).
             />
           </div>
           <div class="info">
-            <label for="birthday">Birthday<span class="sr-only">(Date of Birth)</span></label
+            <label for="birthday"
+              >Birthday<span class="sr-only">(Date of Birth)</span></label
             ><input
               id="birthday"
               placeholder="What is your birthday?"
@@ -107,6 +119,26 @@ Within the span element, add the text (Date of Birth).
         </section>
         <section role="region" aria-labelledby="html-questions">
           <h2 id="html-questions">HTML Questions</h2>
+          <div class="question-block">
+            <p>1</p>
+            <fieldset class="question">
+                <legend></legend>
+                <ul>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </fieldset>
+          </div>
+          <div class="question-block">
+            <p>2</p>
+            <fieldset class="question">
+                <legend></legend>
+                <ul>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </fieldset>
+          </div>
         </section>
         <section role="region" aria-labelledby="css-questions">
           <h2 id="css-questions">CSS Questions</h2>
