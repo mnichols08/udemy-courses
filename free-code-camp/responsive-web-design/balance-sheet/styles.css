@@ -103,6 +103,11 @@ The [attribute="value"] selector targets any element that has an attribute with 
 Step 56
 Using the same selector syntax, target the th elements within your table rows where the class is total. Align the text to the left, and give them a padding of 0.5rem 0 0.25rem 0.5rem.
 
+Step 57
+The key difference between tr[class="total"] and tr.total is that the first will select tr elements where the only class is total. The second will select tr elements where the class includes total.
+
+In your case, tr.total will work. You can use this selector to target all td elements within your .total rows. Align the text to the right, and give them a padding of 0 0.25rem.
+
 */
 
 span[class~="sr-only"] {
@@ -214,4 +219,9 @@ tr[class="total"] {
 tr[class="total"] th {
   text-align: left;
   padding: 0.5rem 0 0.25rem 0.5rem;
+}
+
+tr.total td {
+  text-align: right;
+  padding: 0 0.25rem;
 }
