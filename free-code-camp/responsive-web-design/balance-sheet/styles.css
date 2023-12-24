@@ -114,6 +114,12 @@ The :nth-of-type() pseudo-selector is used to target specific elements based on 
 Step 59
 Give your tr.total elements a hover effect that changes the background to #99c9ff.
 
+Step 60
+Select your td elements with the class value of current, and make the font italic.
+
+Step 61
+Select the tr elements with the class set to data. Give them a background image of linear-gradient(to bottom, #dfdfe2 1.845rem, white 1.845rem).
+
 */
 
 span[class~="sr-only"] {
@@ -242,4 +248,8 @@ tr.total:hover {
 
 td.current{
   font-style: italic;
+}
+
+tr.data {
+  background-image: linear-gradient(to bottom, #dfdfe2 1.845rem, white 1.845rem);
 }
