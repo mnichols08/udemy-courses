@@ -117,6 +117,15 @@ Step 42
 Two final semantic HTML elements for this project are the footer and address elements. The footer element is a container for a collection of content that is related to the page, and the address element is a container for contact information for the author of the page.
 
 After the main element, add one footer element, and nest one address element within it.
+
+Step 43
+Within the address element, add the following:
+
+freeCodeCamp<br />
+San Francisco<br />
+California<br />
+USA
+The br tags will allow each part of the address to be on its own line and are useful for presenting address elements properly.
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -242,26 +251,37 @@ After the main element, add one footer element, and nest one address element wit
               <label for="cInCSS">What does C mean in CSS?</label>
             </div>
             <div class="answer">
-                <select id="cInCSS" name="cInCSS" required>
-                    <option value="">Select an option</option>
-                    <option value="a">corresponding</option>
-                    <option value="b">correlating</option>
-                    <option value="c">canvas</option>
-                    <option value="d">cascading</option>
-                </select>
+              <select id="cInCSS" name="cInCSS" required>
+                <option value="">Select an option</option>
+                <option value="a">corresponding</option>
+                <option value="b">correlating</option>
+                <option value="c">canvas</option>
+                <option value="d">cascading</option>
+              </select>
             </div>
             <div class="question-block">
               <label for="heiarchy">Describe the heiarchy of CSS</label>
             </div>
             <div class="answer">
-                <textarea name="heiarchy" id="heiarchy" cols="60" rows="10" placeholder="How does the browser determine what style is most important?"></textarea>
+              <textarea
+                name="heiarchy"
+                id="heiarchy"
+                cols="60"
+                rows="10"
+                placeholder="How does the browser determine what style is most important?"
+              ></textarea>
             </div>
           </div>
         </section>
-        <button type="submit" >Answer</button>
+        <button type="submit">Answer</button>
       </form>
       <footer>
-        <address></address>
+        <address>
+          freeCodeCamp<br />
+          San Francisco<br />
+          California<br />
+          USA
+        </address>
       </footer>
     </main>
   </body>
