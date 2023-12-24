@@ -85,6 +85,9 @@ Create a table selector to target your tables. Set the border-collapse property 
 Step 50
 Ensure your table fills its container with a width property set to 100%, then position it relatively and give it a top margin of 3rem.
 
+Step 51
+Next you need to style your caption elements to look more like headers. Create a table caption selector. Set the text to have a color of #356eaf, a size of 1.3em, and a normal weight.
+
 */
 
 span[class~="sr-only"] {
@@ -167,4 +170,10 @@ table {
     position: relative;
     width: 100%;
     margin: 3rem;
+}
+
+table caption {
+  color: #356eaf;
+  font-size: 1.3em;
+  font-weight: normal;
 }
