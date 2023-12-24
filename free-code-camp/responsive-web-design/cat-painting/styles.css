@@ -57,6 +57,11 @@ Give the .cat-head element a position property set to absolute. Set a value of 0
 Step 18
 Also, remove the .box CSS rule and its declarations because you don't need them anymore.
 
+Step 23
+You are going to make each ear look like a triangle.
+
+Using a class selector, give the .cat-left-ear element a left and right border of 35px solid transparent each. Also, set the bottom border to 70px solid #5e5e5e.
+
 */
 * {
     box-sizing: border-box;
@@ -78,4 +83,10 @@ body {
     border: 1px solid #000;
     border-radius: 46%;
     background: linear-gradient(#5e5e5e 85%, #45454f 100%);
+}
+
+.cat-left-ear {
+    border-left: 35px solid transparent;
+    border-right: 35px solid transparent;
+    border-bottom: 70px solid #5e5e5e;
 }
