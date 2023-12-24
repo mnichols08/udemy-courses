@@ -173,6 +173,12 @@ Using a descendant selector, select the two div elements inside the div with cla
 Step 60
 You are going to make the two mouth lines into an elliptical shape. So, give the .cat-mouth div selector a border color of black transparent transparent transparent and a border radius of 190%/190px 150px 0 0.
 
+Step 61
+Using a class selector, give your .cat-mouth-line-left element a position of absolute, a top of 88px and a left of 74px. This would move it into the right position.
+
+Step 62
+Using the transform property, rotate the left mouth line at 170 degrees.
+
 */
 * {
   box-sizing: border-box;
@@ -315,4 +321,5 @@ body {
     position: absolute;
     top: 88px;
     left: 74px;
+    transform: rotate(170deg);
 }
