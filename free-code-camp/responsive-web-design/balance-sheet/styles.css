@@ -58,6 +58,9 @@ The calc() function is a CSS function that allows you to calculate a value based
 }
 Give #years a margin of 0 -2px, and a padding set to 0.5rem calc(1.25rem + 2px) 0.5rem 0.
 
+Step 43
+Adding position sticky moved the element into its own stack. To ensure your #years element does not get hidden by different stacks, add a z-index property set to 999 in the #years rule.
+
 */
 
 span[class~="sr-only"] {
@@ -112,6 +115,7 @@ section {
     display: flex;
     justify-content: flex-end;
     position: sticky;
+    z-index: 999;
     top: 0;
     color: #fff;
     background: #0a0a23;
