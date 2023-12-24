@@ -91,6 +91,15 @@ To align the input boxes with each other, create a new ruleset that targets all 
 
 Also, align the label element's text to the right.
 
+Step 58
+To neaten the .question-block elements, set the following CSS properties:
+
+text-align: left;
+display: block;
+width: 100%;
+margin-top: 20px;
+padding-top: 5px;
+
  */
 body {
   background: #f5f6f7;
@@ -183,9 +192,10 @@ p::before {
   margin-top: 10px;
   padding: 0 10px 0 10px;
 }
-.info input, .info label {
-    display: inline-block;
-    text-align: right;
+.info input,
+.info label {
+  display: inline-block;
+  text-align: right;
 }
 .info input {
   width: 50%;
@@ -198,6 +208,14 @@ p::before {
 
 input {
   font-size: 14px;
+}
+
+.question-block {
+  text-align: left;
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+  padding-top: 5px;
 }
 nav li {
   color: #dfdfe2;
