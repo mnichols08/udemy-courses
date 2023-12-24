@@ -158,6 +158,8 @@ Using a class selector, give your .cat-right-inner-eye element a width of 10px a
 Step 52
 Move the right inner eye into position with a position of absolute, a top of 8px, and a left of 18px. Also, give it a border radius of 60% and rotate it at -5deg.
 
+Step 54
+Using a class selector, give your .cat-nose element a left and right border of 15px solid transparent each. Also give it a bottom border of 20px solid #442c2c.
 */
 * {
   box-sizing: border-box;
@@ -275,4 +277,10 @@ body {
   width: 10px;
   height: 20px;
   background-color: #fff;
+}
+
+.cat-nose {
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 20px solid #442c2c;
 }
