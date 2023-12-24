@@ -13,6 +13,15 @@ To see the cat-head element, give it a linear gradient background with #5e5e5e a
 
 You might not notice the difference between these two colors, but they are there.
 
+Step 9
+CSS positioning lets you set how you want an element to be positioned in the browser. It has a position property you can set to static, absolute, relative, sticky or fixed.
+
+Once you set the position property of the element, you can move the element around by setting a pixel or a percentage value for one or more of the top, right, left, or bottom properties.
+
+static is the default positioning for all elements. If you assign it to an element, you won't be able to move it around with top, right, left, or bottom.
+
+Give .cat-head a position property of static, then set the top and left properties to 100px each.
+
 */
 * {
     box-sizing: border-box;
@@ -23,9 +32,12 @@ body {
 }
 
 .cat-head {
+    position: static;
+    top: 100px;
+    left: 100px;
     width: 205px;
     height: 180px;
     border: 1px solid #000;
     border-radius: 46%;
-    background: linear-gradient(#5e5e5e 85%, #45454f 100%)
+    background: linear-gradient(#5e5e5e 85%, #45454f 100%);
 }
