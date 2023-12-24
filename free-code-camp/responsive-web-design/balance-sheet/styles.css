@@ -61,6 +61,11 @@ Give #years a margin of 0 -2px, and a padding set to 0.5rem calc(1.25rem + 2px) 
 Step 43
 Adding position sticky moved the element into its own stack. To ensure your #years element does not get hidden by different stacks, add a z-index property set to 999 in the #years rule.
 
+Step 44
+Style the text within your #years element by creating a #years span[class] selector. The span[class] syntax will target any span element that has a class attribute set, regardless of the attribute's value.
+
+Give your new selector a bold font, a width of 4.5rem, and text aligned to the right.
+
 */
 
 span[class~="sr-only"] {
@@ -121,4 +126,10 @@ section {
     background: #0a0a23;
     margin: 0 -2px;
     padding: 0.5rem calc(1.25rem + 2px) 0.5rem 0;
+}
+
+#years span[class] {
+    font-weight: bold;
+    width: 4.5rem;
+    text-align: right;
 }
