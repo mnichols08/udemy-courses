@@ -19,6 +19,9 @@ The clip-path property determines the shape the clip property should take. Set t
 
 Step 32
 Now you need to size these elements down. Give your span[class~="sr-only"] selector a width and height property set to 1px.
+
+Step 33
+To prevent the text content from overflowing, give your span[class~="sr-only"] selector an overflow property set to hidden and a white-space property set to nowrap.
 */
 
 span[class~="sr-only"] {
@@ -27,6 +30,8 @@ span[class~="sr-only"] {
   clip: rect(1px, 1px, 1px, 1px);
   height: 1px;
   width: 1px;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 html {
