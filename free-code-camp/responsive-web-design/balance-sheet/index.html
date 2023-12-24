@@ -79,6 +79,9 @@ Within your thead, add a tr. Inside that, add a td and three th elements.
 
 Step 19
 Give each th element a span element with the class set to sr-only and the following text, in order: 2019, 2020, and 2021.
+
+Step 20
+Within the tbody element, add four tr elements. Give the first three the class attribute set to data, and the fourth the class attribute set to total.
  -->
 <!DOCTYPE html>
 <html lang="en">
@@ -170,7 +173,12 @@ Give each th element a span element with the class set to sr-only and the follow
                 <th><span class="sr-only">2021</span></th>
               </tr>
             </thead>
-            <tbody></tbody>
+            <tbody>
+              <tr class="data"></tr>
+              <tr class="data"></tr>
+              <tr class="data"></tr>
+              <tr class="total"></tr>
+            </tbody>
           </table>
           <table></table>
         </div>
