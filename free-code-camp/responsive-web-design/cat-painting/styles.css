@@ -191,6 +191,9 @@ Use a descendant selector to target the three div elements inside your .cat-whis
 Step 70
 As you did in the previous step, use a descendant selector to target the three div elements inside your .cat-whiskers-right element. Give it a width of 40px, a height of 1px, and a background-color of #000.
 
+Step 71
+Using a class selector, move the .cat-whisker-left-top element into place with a position of absolute, a top of 120px, and a left of 52px.
+
 */
 * {
   box-sizing: border-box;
@@ -353,4 +356,10 @@ body {
     width: 40px;
     height: 1px;
     background-color: #000;
+}
+
+.cat-whisker-left-top {
+    position: absolute;
+    top: 120px;
+    left: 52px;
 }
