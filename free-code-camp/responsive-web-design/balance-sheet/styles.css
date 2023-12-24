@@ -129,6 +129,9 @@ Create a tr.data th .description selector to target the elements with the class 
 Step 64
 Your span elements now all have more specific styling, which means you can remove your span rule.
 
+Step 65
+Your dollar amounts are currently misaligned. Create a selector to target the td elements within your tr.data elements. Vertically align the text to the top, horizontally align the text to the right, and set the padding to 0.3rem 0.25rem 0.
+
 */
 
 span[class~="sr-only"] {
@@ -271,4 +274,10 @@ tr.data th .description {
   display: block;
   padding: 1rem 0 0.75rem;
   margin-right: -13.5rem;
+}
+
+tr.data td {
+  vertical-align: top;
+  text-align: right;
+  padding: 0.3rem 0.25rem 0
 }
