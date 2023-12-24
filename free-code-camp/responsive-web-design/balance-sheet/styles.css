@@ -37,6 +37,9 @@ The :first-of-type pseudo-selector is used to target the first element that matc
 
 Give your new selector a font-size property of 0.7em to make it look like a sub-heading.
 
+Step 38
+The :last-of-type pseudo-selector does the exact opposite - it targets the last element that matches the selector. Create an h1 .flex span:last-of-type selector to target the last span in your flex container, and give it a font-size property set to 1.2em to make it look like a header.
+
 */
 
 span[class~="sr-only"] {
@@ -68,11 +71,15 @@ h1 {
 }
 
 h1 .flex {
-    display: flex;
-    flex-direction: column-reverse;
-    gap: 1rem;
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 1rem;
 }
 
 h1 .flex span:first-of-type {
-    font-size: 0.7em;
+  font-size: 0.7em;
+}
+
+h1 .flex span:last-of-type {
+  font-size: 1.2em;
 }
