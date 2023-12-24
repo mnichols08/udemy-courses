@@ -29,6 +29,9 @@ Finally, you need to take these hidden elements out of the document flow. Give t
 Step 35
 Time to style your table heading. Create an h1 selector. Give it a max-width property set to 37.25rem, a margin property set to 0 auto, and a padding property set to 1.5rem 1.25rem.
 
+Step 36
+Target your flex container with an h1 .flex selector. Give it a display property set to flex to enable the flexbox layout. Then set the flex-direction property to column-reverse - this will display the nested elements from bottom to top. Finally, set the gap property to 1rem to create some space between the elements.
+
 */
 
 span[class~="sr-only"] {
@@ -57,4 +60,10 @@ h1 {
   max-width: 37.25rem;
   margin: 0 auto;
   padding: 1.5rem 1.25rem;
+}
+
+h1 .flex {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 1rem;
 }
