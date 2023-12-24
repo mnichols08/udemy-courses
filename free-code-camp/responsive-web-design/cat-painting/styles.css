@@ -166,6 +166,10 @@ Move the nose into position with a position property of absolute, a top of 108px
 
 Step 56
 Remove the sharp edges of the nose with border radius of 50% each on the top-left, bottom-right, and bottom-left corners. Also, rotate it at 180 degrees.
+
+Step 59
+Using a descendant selector, select the two div elements inside the div with class cat-mouth. Give it a width of 30px, a height of 50px, and a border of 2px solid #000.
+
 */
 * {
   box-sizing: border-box;
@@ -294,4 +298,10 @@ body {
     border-left: 15px solid transparent;
     border-right: 15px solid transparent;
     border-bottom: 20px solid #442c2c;
+}
+
+.cat-mouth div {
+    width: 30px;
+    height: 50px;
+    border: 2px solid #000;
 }
