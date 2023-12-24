@@ -160,6 +160,10 @@ Move the right inner eye into position with a position of absolute, a top of 8px
 
 Step 54
 Using a class selector, give your .cat-nose element a left and right border of 15px solid transparent each. Also give it a bottom border of 20px solid #442c2c.
+
+Step 55
+Move the nose into position with a position property of absolute, a top of 108px, and a left of 85px.
+
 */
 * {
   box-sizing: border-box;
@@ -280,6 +284,9 @@ body {
 }
 
 .cat-nose {
+    position: absolute;
+    top: 108px;
+    left: 85px;
     border-left: 15px solid transparent;
     border-right: 15px solid transparent;
     border-bottom: 20px solid #442c2c;
