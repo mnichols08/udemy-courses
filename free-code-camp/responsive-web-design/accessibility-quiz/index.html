@@ -31,6 +31,22 @@ It is important to link each input to the corresponding label element. This prov
 This is done by giving the label a for attribute, which contains the id of the input.
 
 This section will take a student's name, email address, and date of birth. Give the label elements appropriate for attributes, as well as text content. Then, link the input elements to the corresponding label elements.
+
+Step 21
+Keeping in mind best-practices for form inputs, give each input an appropriate type and name attribute. Then, give the first input a placeholder attribute.
+
+Step 22
+Even though you added a placeholder to the first input element in the previous lesson, this is actually not a best-practice for accessibility; too often, users confuse the placeholder text with an actual input value - they think there is already a value in the input.
+
+Remove the placeholder text from the first input element, relying on the label being the best-practice.
+
+Step 23
+Arguably, D.O.B. is not descriptive enough. This is especially true for visually impaired users. One way to get around such an issue, without having to add visible text to the label, is to add text only a screen reader can read.
+
+Append a span element with a class of sr-only to the current text content of the third label element.
+
+Step 24
+Within the span element, add the text (Date of Birth).
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -67,14 +83,26 @@ This section will take a student's name, email address, and date of birth. Give 
         <section role="region" aria-labelledby="student-info">
           <h2 id="student-info">Student Info</h2>
           <div class="info">
-            <label for="name">Name</label><input id="name" type="text" />
+            <label for="name">Name</label
+            ><input name="name" id="name" type="text" />
           </div>
           <div class="info">
-            <label for="email">Email</label><input id="email" type="email" />
+            <label for="email">Email</label
+            ><input
+              placeholder="Please provide an email"
+              name="email"
+              id="email"
+              type="email"
+            />
           </div>
           <div class="info">
-            <label for="birthday">Birthday</label
-            ><input id="birthday" type="text" />
+            <label for="birthday">Birthday<span class="sr-only">(Date of Birth)</span></label
+            ><input
+              id="birthday"
+              placeholder="What is your birthday?"
+              name="birthday"
+              type="date"
+            />
           </div>
         </section>
         <section role="region" aria-labelledby="html-questions">
