@@ -54,6 +54,17 @@ When the screen width is small, the h1 does not wrap its text content how it sho
 
 Then, give the main padding such that the Student Info section header can be fully seen.
 
+Step 50
+On small screens, the unordered list in the navigation bar overflows the right side of the screen.
+
+Fix this by using Flexbox to wrap the ul content. Then, set the following CSS properties to correctly align the text:
+
+align-items: center;
+padding-inline-start: 0;
+margin-block: 0;
+height: 100%;
+
+
  */
 body {
   background: #f5f6f7;
@@ -108,6 +119,11 @@ nav {
 nav > ul {
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-inline-start: 0;
+  margin-block: 0;
+  height: 100%;
 }
 
 p::before {
