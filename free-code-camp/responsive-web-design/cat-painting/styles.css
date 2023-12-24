@@ -127,6 +127,9 @@ As you did for the left inner ear, remove the sharp edges of the right inner ear
 Step 43
 Using a class selector, give your .cat-left-eye element a width of 30px and a height of 40px. Also, give it a background-color of #000.
 
+Step 44
+Move the left eye into position with a position property of absolute a top of 54px, and a left of 39px.
+
 */
 * {
     box-sizing: border-box;
@@ -203,6 +206,9 @@ body {
 }
 
 .cat-left-eye {
+    position: absolute;
+    top: 54px;
+    left: 39px;
     width: 30px;
     height: 40px;
     background-color: #000;
