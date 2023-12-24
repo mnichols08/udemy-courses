@@ -137,6 +137,9 @@ Set the footer background color to #2a2a40, and use Flexbox to horizontally cent
 Step 64
 Now, we cannot read the text. Target the footer and the anchor element within to set the font color to a color of adequate contrast ratio.
 
+Step 65
+Horizontally center all the text within the address element, and add some padding.
+
  */
 body {
   background: #f5f6f7;
@@ -298,11 +301,17 @@ button {
 }
 
 footer {
-    background-color: #2a2a40;
-    display: flex;
-    justify-content: center;
+  background-color: #2a2a40;
+  display: flex;
+  justify-content: center;
 }
 
-footer a, footer {
-    color: #fff;
+footer a,
+footer {
+  color: #fff;
+}
+
+address {
+  padding: 1px;
+  text-align: center;
 }
