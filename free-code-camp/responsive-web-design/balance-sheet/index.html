@@ -51,6 +51,12 @@ Leave the td element empty. This element exists only to ensure your table has a 
 Step 12
 Within your tbody element, add four tr elements. Give the first three a class attribute set to data, and the fourth a class attribute set to total.
 
+Step 13
+In your first tr, add a th element with the text Cash This is the cash we currently have on hand.. Wrap all of that text except Cash in a span element with the class set to description.
+
+Following that, add three td elements with the following text (in order): $25, $30, $28. Give the third td element a class attribute set to current.
+
+
  -->
 <!DOCTYPE html>
 <html lang="en">
@@ -60,6 +66,7 @@ Within your tbody element, add four tr elements. Give the first three a class at
     <title>Balance Sheet</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
+
   <body>
     <main>
       <section>
@@ -88,7 +95,17 @@ Within your tbody element, add four tr elements. Give the first three a class at
               </tr>
             </thead>
             <tbody>
-              <tr class="data"></tr>
+              <tr class="data">
+                <th>
+                Cash
+                <span class="description"
+                  >This is the cash we currently have on hand.</span
+                >
+                <td>$25</td>
+                <td>$30</td>
+                <td class="current">$28</td>
+                </th>
+              </tr>
               <tr class="data"></tr>
               <tr class="data"></tr>
               <tr class="total"></tr>
