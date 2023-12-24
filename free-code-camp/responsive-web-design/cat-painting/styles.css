@@ -96,6 +96,10 @@ z-index is a property you can use to define the order of overlapping HTML elemen
 
 To see z-index in action, set the z-indexproperty of the left ear to -1.
 
+Step 32
+That's not the behavior you want. You should make the ears display over the head so the borders that overlap with them don't show.
+
+Instead of -1, set the z-index property of the left ear to 1.
 */
 * {
     box-sizing: border-box;
@@ -123,7 +127,7 @@ body {
     position: absolute;
     top: -26px;
     left: -31px;
-    z-index: -1;
+    z-index: 1;
     transform: rotate(-45deg);
     border-radius: 90px; 
     border-top-right-radius: 10px;
