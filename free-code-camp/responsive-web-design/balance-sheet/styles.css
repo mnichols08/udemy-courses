@@ -26,6 +26,9 @@ To prevent the text content from overflowing, give your span[class~="sr-only"] s
 Step 34
 Finally, you need to take these hidden elements out of the document flow. Give the span[class~="sr-only"] selector a position property set to absolute, a padding property set to 0, and a margin property set to -1px. This will ensure that not only are they no longer visible, but they are not even within the page view.
 
+Step 35
+Time to style your table heading. Create an h1 selector. Give it a max-width property set to 37.25rem, a margin property set to 0 auto, and a padding property set to 1.5rem 1.25rem.
+
 */
 
 span[class~="sr-only"] {
@@ -48,4 +51,10 @@ html {
 body {
   font-family: sans-serif;
   color: #0a0a23;
+}
+
+h1 {
+  max-width: 37.25rem;
+  margin: 0 auto;
+  padding: 1.5rem 1.25rem;
 }
