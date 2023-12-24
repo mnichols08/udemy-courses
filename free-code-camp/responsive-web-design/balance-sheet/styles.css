@@ -108,6 +108,9 @@ The key difference between tr[class="total"] and tr.total is that the first will
 
 In your case, tr.total will work. You can use this selector to target all td elements within your .total rows. Align the text to the right, and give them a padding of 0 0.25rem.
 
+Step 58
+The :nth-of-type() pseudo-selector is used to target specific elements based on their order among siblings of the same type. Use this pseudo-selector to target the third td element within your total table rows. Give it a right padding of 0.5rem.
+
 */
 
 span[class~="sr-only"] {
@@ -224,4 +227,8 @@ tr[class="total"] th {
 tr.total td {
   text-align: right;
   padding: 0 0.25rem;
+}
+
+tr.total td:nth-of-type(3) {
+  padding: 0.5rem;
 }
