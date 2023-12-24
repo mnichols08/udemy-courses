@@ -205,6 +205,9 @@ Rotate the left middle whisker at 3 degrees.
 Step 75
 Using a class selector, move the .cat-whisker-left-bottom into position with a position of absolute, a top of 134px, and a left of 52px.
 
+Step 76
+Rotate the left bottom whisker at -3 degrees.
+
 */
 * {
   box-sizing: border-box;
@@ -387,4 +390,5 @@ body {
     position: absolute;
     top: 134px;
     left: 52px;
+    transform: rotate(-3deg);
 }
