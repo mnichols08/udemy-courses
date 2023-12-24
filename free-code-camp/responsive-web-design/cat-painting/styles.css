@@ -170,6 +170,9 @@ Remove the sharp edges of the nose with border radius of 50% each on the top-lef
 Step 59
 Using a descendant selector, select the two div elements inside the div with class cat-mouth. Give it a width of 30px, a height of 50px, and a border of 2px solid #000.
 
+Step 60
+You are going to make the two mouth lines into an elliptical shape. So, give the .cat-mouth div selector a border color of black transparent transparent transparent and a border radius of 190%/190px 150px 0 0.
+
 */
 * {
   box-sizing: border-box;
@@ -304,4 +307,6 @@ body {
     width: 30px;
     height: 50px;
     border: 2px solid #000;
+    border-color: black transparent transparent transparent;
+    border-radius: 190%/190px 150px 0 0;
 }
