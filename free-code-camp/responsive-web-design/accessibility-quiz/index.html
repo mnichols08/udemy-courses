@@ -102,6 +102,11 @@ Give the first option element a value of "", and the text Select an option. Give
 Step 38
 Link the first label element to the select element, and give the select element a name attribute.
 
+Step 39
+Nest one textarea element within the second div.answer element, and set the number of rows and columns it has.
+
+Then, give the textarea placeholder text describing an example answer.
+
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -236,9 +241,11 @@ Link the first label element to the select element, and give the select element 
                 </select>
             </div>
             <div class="question-block">
-              <label for="">What character denotes a class in CSS?</label>
+              <label for="heiarchy">Describe the heiarchy of CSS</label>
             </div>
-            <div class="answer"></div>
+            <div class="answer">
+                <textarea name="heiarchy" id="heiarchy" cols="60" rows="10" placeholder="How does the browser determine what style is most important?"></textarea>
+            </div>
           </div>
         </section>
       </form>
