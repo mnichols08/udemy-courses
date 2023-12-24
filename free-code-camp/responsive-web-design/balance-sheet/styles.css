@@ -1,7 +1,15 @@
 /* 
 Step 28
 Time to style your table. Start by resetting the box model. Create an html selector and give it a box-sizing property set to border-box.
+
+Step 29
+Create a body selector and give it a font-family property set to sans-serif and a color set to #0a0a23.
 */
 html {
   box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    color: #0a0a23;
 }
