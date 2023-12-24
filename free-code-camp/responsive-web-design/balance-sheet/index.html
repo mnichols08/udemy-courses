@@ -56,7 +56,10 @@ In your first tr, add a th element with the text Cash This is the cash we curren
 
 Following that, add three td elements with the following text (in order): $25, $30, $28. Give the third td element a class attribute set to current.
 
+Step 14
+In your second tr element, add a th element with the text Checking Our primary transactional account.. Wrap that text, except for Checking , in a span element with the class attribute set to description.
 
+Following that, add three td elements with the following text (in order): $54, $56, $53. Give the third td element a class attribute set to current.
  -->
 <!DOCTYPE html>
 <html lang="en">
@@ -97,16 +100,26 @@ Following that, add three td elements with the following text (in order): $25, $
             <tbody>
               <tr class="data">
                 <th>
-                Cash
-                <span class="description"
-                  >This is the cash we currently have on hand.</span
-                >
+                  Cash
+                  <span class="description"
+                    >This is the cash we currently have on hand.</span
+                  >
+                </th>
                 <td>$25</td>
                 <td>$30</td>
                 <td class="current">$28</td>
-                </th>
               </tr>
-              <tr class="data"></tr>
+              <tr class="data">
+                <th>
+                  Checking
+                  <span class="description"
+                    >Our primary transactional account.</span
+                  >
+                </th>
+                <td>$54</td>
+                <td>$56</td>
+                <td class="current">$53</td>
+              </tr>
               <tr class="data"></tr>
               <tr class="total"></tr>
             </tbody>
