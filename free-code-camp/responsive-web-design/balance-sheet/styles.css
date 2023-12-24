@@ -66,6 +66,9 @@ Style the text within your #years element by creating a #years span[class] selec
 
 Give your new selector a bold font, a width of 4.5rem, and text aligned to the right.
 
+Step 45
+You wrapped your tables in a container with the table-wrap class. Create a selector for that class, and give it a padding set to 0 0.75rem 1.5rem 0.75rem.
+
 */
 
 span[class~="sr-only"] {
@@ -132,4 +135,8 @@ section {
     font-weight: bold;
     width: 4.5rem;
     text-align: right;
+}
+
+.table-wrap {
+    padding: 0 0.75rem 1.5rem 0.75rem;
 }
