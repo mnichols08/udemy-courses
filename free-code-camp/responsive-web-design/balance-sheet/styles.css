@@ -111,6 +111,9 @@ In your case, tr.total will work. You can use this selector to target all td ele
 Step 58
 The :nth-of-type() pseudo-selector is used to target specific elements based on their order among siblings of the same type. Use this pseudo-selector to target the third td element within your total table rows. Give it a right padding of 0.5rem.
 
+Step 59
+Give your tr.total elements a hover effect that changes the background to #99c9ff.
+
 */
 
 span[class~="sr-only"] {
@@ -231,4 +234,8 @@ tr.total td {
 
 tr.total td:nth-of-type(3) {
   padding: 0.5rem;
+}
+
+tr.total:hover {
+  background: #99c9ff;
 }
