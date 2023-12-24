@@ -121,6 +121,9 @@ It's time to work on the right inner ear. Using a class selector, give your .cat
 Step 38
 Move the right inner ear into position with a position property set to absolute, a top of 22px and a left of -20px.
 
+Step 39
+As you did for the left inner ear, remove the sharp edges of the right inner ear by setting a bottom-right and bottom-left border radius of 40%, a top-left border radius of 90px, and a top-right border radius of 10px.
+
 */
 * {
     box-sizing: border-box;
@@ -187,6 +190,10 @@ body {
     position: absolute;
     top: 22px;
     left: -20px;
+    border-bottom-left-radius: 40%;
+    border-bottom-right-radius: 40%;
+    border-top-left-radius: 90px;
+    border-top-right-radius:10px;
     border-left: 20px solid transparent;
     border-right: 20px solid transparent;
     border-bottom: 40px solid #3b3b4f;
