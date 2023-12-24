@@ -82,6 +82,10 @@ Then, increase the font size for all input elements.
 
 Step 55
 To make the first section look more inline, target only the input elements within .info elements, and set their width to 50%, and left-align their text.
+
+Step 56
+Target all label elements within .info elements, and set their width to 10%, and make it so they do not take up less than 55px.
+
  */
 body {
   background: #f5f6f7;
@@ -175,9 +179,14 @@ p::before {
   padding: 0 10px 0 10px;
 }
 .info input {
-    width: 50%;
-    text-align: left;
+  width: 50%;
+  text-align: left;
 }
+.info label {
+  width: 10%;
+  min-width: 55px;
+}
+
 input {
   font-size: 14px;
 }
