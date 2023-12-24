@@ -106,6 +106,12 @@ Make the paragraph elements appear as a higher priority, with the following CSS 
 margin-top: 5px;
 padding-left: 15px;
 font-size: 20px;
+
+Step 60
+It is useful to see the default border around the fieldset elements, during development. However, it might not be the style you want.
+
+Remove the border and bottom padding on the .question elements.
+
  */
 body {
   background: #f5f6f7;
@@ -222,6 +228,11 @@ input {
   width: 100%;
   margin-top: 20px;
   padding-top: 5px;
+}
+
+.question {
+  border: none;
+  padding-bottom: 0;
 }
 nav li {
   color: #dfdfe2;
