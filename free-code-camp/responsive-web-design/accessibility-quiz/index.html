@@ -80,6 +80,17 @@ Step 32
 Give the label elements text such that the input comes before the text. Then, give the input elements a value matching the text.
 
 The text should either be True or False.
+
+Step 33
+If you click on the radio inputs, you might notice both inputs within the same true/false fieldset can be selected at the same time.
+
+Group the relevant inputs together such that only one input from a pair can be selected at a time.
+
+Step 35
+The final section of this quiz will contain a dropdown, and a text box.
+
+Begin by nesting a div with a class of formrow, and nest four div elements inside of it, alternating their class attributes with question-block and answer.
+
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -152,6 +163,7 @@ The text should either be True or False.
                       name="question-1"
                       type="radio"
                       id="q1-a1"
+                      value="True"
                     />True</label
                   >
                 </li>
@@ -161,6 +173,7 @@ The text should either be True or False.
                       name="question-1"
                       type="radio"
                       id="q1-a2"
+                      value="False"
                     />False</label
                   >
                 </li>
@@ -178,6 +191,7 @@ The text should either be True or False.
                       name="question-2"
                       type="radio"
                       id="q2-a1"
+                      value="True"
                     />True</label
                   >
                 </li>
@@ -187,6 +201,7 @@ The text should either be True or False.
                       name="question-2"
                       type="radio"
                       id="q2-a2"
+                      value="False"
                     />False</label
                   >
                 </li>
@@ -196,6 +211,12 @@ The text should either be True or False.
         </section>
         <section role="region" aria-labelledby="css-questions">
           <h2 id="css-questions">CSS Questions</h2>
+          <div class="formrow">
+            <div class="question-block"></div>
+            <div class="answer"></div>
+            <div class="question-block"></div>
+            <div class="answer"></div>
+          </div>
         </section>
       </form>
     </main>
