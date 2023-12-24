@@ -49,6 +49,11 @@ Tidy up the header, by using Flexbox to put space between the children, and vert
 
 Then, fix the header to the top of the viewport.
 
+Step 49
+When the screen width is small, the h1 does not wrap its text content how it should. Align the text for the h1 element in the center.
+
+Then, give the main padding such that the Student Info section header can be fully seen.
+
  */
 body {
   background: #f5f6f7;
@@ -62,8 +67,8 @@ header {
   height: 50px;
   background-color: #1b1b32;
   display: flex;
-  position:fixed;
-  top:0;
+  position: fixed;
+  top: 0;
   align-items: center;
   justify-content: space-between;
 }
@@ -83,6 +88,11 @@ h2 {
 h1 {
   color: #f1be32;
   font-size: min(5vw, 1.2em);
+  text-align: center;
+}
+
+main {
+  padding-top: 25px;
 }
 
 h2 {
