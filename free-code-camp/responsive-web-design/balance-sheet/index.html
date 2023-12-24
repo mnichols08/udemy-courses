@@ -76,6 +76,9 @@ Time to move on to your second table. Start by giving it a caption element set t
 
 Step 18
 Within your thead, add a tr. Inside that, add a td and three th elements.
+
+Step 19
+Give each th element a span element with the class set to sr-only and the following text, in order: 2019, 2020, and 2021.
  -->
 <!DOCTYPE html>
 <html lang="en">
@@ -162,9 +165,9 @@ Within your thead, add a tr. Inside that, add a td and three th elements.
             <thead>
               <tr>
                 <td></td>
-                <th></th>
-                <th></th>
-                <th></th>
+                <th><span class="sr-only">2019</span></th>
+                <th><span class="sr-only">2020</span></th>
+                <th><span class="sr-only">2021</span></th>
               </tr>
             </thead>
             <tbody></tbody>
