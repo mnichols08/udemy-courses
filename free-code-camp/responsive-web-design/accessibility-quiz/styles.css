@@ -80,7 +80,8 @@ Give the .formrow elements top margin, and left and right padding. The other pad
 
 Then, increase the font size for all input elements.
 
-
+Step 55
+To make the first section look more inline, target only the input elements within .info elements, and set their width to 50%, and left-align their text.
  */
 body {
   background: #f5f6f7;
@@ -173,11 +174,12 @@ p::before {
   margin-top: 10px;
   padding: 0 10px 0 10px;
 }
-input {
-  font-size: 14px;
+.info input {
+    width: 50%;
+    text-align: left;
 }
 input {
-  font-size: 1.1em;
+  font-size: 14px;
 }
 nav li {
   color: #dfdfe2;
