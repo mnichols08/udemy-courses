@@ -182,6 +182,9 @@ Using the transform property, rotate the left mouth line at 170 degrees.
 Step 63
 Access your .cat-mouth-line-right element with a class selector, then move it into the right position with a position of absolute, a top of 88px and a left of 91px.
 
+Step 64
+Rotate the right mouth line at 165 degrees.
+
 */
 * {
   box-sizing: border-box;
@@ -331,4 +334,5 @@ body {
     position: absolute;
     top: 88px;
     left: 91px;
+    transform: rotate(165deg);
 }
