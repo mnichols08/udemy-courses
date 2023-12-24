@@ -125,6 +125,10 @@ Select the th elements within your tr.data elements. Align the text to the left,
 
 Step 63
 Create a tr.data th .description selector to target the elements with the class set to description that are within your th elements in your .data table rows. Give them a block display, make the text italic with a normal weight, and position them with a padding set to 1rem 0 0.75rem and a right margin of -13.5rem.
+
+Step 64
+Your span elements now all have more specific styling, which means you can remove your span rule.
+
 */
 
 span[class~="sr-only"] {
@@ -195,10 +199,6 @@ section {
 
 .table-wrap {
   padding: 0 0.75rem 1.5rem 0.75rem;
-}
-
-span {
-  font-weight: normal;
 }
 
 table {
