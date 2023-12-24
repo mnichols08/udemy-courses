@@ -71,6 +71,9 @@ Also, ensure the section elements cannot be larger than 600px in width.
 
 Step 52
 Replace the top margin of the h2 elements with 60px of top padding.
+
+Step 53
+Add padding to the top and left of the .info elements, and set the other values to 0.
  */
 body {
   background: #f5f6f7;
@@ -109,10 +112,10 @@ h1 {
 }
 
 h2 {
-    border-bottom: 4px solid #dfdfe2;
-    margin-top: 0;
-    padding-top: 60px;
-  }
+  border-bottom: 4px solid #dfdfe2;
+  margin-top: 0;
+  padding-top: 60px;
+}
 
 main {
   padding-top: 25px;
@@ -153,6 +156,10 @@ p::before {
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border: 0;
+}
+
+.info {
+  padding: 60px 0 0 60px;
 }
 
 nav li {
