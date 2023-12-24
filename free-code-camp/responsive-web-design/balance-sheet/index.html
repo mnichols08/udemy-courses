@@ -60,6 +60,11 @@ Step 14
 In your second tr element, add a th element with the text Checking Our primary transactional account.. Wrap that text, except for Checking , in a span element with the class attribute set to description.
 
 Following that, add three td elements with the following text (in order): $54, $56, $53. Give the third td element a class attribute set to current.
+
+Step 15
+In your third tr element, add a th element with the text Savings Funds set aside for emergencies.. Wrap that text, except for Savings , in a span element with the class attribute set to description.
+
+Following that, add three td elements with the following text (in order): $500, $650, $728. Give the third td element a class attribute set to current.
  -->
 <!DOCTYPE html>
 <html lang="en">
@@ -120,7 +125,16 @@ Following that, add three td elements with the following text (in order): $54, $
                 <td>$56</td>
                 <td class="current">$53</td>
               </tr>
-              <tr class="data"></tr>
+              <tr class="data">
+                <th>
+                  <span class="description"
+                    >Savings Funds set aside for emergencies.</span
+                  >
+                </th>
+                <td>$500</td>
+                <td>$650</td>
+                <td class="current">$728</td>
+              </tr>
               <tr class="total"></tr>
             </tbody>
           </table>
