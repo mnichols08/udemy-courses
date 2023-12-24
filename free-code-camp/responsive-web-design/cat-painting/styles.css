@@ -68,6 +68,13 @@ Move the left ear into position by setting a position of absolute, a top of -26p
 Step 25
 Those edges are too sharp for an ear. So, set the border-top-left-radius to 90px and the border-top-right-radius to 10px.
 
+Step 26
+To position the left ear properly, you can use CSS transform to rotate it in a certain degree.
+
+The transform property allows you to modify the shape, position, and size of an element without changing the layout or affecting the surrounding elements. It has functions such as translate(), rotate(), scale(), skew(), and matrix().
+
+Set the transform property to rotate(-45deg) and see what happens.
+
 */
 * {
     box-sizing: border-box;
@@ -92,6 +99,7 @@ body {
 }
 
 .cat-left-ear {
+    transform: rotate(-45deg);
     position: absolute;
     top: -26px;
     left: -31px;
