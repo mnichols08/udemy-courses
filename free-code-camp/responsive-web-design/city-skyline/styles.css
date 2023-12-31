@@ -306,6 +306,9 @@ A media query can be used to change styles based on certain conditions, and they
 }  
 Add an empty media query at the bottom of your stylesheet with a condition of max-width: 1000px. Styles added in here will take effect when the document size is 1000px wide or less.
 
+Step 117
+Add a :root selector to the top of your media query. Then redefine all four of the --building-color variables to use the value #000 there.
+
 */
 :root {
   --building-color1: #aa80ff;
@@ -599,6 +602,16 @@ body {
 }
 
 @media (max-width: 1000px) {
+    :root {
+        --building-color1: #000;
+        --building-color2: #000;
+        --building-color3: #000;
+        --building-color4: #000;
+        --window-color1: #000;
+        --window-color2: #000;
+        --window-color3: #000;
+        --window-color4: #000;
+      }
   .sky {
     background: radial-gradient(
       circle closest-corner at 15% 15%,
