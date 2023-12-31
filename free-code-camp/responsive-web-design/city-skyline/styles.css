@@ -131,6 +131,17 @@ Give .bb2b a width and height of 100% to make it fill the building container. Yo
 Step 50
 Create a new variable in :root named window-color2 with a value of #8cd9b3. This will be used as the secondary color for this building.
 
+Step 51
+Gradient transitions often gradually change from one color to another. You can make the change a solid line like this:
+
+linear-gradient(
+  var(--first-color) 0%,
+  var(--first-color) 40%,
+  var(--second-color) 40%,
+  var(--second-color) 80%
+);
+Add a linear-gradient to .bb2b that uses --building-color2 from 0% to 6% and --window-color2 from 6% to 9%.
+
  */
 :root {
     --building-color1: #aa80ff;
@@ -193,7 +204,10 @@ body {
 .bb1d {
     width: 100%;
     height: 70%;
-    background: linear-gradient(var(--building-color1) 50%, var(--window-color1));
+    background: linear-gradient(var(--building-color2) 0%,
+            var(--building-color2) 6%,
+            var(--window-color2) 6%,
+            var(--window-color2) 9%)
 }
 
 .bb2 {
