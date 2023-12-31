@@ -19,6 +19,9 @@ Give the parts of your building width and height properties with these values: 7
 Step 13
 Center the parts of your building by turning the .bb1 element into a flexbox parent. Use the flex-direction and align-items properties to center the children.
 
+Step 14
+Now you have something that is resembling a building. You are ready to create your first variable. Variable declarations begin with two dashes (-) and are given a name and a value like this: --variable-name: value;. In the rule for the bb1 class, create a variable named --building-color1 and give it a value of #999.
+
  */
 * {
     border: 1px solid black;
@@ -42,6 +45,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    --building-color1: #999;
   }
 
 .bb1a {
