@@ -286,6 +286,9 @@ Finally! You made it to the last building! Add a repeating gradient to it with a
 Step 108
 Add another repeating gradient to this building; make it the same as the one you just added, except don't add the 90deg direction and use your window color instead of the two transparent colors.
 
+Step 109
+You can remove the background-color for this building now, since it isn't needed.
+
 */
 :root {
   --building-color1: #aa80ff;
@@ -555,7 +558,6 @@ body {
 .fb6 {
   width: 9%;
   height: 38%;
-  background-color: var(--building-color3);
   background: repeating-linear-gradient(
       90deg,
       var(--building-color3),
