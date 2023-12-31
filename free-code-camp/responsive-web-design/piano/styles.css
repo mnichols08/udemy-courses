@@ -46,6 +46,9 @@ If you would like to experiment, try removing the background-color property and 
 Step 19
 Give the .key.black--key::after a position property set to absolute and a left property set to -18px.
 
+Step 20
+For the .key.black--key::after, set the width to 32px and the height to 100px.
+
 */
 *,
 ::before,
@@ -84,6 +87,8 @@ html {
 .key.black--key::after {
   position: absolute;
   left: -18px;
+  width: 32px;
+  height: 100px;
   background-color: #1d1e22;
   content: "";
 }
