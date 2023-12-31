@@ -160,6 +160,9 @@ border-left: 1vw solid #999;
 border-right: 1vw solid #999;
 After you add these, you can see how a thick border on an element gives you some angles where two sides meet. You are going to use that bottom border as the top of the building.
 
+Step 55
+Next, remove the width and height from .bb2a, and change the border-left and border-right to use 5vw instead of 1vw. The element will now have zero size and the borders will come together in the middle.
+
  */
 :root {
     --building-color1: #aa80ff;
@@ -235,13 +238,11 @@ body {
 
 .bb2a {
     margin: auto;
-    width: 5vw;
-    height: 5vw;
     border-top: 1vw solid #000;
     border-bottom: 1vw solid #000;
-    border-left: 1vw solid #999;
-    border-right: 1vw solid #999;
-}
+    border-left: 5vw solid #999;
+    border-right: 5vw solid #999;
+  }
 
 .bb2b {
     width: 100%;
