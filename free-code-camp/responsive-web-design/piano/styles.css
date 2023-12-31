@@ -43,6 +43,9 @@ The content property is used to set or override the content of the element. By d
 
 If you would like to experiment, try removing the background-color property and setting different values for the content property, such as "♥". Remember to undo these changes when you are done so the tests pass.
 
+Step 19
+Give the .key.black--key::after a position property set to absolute and a left property set to -18px.
+
 */
 *,
 ::before,
@@ -78,11 +81,9 @@ html {
   margin: 2px;
 }
 
-.key.black--key {
-  background-color: #1d1e22;
-}
-
 .key.black--key::after {
+  position: absolute;
+  left: -18px;
   background-color: #1d1e22;
   content: "";
 }
