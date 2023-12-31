@@ -197,6 +197,8 @@ Remove the background-color property and value from .bb4, and add it to the thre
 Step 65
 You want .bb4 to share the properties of .bb1 that center the sections. Instead of duplicating that code, create a new class above the background building comment called building-wrap. Leave it empty for now; this class will be used in a few places to save you some coding.
 
+Step 66
+Move the display, flex-direction, and align-items properties and values from .bb1 to the new building-wrap class.
  */
 :root {
     --building-color1: #aa80ff;
@@ -230,15 +232,16 @@ body {
     justify-content: space-evenly;
 }
 
-.building-wrap {}
+.building-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 /* BACKGROUND BUILDINGS - "bb" stands for "background building" */
 .bb1 {
     width: 10%;
     height: 70%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 .bb1a {
