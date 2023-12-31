@@ -78,12 +78,19 @@ The skyline is coming together. Fill in the background-color property of the for
 Step 37
 Move the position of .fb4 relative to where it is now by adding a position of relative and left of 10% to it. Do the same for .fb5 but use right instead of left. This will cover up the remaining white space in between the buildings.
 
+Step 38
+Your code is starting to get quite long. Add a comment above the .fb1 class that says FOREGROUND BUILDINGS - "fb" stands for "foreground building" to help people understand your code. Above the .bb1 class add another comment that says BACKGROUND BUILDINGS - "bb" stands for "background building". If you don't remember, comments in CSS look like this: /* Comment here * /.
+
+Step 39
+Create a new variable in :root called --window-color1 and give it a value of black. This will be a secondary color for the purple buildings.
+
  */
 :root {
     --building-color1: #aa80ff;
     --building-color2: #66cc99;
     --building-color3: #cc6699;
     --building-color4: #538cc6;
+    --window-color1: black;
 }
 
 * {
@@ -101,13 +108,14 @@ body {
 .foreground-buildings {
     position: absolute;
     top: 0;
-    height:100%;
+    height: 100%;
     width: 100%;
     display: flex;
     align-items: flex-end;
     justify-content: space-evenly;
 }
 
+/* BACKGROUND BUILDINGS - "bb" stands for "background building" */
 .bb1 {
     width: 10%;
     height: 70%;
@@ -158,42 +166,43 @@ body {
     background-color: var(--building-color4);
 }
 
+/* FOREGROUND BUILDINGS - "fb" stands for "foreground building" */
 .fb1 {
     width: 10%;
     height: 60%;
     background-color: var(--building-color4);
-  }
-  
-  .fb2 {
+}
+
+.fb2 {
     width: 10%;
     height: 40%;
     background-color: var(--building-color3);
-  }
-  
-  .fb3 {
+}
+
+.fb3 {
     width: 10%;
     height: 35%;
     background-color: var(--building-color1);
-  }
-  
-  .fb4 {
+}
+
+.fb4 {
     position: relative;
     left: 10%;
     width: 8%;
     height: 45%;
     background-color: var(--building-color1);
-  }
-  
-  .fb5 {
+}
+
+.fb5 {
     position: relative;
     right: 10px;
     width: 10%;
     height: 33%;
     background-color: var(--building-color2);
-  }
-  
-  .fb6 {
+}
+
+.fb6 {
     width: 9%;
     height: 38%;
     background-color: var(--building-color3);
-  }
+}
