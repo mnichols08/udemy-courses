@@ -31,6 +31,9 @@ Move the keys into position by adjusting the #piano selector. Set the padding pr
 Step 16
 Time to style the keys themselves. Create a class selector for the .key elements. Set the background-color set to the value #ffffff, the position property to relative, the width property to 41px, and the height property to 175px.
 
+Step 17
+Give the .key a margin of 2px and a float property set to left.
+
 */
 *, ::before, *::after {
     box-sizing: inherit;
@@ -60,4 +63,6 @@ html {
     position: relative;
     width: 41px;
     height: 175px;
+    float: left;
+    margin: 2px;
 }
