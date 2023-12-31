@@ -35,6 +35,10 @@ Change the value of your variable from #999 to #aa80ff and you can see how it ge
 
 Step 19
 Give the new buildings width and height properties of: 10% and 50% for .bb2, 10% and 55% for .bb3, and 11% and 58% for .bb4. You will be using almost all percent based units and some flexbox for this project, so everything will be completely responsive.
+
+Step 20
+The buildings are currently stacked on top of each other. Align the buildings by turning the .background-buildings element into a flexbox parent. Use the align-items and justify-content properties to evenly space the buildings across the bottom of the element.
+
  */
 * {
     border: 1px solid black;
@@ -50,6 +54,9 @@ body {
 .background-buildings {
     height: 100%;
     width: 100%;
+    display: flex;
+    align-items: bottom;
+    justify-content: bottom;
 }
 
 .bb1 {
