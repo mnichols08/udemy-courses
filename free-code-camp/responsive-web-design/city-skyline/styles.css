@@ -39,6 +39,9 @@ Give the new buildings width and height properties of: 10% and 50% for .bb2, 10%
 Step 20
 The buildings are currently stacked on top of each other. Align the buildings by turning the .background-buildings element into a flexbox parent. Use the align-items and justify-content properties to evenly space the buildings across the bottom of the element.
 
+Step 22
+Create a new variable below your --building-color1 variable. Name your new variable --building-color2 and give it a value of #66cc99. Then set it as the background-color of .bb2.
+
  */
 * {
     border: 1px solid black;
@@ -66,6 +69,7 @@ body {
     flex-direction: column;
     align-items: center;
     --building-color1: #aa80ff;
+    --building-color2: #66cc99;
 }
 
 .bb1a {
@@ -95,6 +99,7 @@ body {
 .bb2 {
     width: 10%;
     height: 50%;
+    background-color: var(--building-color2);
 }
 
 .bb3 {
