@@ -256,6 +256,9 @@ With CSS variables you can change values without searching everywhere in the sty
 Step 97
 Give .fb4b a width of 100% and height of 89%.
 
+Step 98
+Add your --building-color1 variable as value of the background-color property of .fb4b. Then, remove the background-color from .fb4.
+
 */
 :root {
   --building-color1: #aa80ff;
@@ -478,7 +481,6 @@ body {
 .fb4 {
   width: 8%;
   height: 45%;
-  background-color: var(--building-color1);
   position: relative;
   left: 10%;
 }
@@ -486,6 +488,7 @@ body {
 .fb4b {
     width: 100%;
     height: 89%;
+    background-color: var(--building-color1);
 }
 
 .fb5 {
