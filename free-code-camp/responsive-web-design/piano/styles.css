@@ -95,6 +95,11 @@ For example, a media query that targets a display width between 500px and 1000px
 }
 Add another @media rule to apply if the browser window is wider than 769px but smaller than 1199px.
 
+
+Step 33
+For the new @media rule, set the width of the #piano to 675px and the width of the .keys to 633px.
+
+With that, your piano is complete!
 */
 *,
 ::before,
@@ -162,6 +167,11 @@ html {
   }
 }
 
-@media (min-width: 769px) and (max-width:1199px) {
-    
+@media (min-width: 769px) and (max-width: 1199px) {
+  #piano {
+    width: 675px;
+  }
+  .keys {
+    width: 633px;
+  }
 }
