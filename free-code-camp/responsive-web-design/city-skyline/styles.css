@@ -271,6 +271,9 @@ The windows are stacked on top of each other on the rightmost purple building. T
 Step 103
 This building is going to have another triangle on top. Give the top section a border-top of 5vh solid transparent, and a border-left that is 8vw, solid, and uses your building color variable as the color.
 
+Step 104
+On to the next building! It's the green one in the foreground. Give it a repeating-linear-gradient with your building color from 0% to 5%, and transparent from 5% to 10%.
+
 */
 :root {
   --building-color1: #aa80ff;
@@ -520,7 +523,12 @@ body {
 .fb5 {
   width: 10%;
   height: 33%;
-  background-color: var(--building-color2);
+  background: repeating-linear-gradient(
+    var(--building-color1),
+    var(--building-color1) 5%,
+    transparent 5%,
+    transparent 10%
+  );
   position: relative;
   right: 10%;
 }
