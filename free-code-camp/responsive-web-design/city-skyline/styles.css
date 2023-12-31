@@ -235,6 +235,10 @@ Give .fb2a a width of 100% and .fb2b a width of 100% and height of 75%.
 Step 85
 Give the .fb2-window elements a width of 22%, height of 100%, and a background-color of your --window-color3 variable.
 
+Step 86
+Move the background-color property and value from .fb2 to .fb2b to just color the section and not the container.
+
+
 */
 :root {
   --building-color1: #aa80ff;
@@ -415,7 +419,6 @@ body {
 .fb2-window {
     width: 22%;
     height: 100%;
-    background-color: var(--window-color3);
 }
 
 .fb2a {
@@ -424,6 +427,7 @@ body {
 .fb2b {
   width: 100%;
   height: 75%;
+  background-color: var(--building-color3);
 }
 
 .fb3 {
