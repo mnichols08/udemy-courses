@@ -84,6 +84,15 @@ Your code is starting to get quite long. Add a comment above the .fb1 class that
 Step 39
 Create a new variable in :root called --window-color1 and give it a value of black. This will be a secondary color for the purple buildings.
 
+Step 40
+Gradients in CSS are a way to transition between colors across the distance of an element. They are applied to the background property and the syntax looks like this:
+
+gradient-type(
+  color1,
+  color2
+);
+In the example, color1 is solid at the top, color2 is solid at the bottom, and in between it transitions evenly from one to the next. In .bb1a, add a background property below the background-color property. Set it as a gradient of type linear-gradient that uses --building-color1 as the first color and --window-color1 as the second.
+
  */
 :root {
     --building-color1: #aa80ff;
@@ -127,7 +136,7 @@ body {
 .bb1a {
     width: 70%;
     height: 10%;
-    background-color: var(--building-color1);
+    background: linear-gradient(var(--building-color1),var(--window-color1));
 }
 
 .bb1b {
