@@ -52,6 +52,8 @@ For the .key.black--key::after, set the width to 32px and the height to 100px.
 Step 22
 Start styling the logo by creating a .logo selector. Set the width to 200px, a position of absolute and a top set to 23px.
 
+Step 23
+The img element needs its parent to have a position set as a point of reference. Set the position of the #piano selector to relative.
 */
 *,
 ::before,
@@ -64,6 +66,7 @@ html {
 }
 
 #piano {
+  position: relative;
   margin: 80px auto;
   background-color: #00471b;
   width: 992px;
