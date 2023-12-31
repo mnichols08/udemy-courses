@@ -244,6 +244,9 @@ For .fb2a, add a border-bottom of 10vh solid var(--building-color3), and a borde
 Step 89
 Give the .fb3a element a width of 80% and height of 15%. Then give the .fb3b element a width of 100% and height of 35%.
 
+Step 90
+Remove the background-color property and value from .fb3, and add them to .fb3a and .fb3b.
+
 */
 :root {
   --building-color1: #aa80ff;
@@ -441,6 +444,10 @@ body {
 .fb3 {
   width: 10%;
   height: 35%;
+}
+
+.fb3a,
+.fb3b {
   background-color: var(--building-color1);
 }
 
