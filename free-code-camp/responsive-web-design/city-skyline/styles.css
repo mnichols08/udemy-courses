@@ -268,6 +268,9 @@ Fill in the windows with your secondary color for this building. Also add a marg
 Step 102
 The windows are stacked on top of each other on the rightmost purple building. Turn the building into a flexbox parent, and use the flex-wrap property to put the windows side by side, and push them down to a new row when they don't fit.
 
+Step 103
+This building is going to have another triangle on top. Give the top section a border-top of 5vh solid transparent, and a border-left that is 8vw, solid, and uses your building color variable as the color.
+
 */
 :root {
   --building-color1: #aa80ff;
@@ -500,6 +503,11 @@ body {
   border-radius: 50%;
   margin: 10%;
   background-color: var(--window-color1);
+}
+
+.fb4a {
+  border-top: 5vh solid transparent;
+  border-left: 8vw solid var(--building-color1);
 }
 .fb4b {
   width: 100%;
