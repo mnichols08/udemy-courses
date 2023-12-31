@@ -206,6 +206,8 @@ Create a new variable called --window-color4 in :root and give it a value of #8c
 Step 70
 Give the bb4-window class a width of 18%, a height of 90%, and add your --window-color4 variable as the background-color.
 
+Step 71
+The windows are stacked on top of each other at the left of the section, behind the purple building. Add a new class below .building-wrap called window-wrap. Make .window-wrap a flexbox container, and use the align-items and justify-content properties to center its child elements vertically and evenly space them in their parent, respectively.
  */
 :root {
     --building-color1: #aa80ff;
@@ -244,6 +246,12 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.window-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 /* BACKGROUND BUILDINGS - "bb" stands for "background building" */
