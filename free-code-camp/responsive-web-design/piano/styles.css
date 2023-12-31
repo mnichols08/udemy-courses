@@ -34,35 +34,55 @@ Time to style the keys themselves. Create a class selector for the .key elements
 Step 17
 Give the .key a margin of 2px and a float property set to left.
 
+Step 18
+Now it is time to use the pseudo-selectors you prepared for earlier. To create the black keys, add a new .key.black--key::after selector. This will target the elements with the class key black--key, and select the pseudo-element after these elements in the HTML.
+
+In the new selector, set the background-color to #1d1e22. Also set the content property to "". This will make the pseudo-elements empty.
+
+The content property is used to set or override the content of the element. By default, the pseudo-elements created by the ::before and ::after pseudo-selectors are empty, and the elements will not be rendered to the page. Setting the content property to an empty string "" will ensure the element is rendered to the page while still being empty.
+
+If you would like to experiment, try removing the background-color property and setting different values for the content property, such as "♥". Remember to undo these changes when you are done so the tests pass.
+
 */
-*, ::before, *::after {
-    box-sizing: inherit;
+*,
+::before,
+*::after {
+  box-sizing: inherit;
 }
 
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 #piano {
-    margin: 80px auto;
-    background-color: #00471b;
-    width: 992px;
-    height: 290px;
-    padding: 90px 20px 0 20px;
+  margin: 80px auto;
+  background-color: #00471b;
+  width: 992px;
+  height: 290px;
+  padding: 90px 20px 0 20px;
 }
 
 .keys {
-    background-color: #040404;
-    width: 949px;
-    height: 180px;
-    padding-left: 2px;
+  background-color: #040404;
+  width: 949px;
+  height: 180px;
+  padding-left: 2px;
 }
 
 .key {
-    background: #fff;;
-    position: relative;
-    width: 41px;
-    height: 175px;
-    float: left;
-    margin: 2px;
+  background: #fff;
+  position: relative;
+  width: 41px;
+  height: 175px;
+  float: left;
+  margin: 2px;
+}
+
+.key.black--key {
+  background-color: #1d1e22;
+}
+
+.key.black--key::after {
+  background-color: #1d1e22;
+  content: "";
 }
