@@ -169,6 +169,9 @@ Next, change the two #999 of .bb2a to transparent. This will make the left and r
 Step 57
 Remove the margin and border-top properties and values from .bb2a to turn it into a triangle for the top of the building.
 
+Step 58
+Finally, on the border-bottom property of .bb2a, change the 1vw to 5vh and change the #000 color to your --building-color2 variable. There you go, now it looks good! At any time throughout this project, you can comment out or remove the border property you added to everything at the beginning to see what the buildings will look like when that gets removed at the end.
+
  */
 :root {
     --building-color1: #aa80ff;
@@ -243,10 +246,10 @@ body {
 }
 
 .bb2a {
-    border-bottom: 1vw solid #000;
     border-left: 5vw solid transparent;
     border-right: 5vw solid transparent;
-  }
+    border-bottom: 5vh solid var(--building-color2);
+}
 
 .bb2b {
     width: 100%;
