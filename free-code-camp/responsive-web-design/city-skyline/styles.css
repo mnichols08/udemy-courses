@@ -208,7 +208,11 @@ Give the bb4-window class a width of 18%, a height of 90%, and add your --window
 
 Step 71
 The windows are stacked on top of each other at the left of the section, behind the purple building. Add a new class below .building-wrap called window-wrap. Make .window-wrap a flexbox container, and use the align-items and justify-content properties to center its child elements vertically and evenly space them in their parent, respectively.
- */
+
+Step 74
+Give .fb1b a width of 60% and height of 10%, and .fb1c a width of 100% and height of 80%.
+
+*/
 :root {
     --building-color1: #aa80ff;
     --building-color2: #66cc99;
@@ -343,6 +347,16 @@ body {
     width: 10%;
     height: 60%;
     background-color: var(--building-color4);
+}
+
+.fb1b {
+    width: 60%;
+    height: 10%;
+}
+
+.fb1c {
+    width: 100%;
+    height: 80%;
 }
 
 .fb2 {
