@@ -109,6 +109,19 @@ gradient-type(
 );
 Add a linear-gradient to .bb1d with orange as the first color, --building-color1 as the second, and --window-color1 as the third. Remember to use the gradient on the background property.
 
+Step 45
+It's a little hidden behind the foreground buildings, but you can see the three color gradient there. Since you are using that now, remove the background-color property from .bb1d.
+
+Step 46
+You can specify where you want a gradient transition to complete by adding it to the color like this:
+
+gradient-type(
+  color1,
+  color2 20%,
+  color3
+);
+Here, it will transition from color1 to color2 between 0% and 20% of the element and then transition to color3 for the rest. Add 80% to the --building-color1 color of the .bb1d gradient so you can see it in action.
+
  */
 :root {
     --building-color1: #aa80ff;
@@ -170,7 +183,7 @@ body {
 .bb1d {
     width: 100%;
     height: 70%;
-    background: linear-gradient(orange, var(--building-color1), var(--window-color1));
+    background: linear-gradient(orange, var(--building-color1) 80%, var(--window-color1));
 }
 
 .bb2 {
