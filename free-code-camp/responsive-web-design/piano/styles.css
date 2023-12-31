@@ -25,6 +25,9 @@ Time to style the keys. Below the #piano rule, target the .keys element with a c
 Step 14
 Give the .keys a padding-left of 2px.
 
+Step 15
+Move the keys into position by adjusting the #piano selector. Set the padding property to 90px 20px 0 20px.
+
 */
 *, ::before, *::after {
     box-sizing: inherit;
@@ -39,6 +42,7 @@ html {
     background-color: #00471b;
     width: 992px;
     height: 290px;
+    padding: 90px 20px 0 20px;
 }
 
 .keys {
