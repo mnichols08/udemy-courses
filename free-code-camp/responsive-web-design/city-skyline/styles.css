@@ -75,6 +75,9 @@ Now that you did that, you can delete the old .foreground-buildings declaration 
 Step 35
 The skyline is coming together. Fill in the background-color property of the foreground buildings. Use your --building-color1 variable to fill in .fb3 and .fb4, --building-color2 for .fb5, --building-color3 for .fb2 and .fb6, and --building-color4 for .fb1.
 
+Step 37
+Move the position of .fb4 relative to where it is now by adding a position of relative and left of 10% to it. Do the same for .fb5 but use right instead of left. This will cover up the remaining white space in between the buildings.
+
  */
 :root {
     --building-color1: #aa80ff;
@@ -174,12 +177,16 @@ body {
   }
   
   .fb4 {
+    position: relative;
+    left: 10%;
     width: 8%;
     height: 45%;
     background-color: var(--building-color1);
   }
   
   .fb5 {
+    position: relative;
+    right: 10px;
     width: 10%;
     height: 33%;
     background-color: var(--building-color2);
