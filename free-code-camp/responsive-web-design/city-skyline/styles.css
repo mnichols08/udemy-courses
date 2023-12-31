@@ -253,6 +253,9 @@ Give the .fb3-window elements a width of 25%, a height of 80%, and use your --wi
 Step 95
 With CSS variables you can change values without searching everywhere in the stylesheet. Change the --window-color1 value to #bb99ff.
 
+Step 97
+Give .fb4b a width of 100% and height of 89%.
+
 */
 :root {
   --building-color1: #aa80ff;
@@ -478,6 +481,11 @@ body {
   background-color: var(--building-color1);
   position: relative;
   left: 10%;
+}
+
+.fb4b {
+    width: 100%;
+    height: 89%;
 }
 
 .fb5 {
