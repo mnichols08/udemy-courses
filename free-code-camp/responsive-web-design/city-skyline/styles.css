@@ -142,6 +142,8 @@ linear-gradient(
 );
 Add a linear-gradient to .bb2b that uses --building-color2 from 0% to 6% and --window-color2 from 6% to 9%.
 
+Step 52
+You can see the hard color change at the top of the section. Change the gradient type from linear-gradient to repeating-linear-gradient for this section. This will make the four colors of your gradient repeat until it gets to the bottom of the element; giving you some stripes, and saving you from having to add a bunch of elements to create them.
  */
 :root {
     --building-color1: #aa80ff;
@@ -204,7 +206,7 @@ body {
 .bb1d {
     width: 100%;
     height: 70%;
-    background: linear-gradient(var(--building-color2) 0%,
+    background: repeating-linear-gradient(var(--building-color2) 0%,
             var(--building-color2) 6%,
             var(--window-color2) 6%,
             var(--window-color2) 9%)
