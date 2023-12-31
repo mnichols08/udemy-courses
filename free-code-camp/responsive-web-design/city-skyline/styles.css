@@ -262,6 +262,9 @@ Add your --building-color1 variable as value of the background-color property of
 Step 100
 Give the .fb4-window elements a width of 30%, height of 10%, and border-radius of 50%. These will make some circular windows for this building.
 
+Step 101
+Fill in the windows with your secondary color for this building. Also add a margin of 10% to give the windows some space.
+
 */
 :root {
   --building-color1: #aa80ff;
@@ -462,9 +465,9 @@ body {
 }
 
 .fb3-window {
-    width: 25%;
-    height: 80%;
-    background-color: var(--window-color1);
+  width: 25%;
+  height: 80%;
+  background-color: var(--window-color1);
 }
 .fb3a,
 .fb3b {
@@ -489,14 +492,16 @@ body {
 }
 
 .fb4-window {
-    width: 30%;
-    height: 10%;
-    border-radius: 50%;
+  width: 30%;
+  height: 10%;
+  border-radius: 50%;
+  margin: 10%;
+  background-color: var(--window-color1);
 }
 .fb4b {
-    width: 100%;
-    height: 89%;
-    background-color: var(--building-color1);
+  width: 100%;
+  height: 89%;
+  background-color: var(--building-color1);
 }
 
 .fb5 {
