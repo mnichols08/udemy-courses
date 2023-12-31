@@ -265,6 +265,9 @@ Give the .fb4-window elements a width of 30%, height of 10%, and border-radius o
 Step 101
 Fill in the windows with your secondary color for this building. Also add a margin of 10% to give the windows some space.
 
+Step 102
+The windows are stacked on top of each other on the rightmost purple building. Turn the building into a flexbox parent, and use the flex-wrap property to put the windows side by side, and push them down to a new row when they don't fit.
+
 */
 :root {
   --building-color1: #aa80ff;
@@ -502,6 +505,8 @@ body {
   width: 100%;
   height: 89%;
   background-color: var(--building-color1);
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .fb5 {
