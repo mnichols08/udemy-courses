@@ -69,6 +69,9 @@ Add the same display, align-items, and justify-content properties and values to 
 Step 33
 You should optimize your code. Move the position and top properties and values from .foreground-buildings to .background-buildings. Then select both .background-buildings and .foreground-buildings there, effectively applying those styles to both of the elements. You can use a comma (,) to separate selectors like this: selector1, selector2.
 
+Step 34
+Now that you did that, you can delete the old .foreground-buildings declaration and all of its properties since they aren't needed anymore.
+
  */
 :root {
     --building-color1: #aa80ff;
@@ -92,19 +95,11 @@ body {
 .foreground-buildings {
     position: absolute;
     top: 0;
+    height:100%;
+    width: 100%;
     display: flex;
     align-items: flex-end;
     justify-content: space-evenly;
-}
-
-.background-buildings {
-    height: 100%;
-    width: 100%;
-}
-
-.foreground-buildings {
-    width: 100%;
-    height: 100%;
 }
 
 .bb1 {
