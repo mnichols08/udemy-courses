@@ -76,6 +76,11 @@ In the below example the padding is applied to the .card class when the viewport
 }
 Add a media query that will be applied when the viewport is 768px wide and below.
 
+Step 29
+Within the @media query, add a .keys selector and set the width to 318px.
+
+
+
 */
 *,
 ::before,
@@ -133,5 +138,8 @@ html {
 @media (max-width: 768px) {
   #piano {
     width: 358px;
+  }
+  .keys {
+    width: 318px;
   }
 }
