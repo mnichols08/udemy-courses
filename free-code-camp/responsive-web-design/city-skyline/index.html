@@ -41,6 +41,9 @@ Nest two new div elements within .bb2, give them the classes of bb2a and bb2b, i
 Step 62
 The next building will have three sections. Nest three div elements within .bb4. Give them the classes of bb4a, bb4b and bb4c in that order.
 
+Step 67
+Add the new building-wrap class to the .bb1 and .bb4 elements. This will apply the centering properties to the buildings that need it.
+
  -->
 <!DOCTYPE html>
 <html lang="en">
@@ -55,7 +58,7 @@ The next building will have three sections. Nest three div elements within .bb4.
     <div class="background-buildings">
         <div></div>
         <div></div>
-        <div class="bb1">
+        <div class="bb1 building-wrap">
             <div class="bb1a bb1-window"></div>
             <div class="bb1b bb1-window"></div>
             <div class="bb1c bb1-window"></div>
@@ -67,13 +70,15 @@ The next building will have three sections. Nest three div elements within .bb4.
         </div>
         <div class="bb3"></div>
         <div></div>
-        <div class="bb4"><div>
-            <div class="bb4a"></div>
-            <div class="bb4b"></div>
-            <div class="bb4c"></div>
+        <div class="bb4 building-wrap">
+            <div>
+                <div class="bb4a"></div>
+                <div class="bb4b"></div>
+                <div class="bb4c"></div>
+            </div>
+            <div></div>
+            <div></div>
         </div>
-        <div></div>
-        <div></div></div>
         <div></div>
         <div></div>
     </div>
