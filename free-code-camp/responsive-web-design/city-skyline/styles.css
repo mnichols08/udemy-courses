@@ -199,6 +199,10 @@ You want .bb4 to share the properties of .bb1 that center the sections. Instead 
 
 Step 66
 Move the display, flex-direction, and align-items properties and values from .bb1 to the new building-wrap class.
+
+Step 68
+Create a new variable called --window-color4 in :root and give it a value of #8cb3d9. This will be the secondary color for the last background building.
+
  */
 :root {
     --building-color1: #aa80ff;
@@ -208,6 +212,7 @@ Move the display, flex-direction, and align-items properties and values from .bb
     --window-color1: black;
     --window-color2: #8cd9b3;
     --window-color3: #d98cb3;
+    --window-color4: #8cb3d9;
 }
 
 * {
