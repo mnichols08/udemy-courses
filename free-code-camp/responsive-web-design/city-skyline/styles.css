@@ -125,6 +125,9 @@ Here, it will transition from color1 to color2 between 0% and 20% of the element
 Step 47
 Remove orange from the .bb1d gradient and change the 80% to 50%. This will make --building-color1 solid for the top half, and then transition to --window-color1 for the bottom half.
 
+Step 49
+Give .bb2b a width and height of 100% to make it fill the building container. You will add something on the top a little later.
+
  */
 :root {
     --building-color1: #aa80ff;
@@ -193,6 +196,11 @@ body {
     width: 10%;
     height: 50%;
     background-color: var(--building-color2);
+}
+
+.bb2b {
+    width: 100%;
+    height: 100%;
 }
 
 .bb3 {
