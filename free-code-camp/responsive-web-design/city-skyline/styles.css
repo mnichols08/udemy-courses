@@ -96,6 +96,9 @@ In the example, color1 is solid at the top, color2 is solid at the bottom, and i
 Step 41
 You want to add the same gradient to the next two sections. Instead of doing that, create a new class selector called bb1-window, and move the height and background properties and values from .bb1a to the new class selector.
 
+Step 43
+You don't need the height or background-color properties in .bb1a, .bb1b or .bb1c anymore, so go ahead and remove them.
+
  */
 :root {
     --building-color1: #aa80ff;
@@ -138,7 +141,6 @@ body {
 
 .bb1a {
     width: 70%;
-    background-color: var(--building-color1);
 }
 
 .bb1-window {
@@ -149,14 +151,10 @@ body {
 
 .bb1b {
     width: 80%;
-    height: 10%;
-    background-color: var(--building-color1);
 }
 
 .bb1c {
     width: 90%;
-    height: 10%;
-    background-color: var(--building-color1);
 }
 
 .bb1d {
