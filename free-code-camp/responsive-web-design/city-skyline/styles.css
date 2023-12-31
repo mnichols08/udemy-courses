@@ -259,6 +259,9 @@ Give .fb4b a width of 100% and height of 89%.
 Step 98
 Add your --building-color1 variable as value of the background-color property of .fb4b. Then, remove the background-color from .fb4.
 
+Step 100
+Give the .fb4-window elements a width of 30%, height of 10%, and border-radius of 50%. These will make some circular windows for this building.
+
 */
 :root {
   --building-color1: #aa80ff;
@@ -485,6 +488,11 @@ body {
   left: 10%;
 }
 
+.fb4-window {
+    width: 30%;
+    height: 10%;
+    border-radius: 50%;
+}
 .fb4b {
     width: 100%;
     height: 89%;
