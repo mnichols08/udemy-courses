@@ -212,6 +212,8 @@ The windows are stacked on top of each other at the left of the section, behind 
 Step 74
 Give .fb1b a width of 60% and height of 10%, and .fb1c a width of 100% and height of 80%.
 
+Step 76
+Move the background-color property and value from .fb1 to .fb1b.
 */
 :root {
     --building-color1: #aa80ff;
@@ -346,12 +348,13 @@ body {
 .fb1 {
     width: 10%;
     height: 60%;
-    background-color: var(--building-color4);
+
 }
 
 .fb1b {
     width: 60%;
     height: 10%;
+    background-color: var(--building-color4);
 }
 
 .fb1c {
