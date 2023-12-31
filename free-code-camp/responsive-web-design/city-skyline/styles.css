@@ -8,6 +8,11 @@ Also add a box-sizing of border-box to everything. This will make it so the bord
 Step 7
 You can see the body (it's the inner-most box on your page); the box around it is the html element. Make your body fill the whole viewport by giving it a height of 100vh. Remove the default margin from the body by setting the margin to 0. Finally, set the overflow property to hidden to hide any scroll bars that appear when something extends past the viewport.
 
+Step 9
+Give your .background-buildings element a width and height of 100% to make it the full width and height of its parent, the body.
+
+Step 10.2 Open your styles.css file, and give .bb1 a width of 10% and height of 70%. "bb" stands for "background building", this will be your first building.
+
  */
 * {
     border: 1px solid black;
@@ -18,4 +23,14 @@ body {
     height: 100vh;
     margin: 0;
     overflow: hidden;
+}
+
+.background-buildings {
+    height: 100%;
+    width: 100%;
+}
+
+.bb1 {
+    width: 10%;
+    height: 70%;
 }
