@@ -16,6 +16,9 @@ For now, create a CSS selector to target all elements with *, and include the ps
 Step 11
 Now target your #piano element with an id selector. Set background-color property to #00471b, the width property to 992px and the height property to 290px.
 
+Step 12
+Set the margin of the #piano to 80px auto.
+
 */
 *, ::before, *::after {
     box-sizing: inherit;
@@ -26,6 +29,7 @@ html {
 }
 
 #piano {
+    margin: 80px auto;
     background-color: #00471b;
     width: 992px;
     height: 290px;
