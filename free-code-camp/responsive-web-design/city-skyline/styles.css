@@ -72,6 +72,9 @@ You should optimize your code. Move the position and top properties and values f
 Step 34
 Now that you did that, you can delete the old .foreground-buildings declaration and all of its properties since they aren't needed anymore.
 
+Step 35
+The skyline is coming together. Fill in the background-color property of the foreground buildings. Use your --building-color1 variable to fill in .fb3 and .fb4, --building-color2 for .fb5, --building-color3 for .fb2 and .fb6, and --building-color4 for .fb1.
+
  */
 :root {
     --building-color1: #aa80ff;
@@ -155,29 +158,35 @@ body {
 .fb1 {
     width: 10%;
     height: 60%;
-}
-
-.fb2 {
+    background-color: var(--building-color4);
+  }
+  
+  .fb2 {
     width: 10%;
     height: 40%;
-}
-
-.fb3 {
+    background-color: var(--building-color3);
+  }
+  
+  .fb3 {
     width: 10%;
     height: 35%;
-}
-
-.fb4 {
+    background-color: var(--building-color1);
+  }
+  
+  .fb4 {
     width: 8%;
     height: 45%;
-}
-
-.fb5 {
+    background-color: var(--building-color1);
+  }
+  
+  .fb5 {
     width: 10%;
     height: 33%;
-}
-
-.fb6 {
+    background-color: var(--building-color2);
+  }
+  
+  .fb6 {
     width: 9%;
     height: 38%;
-}
+    background-color: var(--building-color3);
+  }
