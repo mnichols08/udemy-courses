@@ -66,6 +66,9 @@ Give the six new elements these width and height values: 10% and 60% to .fb1, 10
 Step 32
 Add the same display, align-items, and justify-content properties and values to .foreground-buildings that you used on .background-buildings. Again, this will use Flexbox to evenly space the buildings across the bottom of their container.
 
+Step 33
+You should optimize your code. Move the position and top properties and values from .foreground-buildings to .background-buildings. Then select both .background-buildings and .foreground-buildings there, effectively applying those styles to both of the elements. You can use a comma (,) to separate selectors like this: selector1, selector2.
+
  */
 :root {
     --building-color1: #aa80ff;
@@ -85,22 +88,23 @@ body {
     overflow: hidden;
 }
 
-.background-buildings {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-evenly;
-}
-
+.background-buildings,
 .foreground-buildings {
-    width: 100%;
-    height: 100%;
     position: absolute;
     top: 0;
     display: flex;
     align-items: flex-end;
     justify-content: space-evenly;
+}
+
+.background-buildings {
+    height: 100%;
+    width: 100%;
+}
+
+.foreground-buildings {
+    width: 100%;
+    height: 100%;
 }
 
 .bb1 {
