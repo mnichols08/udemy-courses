@@ -229,6 +229,9 @@ You're going to use some more border tricks for the top section. Add a border-bo
 Step 80
 When you increase the size of the left and right borders, the border on the bottom will expand to be the width of the combined left and right border widths. Add 2vw solid transparent as the value of the border-left and border-right properties of .fb1a. They will be invisible, but it will make the border on the bottom 4vw wide.
 
+Step 82
+Give .fb2a a width of 100% and .fb2b a width of 100% and height of 75%.
+
 */
 :root {
   --building-color1: #aa80ff;
@@ -404,6 +407,11 @@ body {
   width: 10%;
   height: 40%;
   background-color: var(--building-color3);
+}
+
+.fb2a {
+    width: 100%;
+    height: 75%;
 }
 
 .fb3 {
