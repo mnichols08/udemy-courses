@@ -277,6 +277,9 @@ On to the next building! It's the green one in the foreground. Give it a repeati
 Step 105
 Add another repeating-linear-gradient below the one you just added. Give it a 90deg direction, use your building color from 0% to 12% and window color 12% to 44%. This will make a bunch of rectangle windows.
 
+Step 106
+You don't need the background-color for this building anymore so you can remove that property.
+
 */
 :root {
   --building-color1: #aa80ff;
@@ -526,7 +529,6 @@ body {
 .fb5 {
   width: 10%;
   height: 33%;
-  background-color: var(--building-color2);
   background: repeating-linear-gradient(
       var(--building-color2),
       var(--building-color2) 5%,
