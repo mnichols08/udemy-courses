@@ -203,6 +203,9 @@ Move the display, flex-direction, and align-items properties and values from .bb
 Step 68
 Create a new variable called --window-color4 in :root and give it a value of #8cb3d9. This will be the secondary color for the last background building.
 
+Step 70
+Give the bb4-window class a width of 18%, a height of 90%, and add your --window-color4 variable as the background-color.
+
  */
 :root {
     --building-color1: #aa80ff;
@@ -301,6 +304,12 @@ body {
 .bb4 {
     width: 11%;
     height: 58%;
+}
+
+.bb4-window {
+    width: 18%;
+    height: 90%;
+    background-color: var(--window-color4);
 }
 
 .bb4a {
