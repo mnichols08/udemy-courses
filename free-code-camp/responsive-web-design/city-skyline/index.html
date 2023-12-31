@@ -1,0 +1,172 @@
+<!-- 
+Step 1
+Welcome to the CSS Variables Skyline project! Start by adding the !DOCTYPE html declaration at the top of the document so the browser knows what type of document it's reading.
+
+Step 2
+Add opening and closing html tags below the DOCTYPE so you have a place to start putting some code. Be sure to set the language to English.
+
+Step 3
+Next, add opening and closing head and body tags within the html element.
+
+Step 8
+Create a div element in the body with a class of background-buildings. This will be a container for a group of buildings.
+
+Step 10.1
+Nest a div with a class of bb1 in the background buildings container. 
+
+Step 11
+Nest four div elements in the .bb1 container. Give them the classes bb1a, bb1b, bb1c, and bb1d in that order. This building will have four sections.
+
+Step 18
+Your first building looks pretty good now. Nest three new div elements in the .background-buildings container and give them the classes of bb2, bb3, and bb4 in that order. These will be three more buildings for the background.
+
+Step 21
+The buildings are too spaced out. Squeeze them together by adding two empty div elements to the top of the .background-buildings element, two more at the bottom of it, and one more in between .bb3 and .bb4. These will be added as evenly-spaced elements across the container, effectively moving the buildings closer to the center.
+
+Step 28
+The background buildings are starting to look pretty good. Create a new div below the .background-buildings element and give it a class of foreground-buildings. This will be another container for more buildings.
+
+Step 30
+Nest six div elements within .foreground-buildings and give them the classes of fb1 through fb6 in that order. "fb" stands for "foreground building". These will be six more buildings for the foreground.
+
+Step 36
+Squeeze the buildings together again by adding two empty div elements within both the top and bottom of the .foreground-buildings element, and one more in between .fb2 and .fb3.
+
+Step 42
+Add the new bb1-window class to the .bb1a, .bb1b, and .bb1c elements. This will apply the gradient to them.
+
+Step 48
+Nest two new div elements within .bb2, give them the classes of bb2a and bb2b, in that order. These will be two sections for this building.
+
+Step 62
+The next building will have three sections. Nest three div elements within .bb4. Give them the classes of bb4a, bb4b and bb4c in that order.
+
+Step 67
+Add the new building-wrap class to the .bb1 and .bb4 elements. This will apply the centering properties to the buildings that need it.
+
+Step 69
+Nest four new div elements within .bb4c, give them all the class of bb4-window. These will be windows for this building.
+
+Step 72
+Add the new window-wrap class to the .bb4c element.
+
+Step 73
+Looks good! On to the foreground buildings! Turn the .fb1 building into three sections by nesting three new div elements within it. Give them the classes of fb1a, fb1b and fb1c, in that order.
+
+Step 75
+Add the building-wrap class to the .fb1 element to center the sections.
+
+Step 81
+On to the next building! Nest two div elements within .fb2 and give them classes of fb2a and fb2b, in that order.
+
+Step 83
+Nest three div elements within .fb2b and give them a class of fb2-window. These will be windows for this section of the building.
+
+Step 84
+Add your window-wrap class to .fb2b to position the new window elements.
+
+Step 88
+For the next building, nest four div elements within .fb3 with classes of fb3a, fb3b, fb3a again, and fb3b again, in that order. This building will have four sections, and the top two will be almost the same as the bottom two.
+
+Step 91
+Add your building-wrap class to the .fb3 element to center the sections.
+
+Step 92
+Nest three new div elements in the first .fb3a element. Give them each a class of fb3-window. These will be windows for this section.
+
+Step 94
+Add your window-wrap class to the .fb3a element to center and space the windows.
+
+Step 96
+Only three more buildings to go. Nest two new div elements within the .fb4 element and give them the classes of fb4a and fb4b, in that order. Remember that you sort of flipped the location of .fb4 and .fb5, so it's the rightmost purple building you are working on now.
+
+Step 99
+Nest six div elements within .fb4b and give them all a class of fb4-window.
+
+Step 111
+Add sky as a second class to the .background-buildings element. You are going to make a background for the skyline.
+
+ -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>City Skyline</title>
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="background-buildings sky">
+      <div></div>
+      <div></div>
+      <div class="bb1 building-wrap">
+        <div class="bb1a bb1-window"></div>
+        <div class="bb1b bb1-window"></div>
+        <div class="bb1c bb1-window"></div>
+        <div class="bb1d"></div>
+      </div>
+      <div class="bb2">
+        <div class="bb2a"></div>
+        <div class="bb2b"></div>
+      </div>
+      <div class="bb3"></div>
+      <div></div>
+      <div class="bb4 building-wrap">
+        <div class="bb4a"></div>
+        <div class="bb4b"></div>
+        <div class="bb4c window-wrap">
+          <div class="bb4-window"></div>
+          <div class="bb4-window"></div>
+          <div class="bb4-window"></div>
+          <div class="bb4-window"></div>
+        </div>
+      </div>
+      <div></div>
+      <div></div>
+    </div>
+
+    <div class="foreground-buildings">
+      <div></div>
+      <div></div>
+      <div class="fb1 building-wrap">
+        <div class="fb1a"></div>
+        <div class="fb1b"></div>
+        <div class="fb1c"></div>
+      </div>
+      <div class="fb2">
+        <div class="fb2a"></div>
+        <div class="fb2b window-wrap">
+          <div class="fb2-window"></div>
+          <div class="fb2-window"></div>
+          <div class="fb2-window"></div>
+        </div>
+      </div>
+      <div></div>
+      <div class="fb3 building-wrap">
+        <div class="fb3a window-wrap">
+          <div class="fb3-window"></div>
+          <div class="fb3-window"></div>
+          <div class="fb3-window"></div>
+        </div>
+        <div class="fb3b"></div>
+        <div class="fb3a"></div>
+        <div class="fb3b"></div>
+      </div>
+      <div class="fb4">
+        <div class="fb4a"></div>
+        <div class="fb4b">
+          <div class="fb4-window"></div>
+          <div class="fb4-window"></div>
+          <div class="fb4-window"></div>
+          <div class="fb4-window"></div>
+          <div class="fb4-window"></div>
+          <div class="fb4-window"></div>
+        </div>
+      </div>
+      <div class="fb5"></div>
+      <div class="fb6"></div>
+      <div></div>
+      <div></div>
+    </div>
+  </body>
+</html>
