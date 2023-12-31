@@ -250,13 +250,16 @@ Remove the background-color property and value from .fb3, and add them to .fb3a 
 Step 93
 Give the .fb3-window elements a width of 25%, a height of 80%, and use your --window-color1 variable as the background-color value.
 
+Step 95
+With CSS variables you can change values without searching everywhere in the stylesheet. Change the --window-color1 value to #bb99ff.
+
 */
 :root {
   --building-color1: #aa80ff;
   --building-color2: #66cc99;
   --building-color3: #cc6699;
   --building-color4: #538cc6;
-  --window-color1: black;
+  --window-color1: #bb99ff;
   --window-color2: #8cd9b3;
   --window-color3: #d98cb3;
   --window-color4: #8cb3d9;
