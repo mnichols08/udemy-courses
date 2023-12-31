@@ -128,6 +128,9 @@ Remove orange from the .bb1d gradient and change the 80% to 50%. This will make 
 Step 49
 Give .bb2b a width and height of 100% to make it fill the building container. You will add something on the top a little later.
 
+Step 50
+Create a new variable in :root named window-color2 with a value of #8cd9b3. This will be used as the secondary color for this building.
+
  */
 :root {
     --building-color1: #aa80ff;
@@ -135,6 +138,7 @@ Give .bb2b a width and height of 100% to make it fill the building container. Yo
     --building-color3: #cc6699;
     --building-color4: #538cc6;
     --window-color1: black;
+    --window-color2: #8cd9b3;
 }
 
 * {
