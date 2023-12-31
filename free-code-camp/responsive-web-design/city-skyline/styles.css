@@ -247,6 +247,9 @@ Give the .fb3a element a width of 80% and height of 15%. Then give the .fb3b ele
 Step 90
 Remove the background-color property and value from .fb3, and add them to .fb3a and .fb3b.
 
+Step 93
+Give the .fb3-window elements a width of 25%, a height of 80%, and use your --window-color1 variable as the background-color value.
+
 */
 :root {
   --building-color1: #aa80ff;
@@ -446,6 +449,11 @@ body {
   height: 35%;
 }
 
+.fb3-window {
+    width: 25%;
+    height: 80%;
+    background-color: var(--window-color1);
+}
 .fb3a,
 .fb3b {
   background-color: var(--building-color1);
