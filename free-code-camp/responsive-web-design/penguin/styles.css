@@ -51,6 +51,9 @@ Set the position property of the .back-mountain to prevent it from taking up spa
 
 Step 22
 Change the stack level of the .back-mountain element such that it is directly behind the .left-mountain element.
+
+Step 23
+Rotate the .back-mountain element by 45deg clockwise. Then, give it a left property of 110px, and a top property of 225px
 */
 
 body {
@@ -93,4 +96,7 @@ body {
     height: 300px;
     background: linear-gradient(rgb(203, 241, 228), rgb(47, 170, 255));
     z-index: 1;
+    transform: rotate(45deg);
+    left: 110px;
+    top: 225px;
   }
