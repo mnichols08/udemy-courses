@@ -166,6 +166,9 @@ Position the .blush elements 65% from the top of their parent, and give all corn
 Step 66
 Target the .blush element with a class of left, and position it 15% left of its parent. Then, target the .blush element with a class of right, and position it 15% right of its parent.
 
+Step 68
+Target the .beak elements, and give them a height of 10%, background-color of orange, and give all corners a radius of 50%.
+
 */
 
 :root {
@@ -270,6 +273,12 @@ body {
 
 .blush.right {
   right: 15%;
+}
+
+.beak {
+  height: 10%;
+  background-color: orange;
+  border-radius: 50%;
 }
 
 .chin {
