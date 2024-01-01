@@ -40,6 +40,10 @@ Use the transform property to skew the mountain by 0deg in the x-axis and 44deg 
 Step 17
 Set the stack level of the mountain element such that it remains directly behind the .ground element.
 
+Step 18
+To overlap the mountain and .ground elements better, give the mountain a margin-top of 100px, and the .ground element a margin-top of -58px.
+
+
 */
 
 body {
@@ -53,6 +57,7 @@ body {
 
 .ground {
   position: absolute;
+  margin-top: -58px;
   z-index: 3;
   width: 100vw;
   height: 400px;
@@ -69,7 +74,8 @@ body {
   position: absolute;
   width: 300px;
   height: 300px;
+  margin-top: 100px;
   background: linear-gradient(rgb(203, 241, 228), rgb(80, 183, 255));
-  transform: skew(0deg,44deg);
+  transform: skew(0deg, 44deg);
   z-index: 2;
 }
