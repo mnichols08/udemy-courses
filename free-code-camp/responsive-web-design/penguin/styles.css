@@ -29,6 +29,9 @@ Use the margin property to horizontally center the .penguin element, and set the
 Step 14
 Target the .left-mountain element, and set its width and height to 300px. Then, set the background to a linear gradient starting at rgb(203, 241, 228) and ending at rgb(80, 183, 255).
 
+Step 15
+To prevent the mountain from pushing the .ground element, adjust its position to prevent it from taking up space in the page layout.
+
 */
 
 body {
@@ -55,6 +58,7 @@ body {
 }
 
 .left-mountain {
+  position: absolute;
   width: 300px;
   height: 300px;
   background: linear-gradient(rgb(203, 241, 228), rgb(80, 183, 255));
