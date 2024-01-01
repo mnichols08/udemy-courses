@@ -186,6 +186,9 @@ Fix this, by targeting the div with the heart emoji, and setting its font-weight
 Step 76
 Position the div with the heart emoji 22.5px from the top, and 12px from the left of its parent.
 
+Step 77
+Position the .shirt element 165px from the top, and 127.5px from the left of its parent. Then, increase its stacking order such that it appears above the .penguin-body element.
+
 */
 
 :root {
@@ -322,6 +325,10 @@ body {
 }
 
 .shirt {
+  position: absolute;
+  top: 165px;
+  left: 127.5px;
+  z-index:1;
   font-size: 25px;
   font-family: Helvetica, sans-serif;
   font-weight: bold;
