@@ -199,6 +199,9 @@ The place-items property can be used to set the align-items and justify-items va
 
 Give the .image-wrapper selector a place-items property set to center.
 
+Step 76
+Create an .image-1, .image-3 rule and give it a grid-column property set to 1 / -1. This will allow the first and third images to span the full width of the grid.
+
 */
 
 *,
@@ -358,3 +361,6 @@ hr {
     place-items: center;
 }
 
+.image-1, .image-3 {
+    grid-column: 1 / -1;
+}
