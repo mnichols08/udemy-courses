@@ -143,6 +143,8 @@ Create an hr selector, and give it a margin property set to 1.5rem 0
 Step 61
 To give the hr a color, you need to adjust the border property. Give the hr selector a border property set to 1px solid rgba(120, 120, 120, 0.6).
 
+Step 62
+Create a .quote selector. Give it a color property set to #00beef, a font-size property set to 2.4rem, and a text-align property set to center.
 */
 
 *,
@@ -260,3 +262,8 @@ hr {
     margin-right: 1rem;
 }
 
+.quote {
+    color: #00beef;
+    font-size: 2.4rem;
+    text-align: center;
+}
