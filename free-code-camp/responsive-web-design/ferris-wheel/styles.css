@@ -6,12 +6,17 @@ Create a selector for your .wheel element. Start by setting the border to 2px so
 Step 4
 Set the position property of the .wheel selector to absolute. Set the height and width both to 55vw.
 
+Step 5
+Give your .wheel selector a max-height and max-width property both set to 500px.
+
 */
 
 .wheel {
     position: absolute;
     height: 55vw;
+    max-height: 500px;
     width: 55vw;
+    max-width: 500px;
     border: 2px solid black;
     border-radius: 50%;
     margin-left: 50px;
