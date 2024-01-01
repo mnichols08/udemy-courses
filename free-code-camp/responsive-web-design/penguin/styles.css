@@ -70,6 +70,11 @@ Change the stack level of the .penguin element such that it appears in front of 
 Step 30
 Target the .penguin-head element, and give it a width half of its parent's, and a height of 45%. Then, set the background to a linear gradient at 45deg starting at gray, and ending at rgb(239, 240, 228).
 
+Step 31
+Most penguins do not have a square head.
+
+Give the penguin a slightly oval head by setting the radius of the top corners to 70% and the radius of the bottom corners to 65%.
+
 */
 
 body {
@@ -102,6 +107,7 @@ body {
   width: 50%;
   height: 45%;
   background: linear-gradient(45deg, gray, rgb(239, 240, 228));
+  border-radius: 70% 70% 65% 65%;
 }
 
 .left-mountain {
