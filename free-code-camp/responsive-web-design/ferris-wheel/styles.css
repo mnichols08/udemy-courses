@@ -75,6 +75,11 @@ Give the 0% rule a transform property set to rotate(0deg). This will start the a
 Step 19
 Now give the @keyframes wheel rule a 100% selector. Within that, set the transform to rotate(360deg). By doing this, your animation will now complete a full rotation.
 
+Step 20
+The animation-name property is used to link a @keyframes rule to a CSS selector. The value of this property should match the name of the @keyframes rule. Give your .wheel selector an animation-name property set to wheel.
+
+The animation-duration property is used to set how long the animation should sequence to complete. The time should be specified in either seconds (s) or milliseconds (ms). Set your .wheel selector to have an animation-duration property of 10s.
+
 */
 
 .wheel {
@@ -86,6 +91,8 @@ Now give the @keyframes wheel rule a 100% selector. Within that, set the transfo
   border: 2px solid black;
   border-radius: 50%;
   margin-left: 50px;
+  animation-name: wheel;
+  animation-duration: 10s;
 }
 
 .line {
