@@ -119,6 +119,9 @@ Give the .face elements a width of 60%, a height of 70%, and a background-color 
 Step 46
 Make the top corners of the .face elements have a radius of 70%, and the bottom corners have a radius of 60%.
 
+Step 47
+Position the .face elements so that they are 15% from the top.
+
 */
 
 body {
