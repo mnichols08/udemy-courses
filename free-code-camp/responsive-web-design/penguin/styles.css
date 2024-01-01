@@ -91,6 +91,10 @@ Position the .penguin-head element 10% from the top, and 25% from the left of it
 
 Step 36
 Position the .penguin-body element 40% from the top, and 23.5% from the left of its parent.
+
+Step 37
+Change the stack level of the .penguin-head element such that it appears in front of the .penguin-body element.
+
 */
 
 body {
@@ -129,6 +133,7 @@ body {
   height: 45%;
   background: linear-gradient(45deg, gray, rgb(239, 240, 228));
   border-radius: 70% 70% 65% 65%;
+  z-index: 1;
 }
 
 .penguin-body {
