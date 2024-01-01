@@ -68,3 +68,10 @@ Bootstrap comes with several pre-defined colors for buttons. The btn-info class 
 Create a new block-level Bootstrap button below your Like button with the text Info, and add Bootstrap's btn-info class to it.
 
 Note that these buttons still need the btn and btn-block classes.
+
+- Warn Your Users of a Dangerous Action with btn-danger
+Bootstrap comes with several pre-defined colors for buttons. The btn-danger class is the button color you'll use to notify users that the button performs a destructive action, such as deleting a cat photo.
+
+Create a button with the text Delete and give it the class btn-danger.
+
+Note that these buttons still need the btn and btn-block classes.
