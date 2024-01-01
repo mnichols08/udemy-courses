@@ -1,5 +1,7 @@
 /* Header Container */
-.active{color:#fff !important;}
+.active {
+  color: #fff !important;
+}
 .hidden {
   display: none;
 }
@@ -60,8 +62,8 @@ header nav.navbar {
   background: linear-gradient(122deg, #000000cf, #00000091);
 }
 nav.navbar.bg-custom {
-background:linear-gradient(#ffffff42,#00000096);
-box-shadow:0px 0px 20px #000000bf;
+  background: linear-gradient(#ffffff42, #00000096);
+  box-shadow: 0px 0px 20px #000000bf;
 }
 .navbar {
   padding: 0.8rem;
@@ -73,8 +75,10 @@ li.nav-item a:hover {
   padding-right: 2rem;
 }
 .nav-link {
- text-transform: capitalize;
-  -webkit-text-stroke: 3px #0000004d;font-weight:bold;text-shadow: 0 0 3px black;
+  text-transform: capitalize;
+  -webkit-text-stroke: 3px #0000004d;
+  font-weight: bold;
+  text-shadow: 0 0 3px black;
   font-size: 1.1em !important;
 }
 .carousel-inner img {
@@ -177,10 +181,18 @@ li.nav-item a:hover {
 .fa-linkedin {
   color: #0176b56f;
 }
-.fa-linkedin:hover{color: #0176b5;}
-.fa-github:hover{color: #000;}
-.fa-free-code-camp:hover{color: #046300;}
-.fa-facebook:hover {color: #3b5998;}
+.fa-linkedin:hover {
+  color: #0176b5;
+}
+.fa-github:hover {
+  color: #000;
+}
+.fa-free-code-camp:hover {
+  color: #046300;
+}
+.fa-facebook:hover {
+  color: #3b5998;
+}
 footer {
   background: #3f3f3f;
   color: #d5d5d5;
@@ -190,7 +202,7 @@ footer {
 hr.light {
   border-top: 1px solid #d5d5d5;
   width: 75%;
-  padding: ;
+  padding: 0;
   margin-top: 0.8rem;
   margin-bottom: 1rem;
 }
@@ -200,7 +212,7 @@ hr.light {
 hr.light-100 {
   border-top: 1px solid #d5d5d5;
   width: 100%;
-  padding: ;
+  padding: 0;
   margin-top: 0.8rem;
   margin-bottom: 1rem;
 }
