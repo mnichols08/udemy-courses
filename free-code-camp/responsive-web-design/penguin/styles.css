@@ -192,6 +192,9 @@ Position the .shirt element 165px from the top, and 127.5px from the left of its
 Step 78
 For the shirt's final touch, set the color to #6a6969.
 
+Step 80
+Target the .foot elements, and give them a width of 15%, height of 30%, and background-color of orange.
+
 */
 
 :root {
@@ -370,6 +373,12 @@ body {
   left: 25%;
   border-radius: 0% 0% 100% 100%;
   opacity: 70%;
+}
+
+.foot {
+  width: 15%;
+  height: 30%;
+  background-color: orange;
 }
 
 .left-mountain {
