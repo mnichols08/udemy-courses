@@ -90,6 +90,9 @@ Create a .author-name a:hover selector and give it a background-color property s
 
 This will create a hover effect only for the a element within the .author-name, showing the original freeCodeCamp green in the background.
 
+Step 49
+Create a .publish-date selector and give it a color property of rgba(255, 255, 255, 0.5).
+
 */
 
 *,
@@ -176,4 +179,8 @@ img {
 
 .author-name a:hover {
     background-color: #306203;
+}
+
+.publish-date {
+    color: rgba(255,255,255,.5)
 }
