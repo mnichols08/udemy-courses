@@ -96,4 +96,4 @@ Don't worry - there will be plenty of time to customize our CSS later.
 
 - [x] Then delete the p element that contains a dead link. Then remove the red-text class from your h2 element and replace it with the text-primary Bootstrap class.
 
-- [ ] Finally, remove the smaller-image class from your first img element and replace it with the img-responsive class.
+- [x] Finally, remove the smaller-image class from your first img element and replace it with the img-responsive class.
