@@ -145,6 +145,9 @@ To give the hr a color, you need to adjust the border property. Give the hr sele
 
 Step 62
 Create a .quote selector. Give it a color property set to #00beef, a font-size property set to 2.4rem, and a text-align property set to center.
+
+Step 63
+To make the quote text stand out more, give the .quote selector a font-family property set to Raleway with a fallback of sans-serif.
 */
 
 *,
@@ -197,8 +200,8 @@ img {
 }
 
 hr {
-    margin: 1.5rem 0;
-    border: 1px solid rgba(120,120,120,.6)
+  margin: 1.5rem 0;
+  border: 1px solid rgba(120, 120, 120, 0.6);
 }
 
 .heading {
@@ -211,7 +214,7 @@ hr {
 .text {
   grid-column: 2/3;
   font-size: 1.8rem;
-  letter-spacing: .6px;
+  letter-spacing: 0.6px;
   column-width: 25rem;
   text-align: justify;
 }
@@ -239,31 +242,32 @@ hr {
 }
 
 .author-name a:hover {
-    background-color: #306203;
+  background-color: #306203;
 }
 
 .publish-date {
-    color: rgba(255,255,255,.5)
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .social-icons {
-    display: grid;
-    font-size: 3rem;
-    grid-template-columns: repeat(5, 1fr);
-    grid-auto-flow: column;
-    grid-auto-columns: 1fr;
-    align-items: center;
+  display: grid;
+  font-size: 3rem;
+  grid-template-columns: repeat(5, 1fr);
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+  align-items: center;
 }
 
-.first-paragraph::first-letter{
-    font-size: 6rem;
-    color: orangered;
-    float: left;
-    margin-right: 1rem;
+.first-paragraph::first-letter {
+  font-size: 6rem;
+  color: orangered;
+  float: left;
+  margin-right: 1rem;
 }
 
 .quote {
-    color: #00beef;
-    font-size: 2.4rem;
-    text-align: center;
+  color: #00beef;
+  font-size: 2.4rem;
+  text-align: center;
+  font-family: Raleway, sans-serif;
 }
