@@ -107,6 +107,9 @@ Give the pseudo-element a width half that of its parent, a height of 45%, and a 
 Step 41
 Position the pseudo-element 10% from the top and 25% from the left of its parent.
 
+Step 42
+Round off the crest, by giving the pseudo-element bottom corners a radius of 100%, leaving the top corners at 0%.
+
 */
 
 body {
@@ -162,6 +165,7 @@ body {
   border-radius: 80% 80% 100% 100%;
 }
 
+/* crest */
 .penguin-body::before{
   content: "";
   position: absolute;
@@ -170,6 +174,7 @@ body {
   height: 45%;
   top: 10%;
   left: 25%;
+  border-radius: 0% 0% 100% 100%
 }
 
 .left-mountain {
