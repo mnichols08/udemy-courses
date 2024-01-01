@@ -104,6 +104,11 @@ You can use @keyframes rules to control more than just the transformation of an 
 Step 26
 Between the 0% and 100% selectors, add a 50% selector. This will apply in the middle of the animation cycle. Set the background-color to purple.
 
+Step 27
+Because the animation is on an infinite loop and the start and end colors are not the same, the transition appears jerky when it switches back to yellow from red.
+
+To start fixing this, remove the background-color from your 0% selector.
+
 */
 
 .wheel {
@@ -199,7 +204,6 @@ Between the 0% and 100% selectors, add a 50% selector. This will apply in the mi
 @keyframes cabins {
     0% {
         transform: rotate(0deg);
-        background-color: yellow;
     }
     50% {
         background-color: purple;
