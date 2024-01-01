@@ -30,6 +30,8 @@ Using the same pattern, create a separate selector for the third .line, the four
 
 Set the transform property for the third .line to rotate(120deg), the fourth to rotate(180deg), the fifth to rotate(240deg), and the sixth to rotate(300deg)
 
+Step 11
+Create a .cabin selector. Set the background-color to red, the width to 20%, and the height to 20%.
 */
 
 .wheel {
@@ -68,4 +70,10 @@ Set the transform property for the third .line to rotate(120deg), the fourth to 
 }
 .line:nth-of-type(6) {
   transform: rotate(300deg);
+}
+
+.cabin {
+    background-color: red;
+    width: 20%;
+    height: 20%;
 }
