@@ -258,6 +258,14 @@ For the third and fourth waypoints, repeat the transform pattern once more.
 Step 100
 Use the wave animation on the left arm. Have the animation last 3s, infinitely iterate, and have a linear timing function.
 
+Step 101
+Target the .penguin element when it is active, and increase its size by 50% in both dimensions.
+
+Step 102
+When you activate the .penguin element, it might look as though you can drag it around. This is not true.
+
+Indicate this to users, by giving the active element a cursor property of not-allowed.
+
 */
 
 :root {
@@ -290,6 +298,11 @@ body {
   height: 300px;
   margin: 75px auto;
   z-index: 4;
+}
+
+.penguin:active {
+  transform: scale(150%);
+  cursor: not-allowed;
 }
 
 .penguin * {
