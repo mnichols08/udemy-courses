@@ -72,6 +72,9 @@ As an example, this would be a 12% rule:
 Step 18
 Give the 0% rule a transform property set to rotate(0deg). This will start the animation with no rotation.
 
+Step 19
+Now give the @keyframes wheel rule a 100% selector. Within that, set the transform to rotate(360deg). By doing this, your animation will now complete a full rotation.
+
 */
 
 .wheel {
@@ -153,5 +156,8 @@ Give the 0% rule a transform property set to rotate(0deg). This will start the a
 @keyframes wheel {
     0% {
         transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg)
     }
 }
