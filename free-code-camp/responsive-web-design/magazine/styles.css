@@ -85,6 +85,10 @@ The subtitle also needs to be styled. Create a .hero-subtitle selector and give 
 Step 47
 Create an .author selector and give it a font-size property set to 2rem and a font-family property set to Raleway with a fallback of sans-serif.
 
+Step 48
+Create a .author-name a:hover selector and give it a background-color property set to #306203.
+
+This will create a hover effect only for the a element within the .author-name, showing the original freeCodeCamp green in the background.
 
 */
 
@@ -168,4 +172,8 @@ img {
 .author {
   font-size: 2rem;
   font-family: Raleway, sans-serif;
+}
+
+.author-name a:hover {
+    background-color: #306203;
 }
