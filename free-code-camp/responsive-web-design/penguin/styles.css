@@ -113,7 +113,7 @@ body {
 
   .sun {
     position: absolute;
-    left: -75px;
+    right: -75px;
     top: -75px;
     border-radius: 50%;
     width: 200px;
