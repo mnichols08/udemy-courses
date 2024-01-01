@@ -215,11 +215,15 @@ Change the stacking order of the .foot elements such that they appear beneath th
 Step 87
 Target the .arm elements, and give them a width of 30%, a height of 60%, and a background of linear gradient at 90deg from clockwise, starting at gray, and ending at rgb(209, 210, 199).
 
+Step 88
+Create a custom CSS variable named --penguin-skin, and set it to gray. Then, replace all relevant property values with it.
+
 */
 
 :root {
   --penguin-face: white;
   --penguin-picorna: orange;
+  --penguin-skin: gray;
 }
 
 body {
@@ -256,7 +260,7 @@ body {
   left: 25%;
   width: 50%;
   height: 45%;
-  background: linear-gradient(45deg, gray, rgb(239, 240, 228));
+  background: linear-gradient(45deg, var(--penguin-skin), rgb(239, 240, 228));
   border-radius: 70% 70% 65% 65%;
   z-index: 1;
 }
@@ -387,7 +391,7 @@ body {
 .penguin-body::before {
   content: "";
   position: absolute;
-  background-color: gray;
+  background-color: var(--penguin-skin);
   width: 50%;
   height: 45%;
   top: 10%;
@@ -399,7 +403,7 @@ body {
 .arm {
   width: 30%;
   height: 60%;
-  background: linear-gradient(90deg, gray, rgb(209, 210, 199));
+  background: linear-gradient(90deg, var(--penguin-skin), rgb(209, 210, 199));
 }
 
 .foot {
