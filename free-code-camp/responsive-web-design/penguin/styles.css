@@ -83,7 +83,8 @@ Another interesting fact about penguins is that they do not have square bodies.
 
 Use the border-radius property with a value of 80% 80% 100% 100%, to give the penguin a slightly rounded body.
 
-
+Step 34
+Target all descendent elements of the .penguin element, and give them a position of absolute.
 
 */
 
@@ -113,6 +114,9 @@ body {
   z-index: 4;
 }
 
+.penguin * {
+    position: absolute;
+}
 .penguin-head {
   width: 50%;
   height: 45%;
