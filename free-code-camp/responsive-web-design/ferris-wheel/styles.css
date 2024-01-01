@@ -97,6 +97,13 @@ Step 24
 To make your cabin animation seem more like a natural swinging motion, you can use the ease-in-out timing function. This setting will tell the animation to start and end at a slower pace, but move more quickly in the middle of the cycle.
 
 Replace linear to ease-in-out in the .cabin selector.
+
+Step 25
+You can use @keyframes rules to control more than just the transformation of an element. In the 0% selector of your @keyframes cabins, set the background-color to yellow.
+
+Step 26
+Between the 0% and 100% selectors, add a 50% selector. This will apply in the middle of the animation cycle. Set the background-color to purple.
+
 */
 
 .wheel {
@@ -192,8 +199,12 @@ Replace linear to ease-in-out in the .cabin selector.
 @keyframes cabins {
     0% {
         transform: rotate(0deg);
+        background-color: yellow;
+    }
+    50% {
+        background-color: purple;
     }
     100% {
-        transform: rotate(-360deg)
+        transform: rotate(-360deg);
     }
 }
