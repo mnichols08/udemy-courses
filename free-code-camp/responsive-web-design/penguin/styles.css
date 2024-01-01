@@ -172,6 +172,9 @@ Target the .beak elements, and give them a height of 10%, background-color of or
 Step 69
 Target the .beak element with a class of top, give it a width of 20%, and position it 60% from the top, and 40% from the left of its parent.
 
+Step 70
+Target the .beak element with a class of bottom, and give it a width 4% smaller than .beak.top, 5% further from the top, and 2% further from the left of its parent than .beak.top.
+
 */
 
 :root {
@@ -289,6 +292,12 @@ body {
   position: absolute;
   top: 60%;
   left: 40%;
+}
+
+.beak.bottom {
+  width: 16%;
+  top: 65%;
+  left: 42%;
 }
 
 .chin {
