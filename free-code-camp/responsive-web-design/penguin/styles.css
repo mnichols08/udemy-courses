@@ -206,6 +206,9 @@ Create a new custom CSS variable named --penguin-picorna, and replace all releva
 Step 83
 Target the .foot element with a class of left, and position it 25% left of its parent. Then, target the .foot element with a class of right, and position it 25% right of its parent.
 
+Step 84
+To make the penguin's feet look more penguiny, rotate the left foot by 80deg, and the right by -80deg.
+
 */
 
 :root {
@@ -398,10 +401,12 @@ body {
 
 .foot.left {
   left: 25%;
+  transform: rotate(80deg);
 }
 
 .foot.right {
   right: 25%;
+  transform: rotate(-80deg);
 }
 
 .left-mountain {
