@@ -94,6 +94,6 @@ Don't worry - there will be plenty of time to customize our CSS later.
 
 - [x] Delete the .red-text, p, and .smaller-image CSS declarations from your style element so that the only declarations left in your style element are h2 and thick-green-border.
 
-- [ ] Then delete the p element that contains a dead link. Then remove the red-text class from your h2 element and replace it with the text-primary Bootstrap class.
+- [x] Then delete the p element that contains a dead link. Then remove the red-text class from your h2 element and replace it with the text-primary Bootstrap class.
 
 - [ ] Finally, remove the smaller-image class from your first img element and replace it with the img-responsive class.
