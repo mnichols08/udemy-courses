@@ -54,6 +54,16 @@ Change the stack level of the .back-mountain element such that it is directly be
 
 Step 23
 Rotate the .back-mountain element by 45deg clockwise. Then, give it a left property of 110px, and a top property of 225px
+
+Step 25
+Give the .sun element a width and height of 200px, and a background-color of yellow.
+
+Step 26
+Set the position property of the sun to prevent it from taking up space in the page layout, and set the border-radius such that the sun's shape is a circle.
+
+Step 27
+Position the sun in the top right corner of the screen such that 75px of its top and right edges are off screen.
+
 */
 
 body {
@@ -99,4 +109,14 @@ body {
     transform: rotate(45deg);
     left: 110px;
     top: 225px;
+  }
+
+  .sun {
+    position: absolute;
+    left: -75px;
+    top: -75px;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
   }
