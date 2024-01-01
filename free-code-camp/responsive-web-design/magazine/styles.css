@@ -93,6 +93,9 @@ This will create a hover effect only for the a element within the .author-name, 
 Step 49
 Create a .publish-date selector and give it a color property of rgba(255, 255, 255, 0.5).
 
+Step 50
+Create a .social-icons selector. Give it a display property set to grid, and a font-size property set to 3rem.
+
 */
 
 *,
@@ -183,4 +186,9 @@ img {
 
 .publish-date {
     color: rgba(255,255,255,.5)
+}
+
+.social-icons {
+    display: grid;
+    font-size: 3rem;
 }
