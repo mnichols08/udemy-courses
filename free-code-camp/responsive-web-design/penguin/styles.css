@@ -110,6 +110,9 @@ Position the pseudo-element 10% from the top and 25% from the left of its parent
 Step 42
 Round off the crest, by giving the pseudo-element bottom corners a radius of 100%, leaving the top corners at 0%.
 
+Step 43
+Increase the pseudo-element's transparency by 30%.
+
 */
 
 body {
@@ -174,7 +177,8 @@ body {
   height: 45%;
   top: 10%;
   left: 25%;
-  border-radius: 0% 0% 100% 100%
+  border-radius: 0% 0% 100% 100%;
+  opacity: 70%;
 }
 
 .left-mountain {
