@@ -198,10 +198,16 @@ Target the .foot elements, and give them a width of 15%, height of 30%, and back
 Step 81
 Position the .foot elements 85% from the top of their parent, and give all corners a radius of 50%.
 
+Step 82
+The penguin's beak and feet share the same color.
+
+Create a new custom CSS variable named --penguin-picorna, and replace all relevant property values with it.
+
 */
 
 :root {
   --penguin-face: white;
+  --penguin-picorna: orange;
 }
 
 body {
@@ -306,7 +312,7 @@ body {
 
 .beak {
   height: 10%;
-  background-color: orange;
+  background-color: var(--penguin-picorna);
   border-radius: 50%;
 }
 
@@ -384,7 +390,7 @@ body {
   border-radius: 50%;
   width: 15%;
   height: 30%;
-  background-color: orange;
+  background-color: var(--penguin-picorna);
 }
 
 .left-mountain {
