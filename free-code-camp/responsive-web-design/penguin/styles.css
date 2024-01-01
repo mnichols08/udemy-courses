@@ -98,6 +98,9 @@ Change the stack level of the .penguin-head element such that it appears in fron
 Step 38
 To give the penguin body a crest, create a pseudo-element that is the first child of the .penguin-body element. Set the content property of the pseudo-element to an empty string.
 
+Step 39
+Position the pseudo-element relative to its closest positioned ancestor.
+
 */
 
 body {
@@ -153,8 +156,9 @@ body {
   border-radius: 80% 80% 100% 100%;
 }
 
-.penguin-body:first-child{
+.penguin-body::before{
   content: "";
+  position: absolute;
 }
 
 .left-mountain {
