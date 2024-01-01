@@ -153,6 +153,10 @@ Target the .eye element with the left class, and position it 25% from the left o
 
 Step 61
 Target the .eye-lid elements, and give them a width of 150%, height of 100%, and background-color of --penguin-face.
+
+Step 62
+Position the .eye-lid elements 25% from the top, and -23% from the left of their parents. Then, give all corners a radius of 50%.
+
 */
 
 :root {
@@ -233,6 +237,10 @@ body {
 }
 
 .eye-lid {
+  position: absolute;
+  top: 25%;
+  left: -23%;
+  border-radius: 50%;
   width: 150%;
   height: 100%;
   background-color: var(--penguin-face);
