@@ -282,5 +282,133 @@
       </div>
     </div>
   </footer>
+  <script>
+    //I wrote this section from scratch. go me!
+var menuCategory = [
+  {"name": "home"},
+  {"name": "about"},
+  {"name": "portfolio"},
+  {"name": "connect"}
+];
+var ul = document.getElementById("navMenu");
+var catDesc = document.getElementById("catDesc");
+var e;
+for (e = 0; e < menuCategory.length; e++) {
+var li = document.createElement("li");
+$(li).appendTo(ul);
+li.className = "nav-item " + menuCategory[e].name; 
+var aNchor = document.createElement("a");
+$(aNchor).appendTo(li);
+aNchor.id = menuCategory[e].name + "button";
+aNchor.className = "nav-link";
+aNchor.setAttribute('href','#'+ menuCategory[e].name);
+aNchor.setAttribute('data-toggle','collapse');
+aNchor.setAttribute('data-target','.navbar-collapse');
+document.getElementById(menuCategory[e].name + "button").innerHTML = menuCategory[e].name;
+};
+
+$(function() {
+  var nav = $("nav");
+  $(window).scroll(function() {
+    var scroll = $(window).scrollTop(),
+      body = $("#about").offset().top;
+    if (scroll > body - 76) {
+      nav.removeClass("navbar-bottom")
+        .addClass("fixed-top");
+    } else {
+      nav.removeClass("fixed-top").addClass("navbar-bottom");
+    }
+  });
+});
+$("#aboutbutton").click(function() {
+  var aboutsection = $("#about").offset().top;
+  $("html, body").animate(
+    {
+      scrollTop: aboutsection - 76
+    },
+    2000
+  );
+});
+$("#portfoliobutton").click(function() {
+  $("html, body").animate(
+    {
+      scrollTop: $("#slides").offset().top
+    },
+    2000
+  );
+});
+$("#connectbutton").click(function() {
+  var connectsection = $("#connect").offset().top;
+  $("html, body").animate(
+    {
+      scrollTop: connectsection - 76
+    },
+    2000
+  );
+});
+$("#homebutton").click(function() {
+  $("html, body").animate(
+    {
+      scrollTop: $("#home").offset().top
+    },
+    2000
+  );
+});
+$(window).resize(function() {
+  var viewportWidth = $(window).width();
+  if (viewportWidth < 767) {
+    $(".navbar-nav")
+      .removeClass("ml-auto")
+      .addClass("text-right");
+  }else {
+      $(".navbar-nav").removeClass("text-right").addClass("ml-auto");
+    }
+});
+
+var home = $("#home").offset();
+var about = $("#about").offset();
+var portfolio = $("#portfolio").offset();
+var connect = $("#connect").offset();
+
+$(document).ready(function() {
+    $(window).scroll(function(){
+     
+        var screenPosition = $(document).scrollTop();
+        if (screenPosition < about.top) {
+            $("a#homebutton").addClass("active");
+            $("a#aboutbutton").removeClass("active");
+            $("a#portfoliobutton").removeClass("active");
+            $("a#connectbutton").removeClass("active");
+        }
+        if (screenPosition >= about.top - 76) {
+            $("a#aboutbutton").addClass("active");
+            $("a#homebutton").removeClass("active");
+            $("a#portfoliobutton").removeClass("active");
+            $("a#connectbutton").removeClass("active");
+        }
+        if (screenPosition >= portfolio.top -76) {
+            $("a#portfoliobutton").addClass("active");
+            $("a#homebutton").removeClass("active");
+            $("a#aboutbutton").removeClass("active");
+            $("a#connectbutton").removeClass("active");
+        }
+        if (screenPosition >= connect.top - 77) {
+            $("a#connectbutton").addClass("active");
+            $("a#homebutton").removeClass("active");
+            $("a#aboutbutton").removeClass("active");
+            $("a#portfoliobutton").removeClass("active");
+        }
+      
+    });
+    
+    $(window).scroll();
+    $(".home, .about, .portfolio, .connect").click(function() {$(window).scroll();});
+});
+
+
+
+
+
+  </script>
 </body>
 </html>
