@@ -140,6 +140,9 @@ The other text has been shifted out of place. Move it into position by giving th
 Step 60
 Create an hr selector, and give it a margin property set to 1.5rem 0
 
+Step 61
+To give the hr a color, you need to adjust the border property. Give the hr selector a border property set to 1px solid rgba(120, 120, 120, 0.6).
+
 */
 
 *,
@@ -193,6 +196,7 @@ img {
 
 hr {
     margin: 1.5rem 0;
+    border: 1px solid rgba(120,120,120,.6)
 }
 
 .heading {
