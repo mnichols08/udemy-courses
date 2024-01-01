@@ -9,6 +9,9 @@ Set the position property of the .wheel selector to absolute. Set the height and
 Step 5
 Give your .wheel selector a max-height and max-width property both set to 500px.
 
+Step 6
+Create a selector for your .line elements. Start by setting the background-color to black, the width to 50%, and the height to 2px.
+
 */
 
 .wheel {
@@ -20,4 +23,10 @@ Give your .wheel selector a max-height and max-width property both set to 500px.
     border: 2px solid black;
     border-radius: 50%;
     margin-left: 50px;
+}
+
+.line {
+    background-color: black;
+    width: 50%;
+    height: 2px;
 }
