@@ -45,6 +45,9 @@ One option is the grid-column property, which is shorthand for grid-column-start
 
 Create a .heading rule and set the grid-column property to 2 / 3. This will tell the .heading element to start at grid line 2 and end at grid line 3.
 
+Step 37
+Create a .text selector and give it a grid-column property set to 2 / 3.
+
 */
 
 *,
@@ -92,5 +95,9 @@ main {
 }
 
 .heading {
-    grid-column: 2/3
+  grid-column: 2/3;
+}
+
+.text {
+  grid-column: 2/3;
 }
