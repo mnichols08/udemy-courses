@@ -153,6 +153,10 @@ body {
   border-radius: 80% 80% 100% 100%;
 }
 
+.penguin-body:first-child{
+  content: "";
+}
+
 .left-mountain {
   position: absolute;
   width: 300px;
