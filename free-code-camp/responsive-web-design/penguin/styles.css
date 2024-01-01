@@ -10,6 +10,16 @@ Normalise your page, by setting the width to 100%, and height to 100vh.
 
 Step 5
 Remove both the horizontal and vertical scrollbars, using only one property.
+
+Step 7
+Target the .ground element, and set its width to take up the full width of the viewport. Then, set the height to 400px.
+
+Step 8
+Give the .ground element a background with a linear gradient angled 90 degrees clockwise, starting at rgb(88, 175, 236) and ending at rgb(182, 255, 255).
+
+Step 9
+As the .ground element will be third in the stacking context of the page layout, set its z-index to 3, and position to absolute.
+
 */
 
 body {
@@ -19,4 +29,12 @@ body {
   width: 100%;
   height: 100vh;
   overflow: hidden;
+}
+
+.ground {
+  position: absolute;
+  z-index: 3;
+  width: 100vw;
+  height: 400px;
+  background: linear-gradient(90deg, rgb(88, 175, 236), rgb(182, 255, 255));
 }
