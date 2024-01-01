@@ -169,6 +169,9 @@ Target the .blush element with a class of left, and position it 15% left of its 
 Step 68
 Target the .beak elements, and give them a height of 10%, background-color of orange, and give all corners a radius of 50%.
 
+Step 69
+Target the .beak element with a class of top, give it a width of 20%, and position it 60% from the top, and 40% from the left of its parent.
+
 */
 
 :root {
@@ -279,6 +282,13 @@ body {
   height: 10%;
   background-color: orange;
   border-radius: 50%;
+}
+
+.beak.top {
+  width: 20%;
+  position: absolute;
+  top: 60%;
+  left: 40%;
 }
 
 .chin {
