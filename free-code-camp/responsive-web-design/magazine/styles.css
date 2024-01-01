@@ -167,6 +167,9 @@ You will need to have a column for text and a column for images. Give the .text-
 Step 67
 Give the .text-with-images selector a margin-bottom property set to 3rem.
 
+Step 68
+Create a .lists selector and set the list-style-type property to none. This will get rid of the bullet points on the list items.
+
 */
 
 *,
@@ -303,4 +306,8 @@ hr {
     grid-template-columns: 1fr 2fr;
     column-gap: 3rem;
     margin-bottom: 3rem;
+}
+
+.lists {
+    list-style-type: none;
 }
