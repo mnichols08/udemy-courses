@@ -61,3 +61,10 @@ The btn-primary class is the main color you'll use in your app. It is useful for
 Replace Bootstrap's btn-default class with btn-primary in your button.
 
 Note that this button will still need the btn and btn-block classes.
+
+- Call out Optional Actions with btn-info
+Bootstrap comes with several pre-defined colors for buttons. The btn-info class is used to call attention to optional actions that the user can take.
+
+Create a new block-level Bootstrap button below your Like button with the text Info, and add Bootstrap's btn-info class to it.
+
+Note that these buttons still need the btn and btn-block classes.
