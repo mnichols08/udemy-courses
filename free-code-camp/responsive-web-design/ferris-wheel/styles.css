@@ -93,6 +93,10 @@ With your .wheel selector, you created four different properties to control the 
 
 Set the animation property of the .cabin rule to cabins 10s linear infinite. This will set the animation-name, animation-duration, animation-timing-function, and animation-iteration-count properties in that order.
 
+Step 24
+To make your cabin animation seem more like a natural swinging motion, you can use the ease-in-out timing function. This setting will tell the animation to start and end at a slower pace, but move more quickly in the middle of the cycle.
+
+Replace linear to ease-in-out in the .cabin selector.
 */
 
 .wheel {
@@ -144,7 +148,7 @@ Set the animation property of the .cabin rule to cabins 10s linear infinite. Thi
     width: 20%;
     height: 20%;
     transform-origin: 50% 0%;
-    animation: cabins 10s linear infinite;
+    animation: cabins 10s ease-in-out infinite;
 }
 .cabin:first-of-type{
     top: 50%;
