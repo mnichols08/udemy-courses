@@ -203,6 +203,9 @@ The penguin's beak and feet share the same color.
 
 Create a new custom CSS variable named --penguin-picorna, and replace all relevant property values with it.
 
+Step 83
+Target the .foot element with a class of left, and position it 25% left of its parent. Then, target the .foot element with a class of right, and position it 25% right of its parent.
+
 */
 
 :root {
@@ -391,6 +394,14 @@ body {
   width: 15%;
   height: 30%;
   background-color: var(--penguin-picorna);
+}
+
+.foot.left {
+  left: 25%;
+}
+
+.foot.right {
+  right: 25%;
 }
 
 .left-mountain {
