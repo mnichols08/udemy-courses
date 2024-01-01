@@ -209,6 +209,9 @@ Target the .foot element with a class of left, and position it 25% left of its p
 Step 84
 To make the penguin's feet look more penguiny, rotate the left foot by 80deg, and the right by -80deg.
 
+Step 85
+Change the stacking order of the .foot elements such that they appear beneath the .penguin-body element.
+
 */
 
 :root {
@@ -397,6 +400,7 @@ body {
   width: 15%;
   height: 30%;
   background-color: var(--penguin-picorna);
+  z-index: -1;
 }
 
 .foot.left {
