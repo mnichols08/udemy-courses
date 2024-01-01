@@ -104,6 +104,9 @@ Position the pseudo-element relative to its closest positioned ancestor.
 Step 40
 Give the pseudo-element a width half that of its parent, a height of 45%, and a background-color of gray.
 
+Step 41
+Position the pseudo-element 10% from the top and 25% from the left of its parent.
+
 */
 
 body {
@@ -165,6 +168,8 @@ body {
   background-color: gray;
   width: 50%;;
   height: 45%;
+  top: 10%;
+  left: 25%;
 }
 
 .left-mountain {
