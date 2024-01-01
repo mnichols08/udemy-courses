@@ -23,6 +23,9 @@ As the .ground element will be third in the stacking context of the page layout,
 Step 11
 Target the .penguin element, and set its width and height to 300px.
 
+Step 12
+Use the margin property to horizontally center the .penguin element, and set the margin-top to 75px.
+
 */
 
 body {
@@ -45,4 +48,5 @@ body {
 .penguin {
     width: 300px;
     height: 300px;
+    margin: 75px auto;
 }
