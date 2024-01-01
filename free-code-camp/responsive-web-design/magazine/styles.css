@@ -68,6 +68,8 @@ Remember that the grid-column property determines which columns an element start
 
 Create a .hero selector and give it a grid-column property set to 1 / -1. This will tell the element to span the full width of the grid.
 
+Step 42
+Give the .hero selector a position property set to relative.
 */
 
 *,
@@ -127,4 +129,5 @@ main {
 
 .hero {
     grid-column: 1 / -1;
+    position: relative;
 }
