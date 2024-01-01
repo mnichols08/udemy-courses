@@ -224,6 +224,9 @@ Target the .arm element with a class of left, and position it 35% from the top, 
 Step 90
 Within the .arm.left selector, alter the origin of the transform function to be the top left corner of its parent.
 
+Step 91
+To keep the linear gradient on the correct side of the penguin's left arm, first rotate it by 130deg, then invert the x-axis.
+
 */
 
 :root {
@@ -416,6 +419,7 @@ body {
   top: 35%;
   left: 5%;
   transform-origin: 0% 0%;
+  transform: rotate(130deg) scaleX(-1);
 }
 
 .arm.right {
