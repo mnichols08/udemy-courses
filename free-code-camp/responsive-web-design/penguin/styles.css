@@ -269,6 +269,11 @@ Indicate this to users, by giving the active element a cursor property of not-al
 Step 103
 Change the .penguin element's transition behavior during transformation to have a duration of 1s, a timing function of ease-in-out, and a delay of 0ms.
 
+Step 104
+Finally, calculate the height of the .ground element to be the height of the viewport minus the height of the .penguin element.
+
+Congratulations! You have completed the Responsive Web Design certification.
+
 */
 
 :root {
@@ -286,50 +291,76 @@ body {
   overflow: hidden;
 }
 
-.ground {
+.left-mountain {
+  width: 300px;
+  height: 300px;
+  background: linear-gradient(rgb(203, 241, 228), rgb(80, 183, 255));
   position: absolute;
-  margin-top: -58px;
-  z-index: 3;
-  width: 100vw;
-  height: 400px;
-  background: linear-gradient(90deg, rgb(88, 175, 236), rgb(182, 255, 255));
+  transform: skew(0deg, 44deg);
+  z-index: 2;
+  margin-top: 100px;
+}
+
+.back-mountain {
+  width: 300px;
+  height: 300px;
+  background: linear-gradient(rgb(203, 241, 228), rgb(47, 170, 255));
+  position: absolute;
+  z-index: 1;
+  transform: rotate(45deg);
+  left: 110px;
+  top: 225px;
+}
+
+.sun {
+  width: 200px;
+  height: 200px;
+  background-color: yellow;
+  position: absolute;
+  border-radius: 50%;
+  top: -75px;
+  right: -75px;
 }
 
 .penguin {
-  position: relative;
   width: 300px;
   height: 300px;
-  margin: 75px auto;
+  margin: auto;
+  margin-top: 75px;
   z-index: 4;
-  transition: 1s ease-in-out;
-  transition-delay: 0ms;
-}
-
-.penguin:active {
-  transform: scale(150%);
-  cursor: not-allowed;
+  position: relative;
+  transition: transform 1s ease-in-out 0ms;
 }
 
 .penguin * {
   position: absolute;
 }
+
+.penguin:active {
+  transform: scale(1.5);
+  cursor: not-allowed;
+}
+
 .penguin-head {
-  top: 10%;
-  left: 25%;
   width: 50%;
   height: 45%;
-  background: linear-gradient(45deg, var(--penguin-skin), rgb(239, 240, 228));
+  background: linear-gradient(
+    45deg,
+    var(--penguin-skin),
+    rgb(239, 240, 228)
+  );
   border-radius: 70% 70% 65% 65%;
+  top: 10%;
+  left: 25%;
   z-index: 1;
 }
 
 .face {
-  position: absolute;
-  top: 15%;
   width: 60%;
   height: 70%;
   background-color: var(--penguin-face);
   border-radius: 70% 70% 60% 60%;
+  top: 15%;
 }
 
 .face.left {
@@ -340,13 +371,21 @@ body {
   right: 5%;
 }
 
+.chin {
+  width: 90%;
+  height: 70%;
+  background-color: var(--penguin-face);
+  top: 25%;
+  left: 5%;
+  border-radius: 70% 70% 100% 100%;
+}
+
 .eye {
-  position: absolute;
-  top: 45%;
-  border-radius: 50%;
   width: 15%;
   height: 17%;
   background-color: black;
+  top: 45%;
+  border-radius: 50%;
 }
 
 .eye.left {
@@ -358,22 +397,20 @@ body {
 }
 
 .eye-lid {
-  position: absolute;
-  top: 25%;
-  left: -23%;
-  border-radius: 50%;
   width: 150%;
   height: 100%;
   background-color: var(--penguin-face);
+  top: 25%;
+  left: -23%;
+  border-radius: 50%;
 }
 
 .blush {
-  position: absolute;
-  top: 65%;
-  border-radius: 50%;
   width: 15%;
   height: 10%;
   background-color: pink;
+  top: 65%;
+  border-radius: 50%;
 }
 
 .blush.left {
@@ -392,7 +429,6 @@ body {
 
 .beak.top {
   width: 20%;
-  position: absolute;
   top: 60%;
   left: 40%;
 }
@@ -403,38 +439,22 @@ body {
   left: 42%;
 }
 
-.chin {
-  position: absolute;
-  top: 25%;
-  left: 5%;
-  border-radius: 70% 70% 100% 100%;
-  width: 90%;
-  height: 70%;
-  background-color: var(--penguin-face);
-}
-
 .shirt {
-  position: absolute;
+  font: bold 25px Helvetica, sans-serif;
   top: 165px;
   left: 127.5px;
   z-index: 1;
-  font-size: 25px;
-  font-family: Helvetica, sans-serif;
-  font-weight: bold;
   color: #6a6969;
   user-select: none;
 }
 
 .shirt div {
-  position: absolute;
+  font-weight:  initial;
   top: 22.5px;
   left: 12px;
-  font-weight: initial;
 }
 
 .penguin-body {
-  top: 40%;
-  left: 23.5%;
   width: 53%;
   height: 45%;
   background: linear-gradient(
@@ -444,15 +464,16 @@ body {
     white 67%
   );
   border-radius: 80% 80% 100% 100%;
+  top: 40%;
+  left: 23.5%;
 }
 
-/* crest */
 .penguin-body::before {
   content: "";
   position: absolute;
-  background-color: var(--penguin-skin);
   width: 50%;
   height: 45%;
+  background-color: var(--penguin-skin);
   top: 10%;
   left: 25%;
   border-radius: 0% 0% 100% 100%;
@@ -462,74 +483,27 @@ body {
 .arm {
   width: 30%;
   height: 60%;
+  background: linear-gradient(
+    90deg,
+    var(--penguin-skin),
+    rgb(209, 210, 199)
+  );
   border-radius: 30% 30% 30% 120%;
-  background: linear-gradient(90deg, var(--penguin-skin), rgb(209, 210, 199));
   z-index: -1;
 }
 
 .arm.left {
   top: 35%;
   left: 5%;
-  transform-origin: 0% 0%;
+  transform-origin: top left; 
   transform: rotate(130deg) scaleX(-1);
-  animation: 3s infinite linear wave;
+  animation: 3s linear infinite wave;
 }
 
 .arm.right {
   top: 0%;
   right: -5%;
   transform: rotate(-45deg);
-}
-
-.foot {
-  position: absolute;
-  top: 85%;
-  border-radius: 50%;
-  width: 15%;
-  height: 30%;
-  background-color: var(--penguin-picorna);
-  z-index: -1;
-}
-
-.foot.left {
-  left: 25%;
-  transform: rotate(80deg);
-}
-
-.foot.right {
-  right: 25%;
-  transform: rotate(-80deg);
-}
-
-.left-mountain {
-  position: absolute;
-  width: 300px;
-  height: 300px;
-  margin-top: 100px;
-  background: linear-gradient(rgb(203, 241, 228), rgb(80, 183, 255));
-  transform: skew(0deg, 44deg);
-  z-index: 2;
-}
-
-.back-mountain {
-  position: absolute;
-  width: 300px;
-  height: 300px;
-  background: linear-gradient(rgb(203, 241, 228), rgb(47, 170, 255));
-  z-index: 1;
-  transform: rotate(45deg);
-  left: 110px;
-  top: 225px;
-}
-
-.sun {
-  position: absolute;
-  right: -75px;
-  top: -75px;
-  border-radius: 50%;
-  width: 200px;
-  height: 200px;
-  background-color: yellow;
 }
 
 @keyframes wave {
@@ -545,4 +519,32 @@ body {
   40% {
     transform: rotate(130deg) scaleX(-1);
   }
+}
+
+.foot {
+  width:  15%;
+  height: 30%;
+  background-color: var(--penguin-picorna);
+  top: 85%;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.foot.left {
+  left: 25%;
+  transform: rotate(80deg);
+}
+
+.foot.right {
+  right: 25%;
+  transform: rotate(-80deg);
+}
+
+.ground {
+  width: 100vw;
+  background: linear-gradient(90deg, rgb(88, 175, 236), rgb(182, 255, 255));
+  z-index: 3;
+  position: absolute;
+  margin-top: -58px;
+  height: calc(100vh - 300px);
 }
