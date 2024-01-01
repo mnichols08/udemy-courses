@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spacewalkers</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <meta type="description" content="freeCodeCamp Assignment #3 && Lambda School Preprocessing Sprint"
+<audio autoplay loop>
+<!--         <source src="https://mnichols08-preprocessing-sprint.netlify.com/img/sound.mp3" type="audio/mpeg"> -->
+      Your browser does not support the audio element.
+      </audio>
+  <div class="desktop-only">
+      <video class="bg-video" autoplay muted loop id="video">
+          <source src="https://mnichols08-preprocessing-sprint.netlify.com/img/space.mp4" type="video/mp4">
+          A video is being played in the background here, but unfortunately your browser is not supported!
+        </video>
+  </div>
+ <!-- navigation code here -->
+  <nav id="home">
+    <div class="u-fixed-top flex flex-column flex-justify-center flex-items-center">
+      <h1>SpaceWalkers</h1>
+        <ul class="flex flex-items-center flex-no-response flex-justify-around">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#signup">Sign Up</a></li>
+        </ul>
+    </div>
+  </nav>
+  <header class="container" style="animation: blurIn 2.5s" id="header">
+		<nav id="nav-bar" style="display:none"> <a href="#home">Home</a>
+      <a href="#about" class="nav-link">About</a>
+        <a href="#blog" class="nav-link">Blog</a>
+  			<a href="#contact" class="nav-link">Contact</a>
+        <a href="#signup" class="nav-link">Sign Up</a></nav>
+    <img src="https://mnichols08-preprocessing-sprint.netlify.com/img/main-header.png" alt="Super Aerial photograph of Earth" class="u-width-100 u-border-radius-1" id="header-img">
+    <div class="text-content">
+    </div>
+  </header>
+  <div class="container home" style="animation: blurIn 2.5s">
+    <div style="animation: blurIn 5s">
+    <header class="intro" id="about">
+       <!-- image code here -->
+      <h2>Lift Off</h2>
+    
+      <p>As we got further and further away, it [the Earth] diminished in size. Finally it shrank to the size of a marble, the most beautiful you can imagine. That beautiful, warm, living object looked so fragile, so delicate, that if you touched it with a finger it would fall apart. Seeing this has to change a man.</p>
+    </header>
+
+    <section class="space-images">
+        <img src="https://mnichols08-preprocessing-sprint.netlify.com/img/blast.png" class="blast" alt="Rocket blasting off">
+        <img src="https://mnichols08-preprocessing-sprint.netlify.com/img/sky.png" class="sky" alt="Space sky image">
+        <img src="https://mnichols08-preprocessing-sprint.netlify.com/img/launch.png" class="launch" alt="Launching rocket">
+    </section>
+   
+    <section class="visit-planets">
+     
+      <h3>Can We Visit Planets?</h3>
+    
+      <p>Never in all their history have men been able truly to conceive of the world as one: a single sphere, a globe, having the qualities of a globe, a round earth in which all the directions eventually meet.</p>
+    
+      <p>Which there is no center because every point, or none, is center — an equal earth which all men occupy as equals. The airman's earth, if free men make it.</p>
+    </section>
+    
+    <section class="walk" id="blog">
+      <div class="walk-text">
+        <h3>Let's Go For A Walk</h3>
+
+        <p>The Earth was small, light blue, and so touchingly alone, our home that must be defended like a holy relic. The Earth was absolutely round.</p>
+      
+        <p>Suddenly struck me that that tiny pea, pretty and blue, was the Earth. I put up my thumb and shut one eye, and my thumb blotted out the planet Earth.</p>
+      
+        <div class="btn" id="contact">
+          Sign Up
+        </div>
+      </div>
+      
+      <div class="walk-img">
+          <img src="https://mnichols08-preprocessing-sprint.netlify.com/img/space-walk.png" alt="Space walking astronaut">
+      </div>
+
+    </section>
+
+    <section class="content-inquire" id="signup">
+        <h2>Magazine Subscription</h2>
+        <p>Does space intrigue you as much as it does us? Provide us your mailing address below to get your very first magazine from us for free! $249.99 monthly subscription after. No refunds, unless you are on Mars.</p>
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+          <h4 id="signup">Sign Me Up!</h4>
+          
+          <input name="name" type="text" placeholder="Full Name" required>
+          <label for="name">Full Name</label>          
+
+          <input name="address1" placeholder="Address Line 1" required>
+          <label for="address1">Address Line 1</label>
+
+          <input name="email" type="email" placeholder="Email Address" id="email" required>
+          <label for="address2">Email Address</label>
+
+      
+          <input name="city" type="text" placeholder="City" required>
+          <label for="email">City</label>
+
+          <input name="state" type="text" placeholder="State" required>
+          <label for="email">State</label>
+
+          <input name="zip" type="number" placeholder="Zip Code" required>
+          <label for="zip">Zip Code</label>
+
+          
+          <div class="flex flex-items-center flex-justify-center flex-no-response ">
+          <input type="checkbox" required>
+          <label for="optin">I agree to being billed for a monthly subscription of $249.99 after first free magazine.</label>
+          <input type="submit" onclick="alert('Your subscription has been confirmed. Thanks for your money! (NOT REALLY THIS IS A TEST!)')" id="submit">Submit</input>
+           </div>
+        </form>
+      </section>
+    </div>
+  </div>
+  <footer class="container flex flex-justify-center flex-items-center u-border-radius-1">
+      <p>&copy; Copyright SpaceWalkers <script>document.write(new Date().getFullYear())</script></p>
+    </footer>
+</body>
+</html>
