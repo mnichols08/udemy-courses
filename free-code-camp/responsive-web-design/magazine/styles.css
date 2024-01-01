@@ -155,6 +155,11 @@ A quote is not really a quote without proper quotation marks. You can add these 
 Create a .quote::before selector and set the content property to " with a space following it.
 
 Also, create a .quote::after selector and set the content property to " with a space preceding it.
+
+Step 65
+Now it's time to style your third section. Note that it has the text and text-with-images values for the class attribute, which means it is already inheriting the styles from your .text rule.
+
+Create a .text-with-images selector and set the display property to grid.
 */
 
 *,
@@ -284,4 +289,8 @@ hr {
 }
 .quote::after {
     content: ' "'
+}
+
+.text-with-images {
+    display: grid;
 }
