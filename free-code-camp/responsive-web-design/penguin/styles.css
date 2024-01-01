@@ -183,6 +183,9 @@ In some browsers, the heart emoji may look slightly different from the previous 
 
 Fix this, by targeting the div with the heart emoji, and setting its font-weight to its original value.
 
+Step 76
+Position the div with the heart emoji 22.5px from the top, and 12px from the left of its parent.
+
 */
 
 :root {
@@ -325,6 +328,9 @@ body {
 }
 
 .shirt div {
+  position: absolute;
+  top: 22.5px;
+  left: 12px;
   font-weight: initial;
 }
 
