@@ -266,6 +266,9 @@ When you activate the .penguin element, it might look as though you can drag it 
 
 Indicate this to users, by giving the active element a cursor property of not-allowed.
 
+Step 103
+Change the .penguin element's transition behavior during transformation to have a duration of 1s, a timing function of ease-in-out, and a delay of 0ms.
+
 */
 
 :root {
@@ -298,6 +301,8 @@ body {
   height: 300px;
   margin: 75px auto;
   z-index: 4;
+  transition: 1s ease-in-out;
+  transition-delay: 0ms;
 }
 
 .penguin:active {
@@ -417,6 +422,7 @@ body {
   font-family: Helvetica, sans-serif;
   font-weight: bold;
   color: #6a6969;
+  user-select: none;
 }
 
 .shirt div {
