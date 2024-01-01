@@ -83,6 +83,6 @@ Take for example Bootstrap's col-md-* class. Here, md means medium, and * is a n
 
 In the Cat Photo App that we're building, we'll use col-xs-*, where xs means extra small (like an extra-small mobile phone screen), and * is the number of columns specifying how many columns wide the element should be.
 
-- [x] Put the Like, Info and Delete buttons side-by-side by nesting all three of them within one `<div class="row">` element, then each of them within a `<div class="col-xs-4">` element.
+- [ ] Put the Like, Info and Delete buttons side-by-side by nesting all three of them within one `<div class="row">` element, then each of them within a `<div class="col-xs-4">` element.
 
 The row class is applied to a div, and the buttons themselves can be nested within it.
