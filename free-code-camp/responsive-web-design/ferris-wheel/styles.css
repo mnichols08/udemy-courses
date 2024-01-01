@@ -109,6 +109,9 @@ Because the animation is on an infinite loop and the start and end colors are no
 
 To start fixing this, remove the background-color from your 0% selector.
 
+Step 28
+Create a new 25% selector between your 0% and 50% selectors. Give this new selector the background-color property set to yellow.
+
 */
 
 .wheel {
@@ -204,6 +207,9 @@ To start fixing this, remove the background-color from your 0% selector.
 @keyframes cabins {
     0% {
         transform: rotate(0deg);
+    }
+    25% {
+        background-color: yellow;
     }
     50% {
         background-color: purple;
