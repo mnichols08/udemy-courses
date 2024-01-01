@@ -96,6 +96,8 @@ Create a .publish-date selector and give it a color property of rgba(255, 255, 2
 Step 50
 Create a .social-icons selector. Give it a display property set to grid, and a font-size property set to 3rem.
 
+Step 51
+The default settings for CSS Grid will create additional rows as needed, unlike Flexbox. Give the .social-icons selector a grid-template-columns property set to repeat(5, 1fr) to arrange the icons in a single row.
 */
 
 *,
@@ -191,4 +193,5 @@ img {
 .social-icons {
     display: grid;
     font-size: 3rem;
+    grid-template-columns: repeat(5, 1fr)
 }
