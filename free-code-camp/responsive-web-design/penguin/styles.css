@@ -255,6 +255,9 @@ Within the second waypoint, rotate to 130deg, and retain the scaling of the left
 Step 99
 For the third and fourth waypoints, repeat the transform pattern once more.
 
+Step 100
+Use the wave animation on the left arm. Have the animation last 3s, infinitely iterate, and have a linear timing function.
+
 */
 
 :root {
@@ -450,6 +453,7 @@ body {
   left: 5%;
   transform-origin: 0% 0%;
   transform: rotate(130deg) scaleX(-1);
+  animation: 3s infinite linear wave;
 }
 
 .arm.right {
