@@ -195,6 +195,9 @@ For the shirt's final touch, set the color to #6a6969.
 Step 80
 Target the .foot elements, and give them a width of 15%, height of 30%, and background-color of orange.
 
+Step 81
+Position the .foot elements 85% from the top of their parent, and give all corners a radius of 50%.
+
 */
 
 :root {
@@ -334,7 +337,7 @@ body {
   position: absolute;
   top: 165px;
   left: 127.5px;
-  z-index:1;
+  z-index: 1;
   font-size: 25px;
   font-family: Helvetica, sans-serif;
   font-weight: bold;
@@ -376,6 +379,9 @@ body {
 }
 
 .foot {
+  position: absolute;
+  top: 85%;
+  border-radius: 50%;
   width: 15%;
   height: 30%;
   background-color: orange;
