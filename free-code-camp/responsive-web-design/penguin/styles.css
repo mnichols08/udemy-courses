@@ -249,6 +249,9 @@ Give wave four waypoints starting at 10%, and incrementing by 10%.
 Step 97
 Within the first waypoint, rotate to 110deg, and retain the scaling of the left arm.
 
+Step 98
+Within the second waypoint, rotate to 130deg, and retain the scaling of the left arm.
+
 */
 
 :root {
@@ -508,6 +511,7 @@ body {
     transform: rotate(110deg) scaleX(-1);
   }
   20% {
+    transform: rotate(130deg) scaleX(-1);
   }
   30% {
   }
