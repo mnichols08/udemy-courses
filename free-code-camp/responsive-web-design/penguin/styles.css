@@ -75,6 +75,9 @@ Most penguins do not have a square head.
 
 Give the penguin a slightly oval head by setting the radius of the top corners to 70% and the radius of the bottom corners to 65%.
 
+Step 32
+Target the .penguin-body element, and give it a width of 53%, and a height of 45%. Then, set the background to a linear gradient at 45deg, rgb(134, 133, 133) from 0%, rgb(234, 231, 231) from 25%, and white from 67%.
+
 */
 
 body {
@@ -108,6 +111,17 @@ body {
   height: 45%;
   background: linear-gradient(45deg, gray, rgb(239, 240, 228));
   border-radius: 70% 70% 65% 65%;
+}
+
+.penguin-body {
+  width: 53%;
+  height: 45%;
+  background: linear-gradient(
+    45deg,
+    rgb(134, 133, 133) 0%,
+    rgb(234, 231, 231) 25%,
+    white 67%
+  );
 }
 
 .left-mountain {
