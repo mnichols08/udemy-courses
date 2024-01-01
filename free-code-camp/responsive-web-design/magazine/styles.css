@@ -71,6 +71,11 @@ Create a .hero selector and give it a grid-column property set to 1 / -1. This w
 Step 42
 Give the .hero selector a position property set to relative.
 
+Step 44
+Create an img selector and give it a width property set to 100%, and an object-fit property set to cover.
+
+The object-fit property tells the browser how to position the element within its container. In this case, cover will set the image to fill the container, cropping as needed to avoid changing the aspect ratio.
+
 */
 
 *,
@@ -115,6 +120,11 @@ main {
       1fr
     );
   row-gap: 3rem;
+}
+
+img {
+    width: 100%;
+    object-fit:cover;
 }
 
 .heading {
