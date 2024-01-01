@@ -49,6 +49,8 @@ Target the .back-mountain element, and set its width and height to 300px. Then, 
 Step 21
 Set the position property of the .back-mountain to prevent it from taking up space in the page layout.
 
+Step 22
+Change the stack level of the .back-mountain element such that it is directly behind the .left-mountain element.
 */
 
 body {
@@ -90,4 +92,5 @@ body {
     width: 300px;
     height: 300px;
     background: linear-gradient(rgb(203, 241, 228), rgb(47, 170, 255));
+    z-index: 1;
   }
