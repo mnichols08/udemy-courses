@@ -112,6 +112,11 @@ To start fixing this, remove the background-color from your 0% selector.
 Step 28
 Create a new 25% selector between your 0% and 50% selectors. Give this new selector the background-color property set to yellow.
 
+Step 29
+Finally, create a new 75% selector between your 50% and 100% selectors. Give this new selector a background-color property set to yellow.
+
+With that, your animation is much smoother and your Ferris wheel is complete.
+
 */
 
 .wheel {
@@ -213,6 +218,9 @@ Create a new 25% selector between your 0% and 50% selectors. Give this new selec
     }
     50% {
         background-color: purple;
+    }
+    75% {
+        background-color: yellow;
     }
     100% {
         transform: rotate(-360deg);
