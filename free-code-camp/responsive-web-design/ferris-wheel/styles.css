@@ -20,25 +20,52 @@ The transform-origin property is used to set the point around which a CSS transf
 
 Give the .line selector a transform-origin property of 0% 0%. This will offset the origin point by 0% from the left and 0% from the top, setting it to the top left corner of the element.
 
+Step 9
+Create a selector to target your second .line element. Set the transform property to rotate(60deg).
+
+Remember that the transform property allows you to manipulate the shape of an element. In this case, using the rotate(60deg) value will rotate the element around its transform-origin point by 60 degrees clockwise.
+
+Step 10
+Using the same pattern, create a separate selector for the third .line, the fourth .line, the fifth .line, and the sixth .line.
+
+Set the transform property for the third .line to rotate(120deg), the fourth to rotate(180deg), the fifth to rotate(240deg), and the sixth to rotate(300deg)
+
 */
 
 .wheel {
-    position: absolute;
-    height: 55vw;
-    max-height: 500px;
-    width: 55vw;
-    max-width: 500px;
-    border: 2px solid black;
-    border-radius: 50%;
-    margin-left: 50px;
+  position: absolute;
+  height: 55vw;
+  max-height: 500px;
+  width: 55vw;
+  max-width: 500px;
+  border: 2px solid black;
+  border-radius: 50%;
+  margin-left: 50px;
 }
 
 .line {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    background-color: black;
-    width: 50%;
-    height: 2px;
-    transform-origin: 0% 0%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  background-color: black;
+  width: 50%;
+  height: 2px;
+  transform-origin: 0% 0%;
+}
+
+.line:nth-of-type(2) {
+  transform: rotate(60deg);
+}
+
+.line:nth-of-type(3) {
+  transform: rotate(120deg);
+}
+.line:nth-of-type(4) {
+  transform: rotate(180deg);
+}
+.line:nth-of-type(5) {
+  transform: rotate(240deg);
+}
+.line:nth-of-type(6) {
+  transform: rotate(300deg);
 }
