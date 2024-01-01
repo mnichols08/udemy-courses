@@ -38,6 +38,13 @@ Wrap each of your already defined values of the grid-template-columns property i
 Step 35
 To add space between rows in the grid layout, you can use the row-gap property. Give the main selector a row-gap property of 3rem.
 
+Step 36
+Your magazine will have three primary sections. You already set the overall layout in the main rule, but you can adjust the placement in the child rules.
+
+One option is the grid-column property, which is shorthand for grid-column-start and grid-column-end. The grid-column property tells the grid item which grid line to start and end at.
+
+Create a .heading rule and set the grid-column property to 2 / 3. This will tell the .heading element to start at grid line 2 and end at grid line 3.
+
 */
 
 *,
@@ -82,4 +89,8 @@ main {
       1fr
     );
   row-gap: 3rem;
+}
+
+.heading {
+    grid-column: 2/3
 }
