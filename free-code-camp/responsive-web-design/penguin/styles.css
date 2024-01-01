@@ -246,6 +246,9 @@ Define a new @keyframes named wave.
 Step 96
 Give wave four waypoints starting at 10%, and incrementing by 10%.
 
+Step 97
+Within the first waypoint, rotate to 110deg, and retain the scaling of the left arm.
+
 */
 
 :root {
@@ -433,7 +436,7 @@ body {
   height: 60%;
   border-radius: 30% 30% 30% 120%;
   background: linear-gradient(90deg, var(--penguin-skin), rgb(209, 210, 199));
-  z-index:-1;
+  z-index: -1;
 }
 
 .arm.left {
@@ -502,15 +505,12 @@ body {
 
 @keyframes wave {
   10% {
-
+    transform: rotate(110deg) scaleX(-1);
   }
   20% {
-
   }
   30% {
-
   }
   40% {
-    
   }
 }
