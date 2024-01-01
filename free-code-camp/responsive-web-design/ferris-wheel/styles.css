@@ -80,6 +80,11 @@ The animation-name property is used to link a @keyframes rule to a CSS selector.
 
 The animation-duration property is used to set how long the animation should sequence to complete. The time should be specified in either seconds (s) or milliseconds (ms). Set your .wheel selector to have an animation-duration property of 10s.
 
+Step 21
+The animation-iteration-count property sets how many times your animation should repeat. This can be set to a number, or to infinite to indefinitely repeat the animation. Your Ferris wheel should never stop, so set the .wheel selector to have an animation-iteration-count of infinite.
+
+The animation-timing-function property sets how the animation should progress over time. There are a few different values for this property, but you want the Ferris wheel animation to run at the same rate from start to finish. Set the animation-timing-function to linear in your .wheel selector.
+
 */
 
 .wheel {
@@ -93,6 +98,8 @@ The animation-duration property is used to set how long the animation should seq
   margin-left: 50px;
   animation-name: wheel;
   animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
 }
 
 .line {
