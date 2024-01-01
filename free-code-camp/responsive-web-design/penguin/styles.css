@@ -252,6 +252,9 @@ Within the first waypoint, rotate to 110deg, and retain the scaling of the left 
 Step 98
 Within the second waypoint, rotate to 130deg, and retain the scaling of the left arm.
 
+Step 99
+For the third and fourth waypoints, repeat the transform pattern once more.
+
 */
 
 :root {
@@ -514,7 +517,9 @@ body {
     transform: rotate(130deg) scaleX(-1);
   }
   30% {
+    transform: rotate(110deg) scaleX(-1);
   }
   40% {
+    transform: rotate(130deg) scaleX(-1);
   }
 }
