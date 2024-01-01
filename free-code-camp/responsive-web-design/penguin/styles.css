@@ -116,6 +116,9 @@ Increase the pseudo-element's transparency by 30%.
 Step 45
 Give the .face elements a width of 60%, a height of 70%, and a background-color of white.
 
+Step 46
+Make the top corners of the .face elements have a radius of 70%, and the bottom corners have a radius of 60%.
+
 */
 
 body {
@@ -158,9 +161,12 @@ body {
 }
 
 .face {
+  position: absolute;
+  top: 15%;
   width: 60%;
   height: 70%;
   background-color: white;
+  border-radius: 70% 70% 60% 60%;
 }
 
 .penguin-body {
