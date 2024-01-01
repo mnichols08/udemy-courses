@@ -235,6 +235,9 @@ Fun fact: Most, if not all, flippers are not naturally rectangles.
 
 Give the .arm elements' top-left, top-right, and bottom-right corners a radius of 30%, and the bottom-left corner a radius of 120%.
 
+Step 94
+Change the .arm elements' stacking order such that they appear behind the .penguin-body element.
+
 */
 
 :root {
@@ -422,6 +425,7 @@ body {
   height: 60%;
   border-radius: 30% 30% 30% 120%;
   background: linear-gradient(90deg, var(--penguin-skin), rgb(209, 210, 199));
+  z-index:-1;
 }
 
 .arm.left {
