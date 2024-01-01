@@ -32,3 +32,8 @@ Now that we're using Bootstrap, we can center our heading element to make it loo
 Remember that you can add several classes to the same element by separating each of them with a space, like this:
 
 `<h2 class="red-text text-center">your text</h2>`
+
+- Create a Bootstrap Button
+Bootstrap has its own styles for button elements, which look much better than the plain HTML ones.
+
+Create a new button element below your large kitten photo. Give it the btn and btn-default classes, as well as the text of Like.
