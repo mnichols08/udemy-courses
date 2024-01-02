@@ -4,20 +4,23 @@
 - [x]:Your .blog-post element should have a color of red.
 - [x]:Your h2 elements should have a color of red.
 - [x]:Your code should re-organize the CSS rules so the h1 and p are nested in the .blog-post parent element.
+Waiting:Your code should declare a mixin named border-radius which has a parameter named $radius.
+Waiting:Your code should include the -webkit-border-radius vendor prefix that uses the $radius parameter.
+Waiting:Your code should include the -moz-border-radius vendor prefix that uses the $radius parameter.
+Waiting:Your code should include the -ms-border-radius vendor prefix that uses the $radius parameter.
+Waiting:Your code should include the general border-radius rule that uses the $radius parameter.
+Waiting:Your code should call the border-radius mixin using the @include keyword, setting it to 15px.
  -->
  <style type='text/scss'>
-    .blog-post {
-        h1 {
-      text-align: center;
-      color: blue;
-    }
-    p {
-      font-size: 20px;
-    }
+
+
+
+    #awesome {
+      width: 150px;
+      height: 150px;
+      background-color: green;
+  
     }
   </style>
   
-  <div class="blog-post">
-    <h1>Blog Title</h1>
-    <p>This is a paragraph</p>
-  </div>
+  <div id="awesome"></div>
