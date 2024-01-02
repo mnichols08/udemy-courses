@@ -61,3 +61,8 @@ Note that, just like with CSS declarations, you type a # before the id's name.
 Here's how you'd make the button element with the id target6 fade out:
 
 `$("#target6").addClass("animated fadeOut");`
+
+## Delete Your jQuery Functions
+These animations were cool at first, but now they're getting kind of distracting.
+
+- [x] Delete all three of these jQuery functions from your document ready function, but leave your document ready function itself intact.
