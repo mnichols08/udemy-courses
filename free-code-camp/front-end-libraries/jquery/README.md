@@ -66,3 +66,18 @@ Here's how you'd make the button element with the id target6 fade out:
 These animations were cool at first, but now they're getting kind of distracting.
 
 - [x] Delete all three of these jQuery functions from your document ready function, but leave your document ready function itself intact.
+
+## Target the Same Element with Multiple jQuery Selectors
+Now you know three ways of targeting elements: by type: `$("button")`, by class: `$(".btn")`, and by id `$("#target1")`.
+
+Although it is possible to add multiple classes in a single `.addClass()` call, let's add them to the same element in three separate ways.
+
+- [x] Using `.addClass()`, add only one class at a time to the same element, three different ways:
+
+- [x] Add the animated class to all elements with type button.
+
+- [x] Add the shake class to all the buttons with class .btn.
+
+- [x] Add the btn-primary class to the button with id #target1.
+
+Note: You should only be targeting one element and adding only one class at a time. Altogether, your three individual selectors will end up adding the three classes shake, animated, and btn-primary to #target1.
