@@ -139,6 +139,6 @@ The `#{$i}` part is the syntax to combine a variable `(i)` with text to make a s
 }```
 This is a powerful way to create a grid layout. Now you have twelve options for column widths available as CSS classes.
 
-- [ ] Write a `@for` directive that takes a variable `$j` that goes from 1 **to** 6.
+- [x] Write a `@for` directive that takes a variable `$j` that goes from 1 **to** 6.
 
-- [ ] It should create 5 classes called `.text-1` to `.text-5` where each has a `font-size` set to 15px multiplied by the index.
+- [x] It should create 5 classes called `.text-1` to `.text-5` where each has a `font-size` set to 15px multiplied by the index.

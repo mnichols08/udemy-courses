@@ -15,17 +15,19 @@
 - [x]:Your mixin should have an @else if statement to check if $val is medium, and to set the border to 3px solid black.
 - [x]:Your mixin should have an @else if statement to check if $val is heavy, and to set the border to 6px solid black.
 - [x]:Your mixin should have an @else statement to set the border to none.
-Waiting:Your code should use the @for directive.
-Waiting:Your .text-1 class should have a font-size of 15px.
-Waiting:Your .text-2 class should have a font-size of 30px.
-Waiting:Your .text-3 class should have a font-size of 45px.
-Waiting:Your .text-4 class should have a font-size of 60px.
-Waiting:Your .text-5 class should have a font-size of 75px.
+- [x]:Your code should use the @for directive.
+- [x]:Your .text-1 class should have a font-size of 15px.
+- [x]:Your .text-2 class should have a font-size of 30px.
+- [x]:Your .text-3 class should have a font-size of 45px.
+- [x]:Your .text-4 class should have a font-size of 60px.
+- [x]:Your .text-5 class should have a font-size of 75px.
  -->
  <style type='text/scss'>
-
-
-
+    @for $j from 1 through 6 {
+        .text-#{$j} {
+            font-size: 15px * $j;
+        }
+    }
  </style>
  
  <p class="text-1">Hello</p>
