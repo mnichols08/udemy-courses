@@ -177,3 +177,12 @@ Now let's get your form input and your submission button on the same line. We'll
 [x] Nest both your form's text input and submit button within a div with the class row. Nest your form's text input within a div with the class of col-xs-7. Nest your form's submit button in a div with the class col-xs-5.
 
 This is the last challenge we'll do for our Cat Photo App for now. We hope you've enjoyed learning Font Awesome, Bootstrap, and responsive design!
+
+## Create a Bootstrap Headline
+Now let's build something from scratch to practice our HTML, CSS and Bootstrap skills.
+
+We'll build a jQuery playground, which we'll soon put to use in our jQuery challenges.
+
+[] To start with, create an h3 element, with the text jQuery Playground.
+
+Color your h3 element with the text-primary Bootstrap class, and center it with the text-center Bootstrap class.
