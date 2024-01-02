@@ -256,3 +256,10 @@ For the sake of clarity, let's label both of our wells with their ids.
 - [x] Above your left-well, inside its col-xs-6 div element, add a h4 element with the text #left-well.
 
 - [x] Above your right-well, inside its col-xs-6 div element, add a h4 element with the text #right-well.
+
+## Give Each Element a Unique id
+We will also want to be able to use jQuery to target each button by its unique id.
+
+- [x] Give each of your buttons a unique id, starting with target1 and ending with target6.
+
+Make sure that target1 to target3 are in #left-well, and target4 to target6 are in #right-well.
