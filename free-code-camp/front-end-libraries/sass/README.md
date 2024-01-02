@@ -53,4 +53,4 @@ For a large project, the CSS file will have many lines and rules. This is where 
   }
 }```
 
-- [ ] Use the nesting technique shown above to re-organize the CSS rules for both children of .blog-post element. For testing purposes, the h1 should come before the p element.
+- [x] Use the nesting technique shown above to re-organize the CSS rules for both children of .blog-post element. For testing purposes, the h1 should come before the p element.
