@@ -151,3 +151,10 @@ Font Awesome is a convenient library of icons. These icons can be web fonts or v
 [x] Use Font Awesome to add an info-circle icon to your info button and a trash icon to your delete button.
 
 Note: You can use either i or span elements to complete this challenge.
+
+## Responsively Style Radio Buttons
+You can use Bootstrap's col-xs-* classes on form elements, too! This way, our radio buttons will be evenly spread out across the page, regardless of how wide the screen resolution is.
+
+[x] Nest both your radio buttons within a `<div class="row">` element. Then nest each of them within a `<div class="col-xs-6">` element.
+
+Note: As a reminder, radio buttons are input elements of type radio.
