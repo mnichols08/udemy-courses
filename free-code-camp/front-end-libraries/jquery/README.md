@@ -103,3 +103,15 @@ This is slightly different from a normal CSS declaration, because the CSS proper
 - [x] Delete your jQuery selectors, leaving an empty document ready function.
 
 - [x] Select target1 and change its color to red.
+
+## Disable an Element Using jQuery
+You can also change the non-CSS properties of HTML elements with jQuery. For example, you can disable buttons.
+
+When you disable a button, it will become grayed-out and can no longer be clicked.
+
+jQuery has a function called .prop() that allows you to adjust the properties of elements.
+
+Here's how you would disable all buttons:
+
+`$("button").prop("disabled", true);`
+- [x] Disable only the target1 button.
