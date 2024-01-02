@@ -81,3 +81,11 @@ Although it is possible to add multiple classes in a single `.addClass()` call, 
 - [x] Add the btn-primary class to the button with id #target1.
 
 Note: You should only be targeting one element and adding only one class at a time. Altogether, your three individual selectors will end up adding the three classes shake, animated, and btn-primary to #target1.
+
+## Remove Classes from an Element with jQuery
+In the same way you can add classes to an element with jQuery's addClass() function, you can remove them with jQuery's removeClass() function.
+
+Here's how you would do this for a specific button:
+
+`$("#target2").removeClass("btn-default");`
+- [x] Let's remove the btn-default class from all of our button elements.

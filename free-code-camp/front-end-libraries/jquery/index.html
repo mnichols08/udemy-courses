@@ -1,9 +1,10 @@
 <script>
-    $(document).ready(function(){
-        $('button').addClass('animated');
-        $('.btn').addClass('shake');
-        $('#target1').addClass('btn-primary')
-    })
+  $(document).ready(function () {
+    $("button").addClass("animated");
+    $(".btn").addClass("shake");
+    $("#target1").addClass("btn-primary");
+    $("button").removeClass("btn-default");
+  });
 </script>
 <!-- Only change code above this line -->
 <!-- 
@@ -29,26 +30,29 @@
 - [x]:You should only add one class with each of your three selectors.
 - [x]:Your #target1 element should have the classes animated‚ shake and btn-primary.
 - [x]:You should only use jQuery to add these classes to the element.
+- [x]:The btn-default class should be removed from all of your button elements.
+- [x]:You should only use jQuery to remove this class from the element.
+- [x]:You should only remove the btn-default class.
 
  -->
 <div class="container-fluid">
-    <h3 class="text-primary text-center">jQuery Playground</h3>
-    <div class="row">
-      <div class="col-xs-6">
-        <h4>#left-well</h4>
-        <div class="well" id="left-well">
-          <button class="btn btn-default target" id="target1">#target1</button>
-          <button class="btn btn-default target" id="target2">#target2</button>
-          <button class="btn btn-default target" id="target3">#target3</button>
-        </div>
+  <h3 class="text-primary text-center">jQuery Playground</h3>
+  <div class="row">
+    <div class="col-xs-6">
+      <h4>#left-well</h4>
+      <div class="well" id="left-well">
+        <button class="btn btn-default target" id="target1">#target1</button>
+        <button class="btn btn-default target" id="target2">#target2</button>
+        <button class="btn btn-default target" id="target3">#target3</button>
       </div>
-      <div class="col-xs-6">
-        <h4>#right-well</h4>
-        <div class="well" id="right-well">
-          <button class="btn btn-default target" id="target4">#target4</button>
-          <button class="btn btn-default target" id="target5">#target5</button>
-          <button class="btn btn-default target" id="target6">#target6</button>
-        </div>
+    </div>
+    <div class="col-xs-6">
+      <h4>#right-well</h4>
+      <div class="well" id="right-well">
+        <button class="btn btn-default target" id="target4">#target4</button>
+        <button class="btn btn-default target" id="target5">#target5</button>
+        <button class="btn btn-default target" id="target6">#target6</button>
       </div>
     </div>
   </div>
+</div>
