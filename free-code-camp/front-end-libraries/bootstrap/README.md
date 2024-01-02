@@ -126,7 +126,7 @@ We will make a simple heading for our Cat Photo App by putting the title and rel
 
 Remember, Bootstrap uses a responsive grid system, which makes it easy to put elements into rows and specify each element's relative width. Most of Bootstrap's classes can be applied to a div element.
 
-[x] Nest your first image and your h2 element within a single `<div class="row">` element. Nest your h2 element within a `<div class="col-xs-8">` and your image in a `<div class="col-xs-4">` so that they are on the same line.
+- [x] Nest your first image and your h2 element within a single `<div class="row">` element. Nest your h2 element within a `<div class="col-xs-8">` and your image in a `<div class="col-xs-4">` so that they are on the same line.
 
 Notice how the image is now just the right size to fit along the text?
 
@@ -143,38 +143,38 @@ The i element was originally used to make other elements italic, but is now comm
 `<i class="fas fa-info-circle"></i>`
 Note that the span element is also acceptable for use with icons.
 
-[x] Use Font Awesome to add a thumbs-up icon to your like button by giving it an i element with the classes fas and fa-thumbs-up. Make sure to keep the text Like next to the icon.
+- [x] Use Font Awesome to add a thumbs-up icon to your like button by giving it an i element with the classes fas and fa-thumbs-up. Make sure to keep the text Like next to the icon.
 
 ## Add Font Awesome Icons to all of our Buttons
 Font Awesome is a convenient library of icons. These icons can be web fonts or vector graphics. These icons are treated just like fonts. You can specify their size using pixels, and they will assume the font size of their parent HTML elements.
 
-[x] Use Font Awesome to add an info-circle icon to your info button and a trash icon to your delete button.
+- [x] Use Font Awesome to add an info-circle icon to your info button and a trash icon to your delete button.
 
 Note: You can use either i or span elements to complete this challenge.
 
 ## Responsively Style Radio Buttons
 You can use Bootstrap's col-xs-* classes on form elements, too! This way, our radio buttons will be evenly spread out across the page, regardless of how wide the screen resolution is.
 
-[x] Nest both your radio buttons within a `<div class="row">` element. Then nest each of them within a `<div class="col-xs-6">` element.
+- [x] Nest both your radio buttons within a `<div class="row">` element. Then nest each of them within a `<div class="col-xs-6">` element.
 
 Note: As a reminder, radio buttons are input elements of type radio.
 
 ## Responsively Style Checkboxes
 Since Bootstrap's col-xs-* classes are applicable to all form elements, you can use them on your checkboxes too! This way, the checkboxes will be evenly spread out across the page, regardless of how wide the screen resolution is.
 
-[x] Nest all three of your checkboxes in a `<div class="row">` element. Then nest each of them in a `<div class="col-xs-4">` element.
+- [x] Nest all three of your checkboxes in a `<div class="row">` element. Then nest each of them in a `<div class="col-xs-4">` element.
 
 ## Style Text Inputs as Form Controls
 You can add the fa-paper-plane Font Awesome icon by adding `<i class="fa fa-paper-plane"></i>` within your submit button element.
 
-[x] Give your form's text input field a class of form-control. Give your form's submit button the classes btn btn-primary. Also give this button the Font Awesome icon of fa-paper-plane.
+- [x] Give your form's text input field a class of form-control. Give your form's submit button the classes btn btn-primary. Also give this button the Font Awesome icon of fa-paper-plane.
 
 All textual `<input>`, `<textarea>`, and `<select>` elements with the class .form-control have a width of 100%.
 
 ## Line up Form Elements Responsively with Bootstrap
 Now let's get your form input and your submission button on the same line. We'll do this the same way we have previously: by using a div element with the class row, and other div elements within it using the col-xs-* class.
 
-[x] Nest both your form's text input and submit button within a div with the class row. Nest your form's text input within a div with the class of col-xs-7. Nest your form's submit button in a div with the class col-xs-5.
+- [x] Nest both your form's text input and submit button within a div with the class row. Nest your form's text input within a div with the class of col-xs-7. Nest your form's submit button in a div with the class col-xs-5.
 
 This is the last challenge we'll do for our Cat Photo App for now. We hope you've enjoyed learning Font Awesome, Bootstrap, and responsive design!
 
@@ -183,6 +183,11 @@ Now let's build something from scratch to practice our HTML, CSS and Bootstrap s
 
 We'll build a jQuery playground, which we'll soon put to use in our jQuery challenges.
 
-[x] To start with, create an h3 element, with the text jQuery Playground.
+- [x] To start with, create an h3 element, with the text jQuery Playground.
 
-[x]Color your h3 element with the text-primary Bootstrap class, and center it with the text-center Bootstrap class.
+- [x]Color your h3 element with the text-primary Bootstrap class, and center it with the text-center Bootstrap class.
+
+## House our page within a Bootstrap container-fluid div
+Now let's make sure all the content on your page is mobile-responsive.
+
+- [x] Let's nest your h3 element within a div element with the class container-fluid.
