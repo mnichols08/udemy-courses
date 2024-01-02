@@ -181,10 +181,10 @@ The `@for` challenge gave an example to create a simple grid system. This can al
   .col-#{$x} { width: 100%/12 * $x;}
   $x: $x + 1;
 }```
-- [ ] First, define a variable `$x` and set it to 1. 
-- [ ] Next, use the `@while` directive to create the grid system while `$x` is less than 13. 
-- [ ] After setting the CSS rule for `width`, `$x` is incremented by 1 to avoid an infinite loop.
+- [x] First, define a variable `$x` and set it to 1. 
+- [x] Next, use the `@while` directive to create the grid system while `$x` is less than 13. 
+- [x] After setting the CSS rule for `width`, `$x` is incremented by 1 to avoid an infinite loop.
 
-- [ ] Use `@while` to create a series of classes with different `font-sizes`.
+- [x] Use `@while` to create a series of classes with different `font-sizes`.
 
 There should be 5 different classes from `text-1` to `text-5`. Then set `font-size` to `15px` multiplied by the current index number. Make sure to avoid an infinite loop!

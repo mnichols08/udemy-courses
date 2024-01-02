@@ -25,19 +25,23 @@
 - [x]:Your .blue-bg class should have a background-color of blue.
 - [x]:Your .black-bg class should have a background-color of black.
 - [x]:Your .red-bg class should have a background-color of red.
-- [ ]:Your code should use the @while directive.
-- [ ]:Your code should use an index variable which starts at an index of 1.
-- [ ]:Your code should increment the counter variable.
-- [ ]:Your .text-1 class should have a font-size of 15px.
-- [ ]:Your .text-2 class should have a font-size of 30px.
-- [ ]:Your .text-3 class should have a font-size of 45px.
-- [ ]:Your .text-4 class should have a font-size of 60px.
-- [ ]:Your .text-5 class should have a font-size of 75px.
+- [x]:Your code should use the @while directive.
+- [x]:Your code should use an index variable which starts at an index of 1.
+- [x]:Your code should increment the counter variable.
+- [x]:Your .text-1 class should have a font-size of 15px.
+- [x]:Your .text-2 class should have a font-size of 30px.
+- [x]:Your .text-3 class should have a font-size of 45px.
+- [x]:Your .text-4 class should have a font-size of 60px.
+- [x]:Your .text-5 class should have a font-size of 75px.
  -->
  <style type='text/scss'>
-
-
-
+    $x: 1;
+    @while $x < 13 {
+        .text-#{$x} {
+            font-size: 15px * $x;
+        }
+        $x: $x + 1;
+    }
  </style>
  
  <p class="text-1">Hello</p>
