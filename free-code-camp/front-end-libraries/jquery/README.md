@@ -160,3 +160,15 @@ For example, if we wanted to copy target2 from our left-well to our right-well, 
 Did you notice this involves sticking two jQuery functions together? This is called function chaining and it's a convenient way to get things done with jQuery.
 
 - [x] Clone your target5 element and append it to your left-well.
+
+## Target the Parent of an Element Using jQuery
+Every HTML element has a parent element from which it inherits properties.
+
+For example, the h3 element in your jQuery Playground has the parent element of `<div class="container-fluid">`, which itself has the parent element of body.
+
+jQuery has a function called parent() that allows you to access the parent of whichever element you've selected.
+
+Here's an example of how you would use the parent() function if you wanted to give the parent element of the left-well element a background color of blue:
+
+`$("#left-well").parent().css("background-color", "blue")`
+- [x] Give the parent of the #target1 element a background-color of red.
