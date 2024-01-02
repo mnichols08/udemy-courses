@@ -129,3 +129,18 @@ Remember, Bootstrap uses a responsive grid system, which makes it easy to put el
 [x] Nest your first image and your h2 element within a single `<div class="row">` element. Nest your h2 element within a `<div class="col-xs-8">` and your image in a `<div class="col-xs-4">` so that they are on the same line.
 
 Notice how the image is now just the right size to fit along the text?
+
+## Add Font Awesome Icons to our Buttons
+Font Awesome is a convenient library of icons. These icons can be webfonts or vector graphics. These icons are treated just like fonts. You can specify their size using pixels, and they will assume the font size of their parent HTML elements.
+
+You can include Font Awesome in any app by adding the following code to the top of your HTML:
+
+`<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">`
+In this case, we've already added it for you to this page behind the scenes.
+
+The i element was originally used to make other elements italic, but is now commonly used for icons. You can add the Font Awesome classes to the i element to turn it into an icon, for example:
+
+`<i class="fas fa-info-circle"></i>`
+Note that the span element is also acceptable for use with icons.
+
+[x] Use Font Awesome to add a thumbs-up icon to your like button by giving it an i element with the classes fas and fa-thumbs-up. Make sure to keep the text Like next to the icon.
