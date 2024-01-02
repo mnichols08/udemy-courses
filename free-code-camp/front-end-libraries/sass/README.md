@@ -220,4 +220,4 @@ Now you want another panel called `.big-panel`. It has the same base properties 
 }```
 The `.big-panel` will have the same properties as `.panel` in addition to the new styles.
 
-- [ ] Make a class `.info-important` that extends `.info` and also has a b`ackground-color` set to magenta.
+- [x] Make a class `.info-important` that extends `.info` and also has a b`ackground-color` set to magenta.

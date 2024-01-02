@@ -34,8 +34,8 @@
 - [x]:Your .text-4 class should have a font-size of 60px.
 - [x]:Your .text-5 class should have a font-size of 75px.
 - [x]:Your code should use the @import directive, and should not include the underscore in the file name.
-- [ ]:Your info-important class should have a background-color set to magenta.
-- [ ]:Your info-important class should use @extend to inherit the styling from the info class.
+- [x]:Your info-important class should have a background-color set to magenta.
+- [x]:Your info-important class should use @extend to inherit the styling from the info class.
  -->
  <style type='text/scss'>
     h3{
@@ -46,7 +46,10 @@
       border: 1px solid black;
       margin: 0 auto;
     }
-  
+  .info-important{
+    @extend .info;
+    background-color: magenta;
+  }
   
   
   
