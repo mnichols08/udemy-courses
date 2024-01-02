@@ -201,3 +201,8 @@ Now we'll create a Bootstrap row for our inline elements.
 Now that we have a Bootstrap Row, let's split it into two columns to house our elements.
 
 - [x] Create two div elements within your row, both with the class col-xs-6.
+
+## Create Bootstrap Wells
+Bootstrap has a class called well that can create a visual sense of depth for your columns.
+
+- [x] Nest one div element with the class well within each of your col-xs-6 div elements.
