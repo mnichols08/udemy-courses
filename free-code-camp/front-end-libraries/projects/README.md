@@ -8,4 +8,4 @@ Complete all 5 projects, and you'll earn the Front End Development Libraries cer
 - [x] [Markdown Previewer](./md-preview/)
 - [x] [Drum Machine](./drum-machine/)
 - [x] [JavaScript Calculator](./calculator/)
-- [] [25 + 5 Clock](./25plus5/)
+- [ ] [25 + 5 Clock](./25plus5/)
