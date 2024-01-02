@@ -268,3 +268,12 @@ Make sure that target1 to target3 are in #left-well, and target4 to target6 are 
 Just like we labeled our wells, we want to label our buttons.
 
 - [x] Give each of your button elements text that corresponds to its id selector.
+
+## Use Comments to Clarify Code
+When we start using jQuery, we will modify HTML elements without needing to actually change them in HTML.
+
+Let's make sure that everyone knows they shouldn't actually modify any of this code directly.
+
+Remember that you can start a comment with `<!-- and end a comment with -->`
+
+- [x] Add a comment at the top of your HTML that says Code below this line should not be changed
