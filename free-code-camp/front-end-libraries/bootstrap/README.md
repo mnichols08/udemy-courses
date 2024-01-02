@@ -196,3 +196,8 @@ Now let's make sure all the content on your page is mobile-responsive.
 Now we'll create a Bootstrap row for our inline elements.
 
 - [x] Create a div element below the h3 tag, with a class of row.
+
+## Split Your Bootstrap Row
+Now that we have a Bootstrap Row, let's split it into two columns to house our elements.
+
+- [x] Create two div elements within your row, both with the class col-xs-6.
