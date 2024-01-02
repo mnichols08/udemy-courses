@@ -48,3 +48,16 @@ Note that, just like with CSS declarations, you type a . before the class's name
 For example, you could make all the elements with the class text-primary shake by adding the following to your document ready function:
 
 `$(".text-primary").addClass("animated shake");`
+
+## Target Elements by id Using jQuery
+You can also target elements by their id attributes.
+
+- [x] First target your button element with the id target3 by using the $("#target3") selector.
+
+Note that, just like with CSS declarations, you type a # before the id's name.
+
+- [x] Then use jQuery's .addClass() function to add the classes animated and fadeOut.
+
+Here's how you'd make the button element with the id target6 fade out:
+
+`$("#target6").addClass("animated fadeOut");`
