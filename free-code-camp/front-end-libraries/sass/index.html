@@ -4,21 +4,25 @@
 - [x]:Your .blog-post element should have a color of red.
 - [x]:Your h2 elements should have a color of red.
 - [x]:Your code should re-organize the CSS rules so the h1 and p are nested in the .blog-post parent element.
-Waiting:Your code should declare a mixin named border-radius which has a parameter named $radius.
-Waiting:Your code should include the -webkit-border-radius vendor prefix that uses the $radius parameter.
-Waiting:Your code should include the -moz-border-radius vendor prefix that uses the $radius parameter.
-Waiting:Your code should include the -ms-border-radius vendor prefix that uses the $radius parameter.
-Waiting:Your code should include the general border-radius rule that uses the $radius parameter.
-Waiting:Your code should call the border-radius mixin using the @include keyword, setting it to 15px.
+- [x]:Your code should declare a mixin named border-radius which has a parameter named $radius.
+- [x]:Your code should include the -webkit-border-radius vendor prefix that uses the $radius parameter.
+- [x]:Your code should include the -moz-border-radius vendor prefix that uses the $radius parameter.
+- [x]:Your code should include the -ms-border-radius vendor prefix that uses the $radius parameter.
+- [x]:Your code should include the general border-radius rule that uses the $radius parameter.
+- [x]:Your code should call the border-radius mixin using the @include keyword, setting it to 15px.
  -->
  <style type='text/scss'>
-
-
-
+    @mixin border-radius($radius){
+        -webkit-border-radius: $radius;
+        -moz-border-radius: $radius;
+        -ms-border-radius: $radius;
+        border-radius: $radius;
+    }
     #awesome {
       width: 150px;
       height: 150px;
       background-color: green;
+      @include border-radius(15px);
   
     }
   </style>
