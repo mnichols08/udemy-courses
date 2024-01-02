@@ -21,15 +21,17 @@
 - [x]:Your .text-3 class should have a font-size of 45px.
 - [x]:Your .text-4 class should have a font-size of 60px.
 - [x]:Your .text-5 class should have a font-size of 75px.
-- [ ]:Your code should use the @each directive.
-- [ ]:Your .blue-bg class should have a background-color of blue.
-- [ ]:Your .black-bg class should have a background-color of black.
-- [ ]:Your .red-bg class should have a background-color of red.
+- [x]:Your code should use the @each directive.
+- [x]:Your .blue-bg class should have a background-color of blue.
+- [x]:Your .black-bg class should have a background-color of black.
+- [x]:Your .red-bg class should have a background-color of red.
  -->
  <style type='text/scss'>
-
-
-
+    @each $color in blue, black, red {
+        .#{$color}-bg {
+            background-color: $color
+        }
+    }
     div {
       height: 200px;
       width: 200px;

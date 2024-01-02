@@ -169,5 +169,5 @@ Note that the `$key` variable is needed to reference the keys in the map. Otherw
 .green-text {
   color: green;
 }```
-- [ ] Write an `@each` directive that goes through a list: `blue, black, red` and assigns each variable to a `.color-bg `class, where the `color` part changes for each item to the respective color. Each class should set the `background-color` to the respective color as well.
+- [x] Write an `@each` directive that goes through a list: `blue, black, red` and assigns each variable to a `.color-bg `class, where the `color` part changes for each item to the respective color. Each class should set the `background-color` to the respective color as well.
 
