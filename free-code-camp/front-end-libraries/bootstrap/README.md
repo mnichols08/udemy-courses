@@ -163,3 +163,10 @@ Note: As a reminder, radio buttons are input elements of type radio.
 Since Bootstrap's col-xs-* classes are applicable to all form elements, you can use them on your checkboxes too! This way, the checkboxes will be evenly spread out across the page, regardless of how wide the screen resolution is.
 
 [x] Nest all three of your checkboxes in a `<div class="row">` element. Then nest each of them in a `<div class="col-xs-4">` element.
+
+## Style Text Inputs as Form Controls
+You can add the fa-paper-plane Font Awesome icon by adding `<i class="fa fa-paper-plane"></i>` within your submit button element.
+
+[x] Give your form's text input field a class of form-control. Give your form's submit button the classes btn btn-primary. Also give this button the Font Awesome icon of fa-paper-plane.
+
+All textual `<input>`, `<textarea>`, and `<select>` elements with the class .form-control have a width of 100%.
