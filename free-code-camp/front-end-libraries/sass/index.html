@@ -10,21 +10,22 @@
 - [x]:Your code should include the -ms-border-radius vendor prefix that uses the $radius parameter.
 - [x]:Your code should include the general border-radius rule that uses the $radius parameter.
 - [x]:Your code should call the border-radius mixin using the @include keyword, setting it to 15px.
+Waiting:Your code should declare a mixin named border-stroke which has a parameter named $val.
+Waiting:Your mixin should have an @if statement to check if $val is light, and to set the border to 1px solid black.
+Waiting:Your mixin should have an @else if statement to check if $val is medium, and to set the border to 3px solid black.
+Waiting:Your mixin should have an @else if statement to check if $val is heavy, and to set the border to 6px solid black.
+Waiting:Your mixin should have an @else statement to set the border to none.
  -->
  <style type='text/scss'>
-    @mixin border-radius($radius){
-        -webkit-border-radius: $radius;
-        -moz-border-radius: $radius;
-        -ms-border-radius: $radius;
-        border-radius: $radius;
-    }
-    #awesome {
+
+
+
+    #box {
       width: 150px;
       height: 150px;
-      background-color: green;
-      @include border-radius(15px);
-  
+      background-color: red;
+      @include border-stroke(medium);
     }
   </style>
   
-  <div id="awesome"></div>
+  <div id="box"></div>
