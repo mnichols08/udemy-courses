@@ -138,3 +138,13 @@ Now let's remove an HTML element from your page using jQuery.
 jQuery has a function called .remove() that will remove an HTML element entirely.
 
 - [x] Remove the #target4 element from the page by using the .remove() function.
+
+## Use appendTo to Move Elements with jQuery
+Now let's try moving elements from one div to another.
+
+jQuery has a function called appendTo() that allows you to select HTML elements and append them to another element.
+
+For example, if we wanted to move target4 from our right well to our left well, we would use:
+
+`$("#target4").appendTo("#left-well");`
+- [x] Move your target2 element from your left-well to your right-well.
