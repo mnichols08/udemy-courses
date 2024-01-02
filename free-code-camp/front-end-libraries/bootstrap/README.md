@@ -21,7 +21,7 @@ In this case, we've already added it for you to this page behind the scenes. Not
 - [x] To get started, we should nest all of our HTML (except the link tag and the style element) in a div element with the class container-fluid.
 
 - [x] Make Images Mobile Responsive
-  First, add a new image below the existing one. Set its src attribute to https://cdn.freecodecamp.org/curriculum/cat-photo-app/running-cats.jpg.
+      First, add a new image below the existing one. Set its src attribute to https://cdn.freecodecamp.org/curriculum/cat-photo-app/running-cats.jpg.
 
 It would be great if this image could be exactly the width of our phone's screen.
 
@@ -122,6 +122,7 @@ Here's how you would do this for the p element that has the text Top 3 things ca
 `<p>Top 3 things cats <span class="text-danger">hate:</span></p>`
 
 ## Create a Custom Heading
+
 We will make a simple heading for our Cat Photo App by putting the title and relaxing cat image in the same row.
 
 Remember, Bootstrap uses a responsive grid system, which makes it easy to put elements into rows and specify each element's relative width. Most of Bootstrap's classes can be applied to a div element.
@@ -131,6 +132,7 @@ Remember, Bootstrap uses a responsive grid system, which makes it easy to put el
 Notice how the image is now just the right size to fit along the text?
 
 ## Add Font Awesome Icons to our Buttons
+
 Font Awesome is a convenient library of icons. These icons can be webfonts or vector graphics. These icons are treated just like fonts. You can specify their size using pixels, and they will assume the font size of their parent HTML elements.
 
 You can include Font Awesome in any app by adding the following code to the top of your HTML:
@@ -146,6 +148,7 @@ Note that the span element is also acceptable for use with icons.
 - [x] Use Font Awesome to add a thumbs-up icon to your like button by giving it an i element with the classes fas and fa-thumbs-up. Make sure to keep the text Like next to the icon.
 
 ## Add Font Awesome Icons to all of our Buttons
+
 Font Awesome is a convenient library of icons. These icons can be web fonts or vector graphics. These icons are treated just like fonts. You can specify their size using pixels, and they will assume the font size of their parent HTML elements.
 
 - [x] Use Font Awesome to add an info-circle icon to your info button and a trash icon to your delete button.
@@ -153,18 +156,21 @@ Font Awesome is a convenient library of icons. These icons can be web fonts or v
 Note: You can use either i or span elements to complete this challenge.
 
 ## Responsively Style Radio Buttons
-You can use Bootstrap's col-xs-* classes on form elements, too! This way, our radio buttons will be evenly spread out across the page, regardless of how wide the screen resolution is.
+
+You can use Bootstrap's col-xs-\* classes on form elements, too! This way, our radio buttons will be evenly spread out across the page, regardless of how wide the screen resolution is.
 
 - [x] Nest both your radio buttons within a `<div class="row">` element. Then nest each of them within a `<div class="col-xs-6">` element.
 
 Note: As a reminder, radio buttons are input elements of type radio.
 
 ## Responsively Style Checkboxes
-Since Bootstrap's col-xs-* classes are applicable to all form elements, you can use them on your checkboxes too! This way, the checkboxes will be evenly spread out across the page, regardless of how wide the screen resolution is.
+
+Since Bootstrap's col-xs-\* classes are applicable to all form elements, you can use them on your checkboxes too! This way, the checkboxes will be evenly spread out across the page, regardless of how wide the screen resolution is.
 
 - [x] Nest all three of your checkboxes in a `<div class="row">` element. Then nest each of them in a `<div class="col-xs-4">` element.
 
 ## Style Text Inputs as Form Controls
+
 You can add the fa-paper-plane Font Awesome icon by adding `<i class="fa fa-paper-plane"></i>` within your submit button element.
 
 - [x] Give your form's text input field a class of form-control. Give your form's submit button the classes btn btn-primary. Also give this button the Font Awesome icon of fa-paper-plane.
@@ -172,13 +178,15 @@ You can add the fa-paper-plane Font Awesome icon by adding `<i class="fa fa-pape
 All textual `<input>`, `<textarea>`, and `<select>` elements with the class .form-control have a width of 100%.
 
 ## Line up Form Elements Responsively with Bootstrap
-Now let's get your form input and your submission button on the same line. We'll do this the same way we have previously: by using a div element with the class row, and other div elements within it using the col-xs-* class.
+
+Now let's get your form input and your submission button on the same line. We'll do this the same way we have previously: by using a div element with the class row, and other div elements within it using the col-xs-\* class.
 
 - [x] Nest both your form's text input and submit button within a div with the class row. Nest your form's text input within a div with the class of col-xs-7. Nest your form's submit button in a div with the class col-xs-5.
 
 This is the last challenge we'll do for our Cat Photo App for now. We hope you've enjoyed learning Font Awesome, Bootstrap, and responsive design!
 
 ## Create a Bootstrap Headline
+
 Now let's build something from scratch to practice our HTML, CSS and Bootstrap skills.
 
 We'll build a jQuery playground, which we'll soon put to use in our jQuery challenges.
@@ -188,31 +196,43 @@ We'll build a jQuery playground, which we'll soon put to use in our jQuery chall
 - [x]Color your h3 element with the text-primary Bootstrap class, and center it with the text-center Bootstrap class.
 
 ## House our page within a Bootstrap container-fluid div
+
 Now let's make sure all the content on your page is mobile-responsive.
 
 - [x] Let's nest your h3 element within a div element with the class container-fluid.
 
 ## Create a Bootstrap Row
+
 Now we'll create a Bootstrap row for our inline elements.
 
 - [x] Create a div element below the h3 tag, with a class of row.
 
 ## Split Your Bootstrap Row
+
 Now that we have a Bootstrap Row, let's split it into two columns to house our elements.
 
 - [x] Create two div elements within your row, both with the class col-xs-6.
 
 ## Create Bootstrap Wells
+
 Bootstrap has a class called well that can create a visual sense of depth for your columns.
 
 - [x] Nest one div element with the class well within each of your col-xs-6 div elements.
 
 ## Add Elements within Your Bootstrap Wells
+
 Now we're several div elements deep on each column of our row. This is as deep as we'll need to go. Now we can add our button elements.
 
 - [x] Nest three button elements within each of your div elements having the class name well.
 
 ## Apply the Default Bootstrap Button Style
+
 Bootstrap has another button class called btn-default.
 
 - [x] Apply both the btn and btn-default classes to each of your button elements.
+
+## Create a Class to Target with jQuery Selectors
+
+Not every class needs to have corresponding CSS. Sometimes we create classes just for the purpose of selecting these elements more easily using jQuery.
+
+- [x] Give each of your button elements the class target.
