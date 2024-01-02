@@ -13,6 +13,7 @@
     $("#target1").parent().css('background-color','red');
     $("#right-well").children().css('color','orange');
     $(".target:nth-child(2)").addClass('animated bounce');
+    $(".target:even").addClass('animated shake');
   });
 </script>
 <!-- Only change code above this line -->
@@ -70,6 +71,9 @@
 - [x]:The second element in your target elements should bounce.
 - [x]:Only two elements should bounce.
 - [x]:You should use the :nth-child() selector to modify these elements.
+- [x]:You should only use jQuery to add these classes to the element.
+- [x]:All of the target elements that jQuery considers to be even should shake.
+- [x]:You should use the :even selector to modify these elements.
 - [x]:You should only use jQuery to add these classes to the element.
  -->
 <div class="container-fluid">
