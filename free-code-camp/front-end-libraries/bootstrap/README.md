@@ -249,3 +249,10 @@ Remember that you can give an element an id like this:
 `<div class="well" id="center-well">`
 - [x] Give the well on the left the id of left-well. 
 - [x] Give the well on the right the id of right-well.
+
+## Label Bootstrap Wells
+For the sake of clarity, let's label both of our wells with their ids.
+
+- [x] Above your left-well, inside its col-xs-6 div element, add a h4 element with the text #left-well.
+
+- [x] Above your right-well, inside its col-xs-6 div element, add a h4 element with the text #right-well.
