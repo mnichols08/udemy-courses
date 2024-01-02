@@ -206,3 +206,8 @@ Now that we have a Bootstrap Row, let's split it into two columns to house our e
 Bootstrap has a class called well that can create a visual sense of depth for your columns.
 
 - [x] Nest one div element with the class well within each of your col-xs-6 div elements.
+
+## Add Elements within Your Bootstrap Wells
+Now we're several div elements deep on each column of our row. This is as deep as we'll need to go. Now we can add our button elements.
+
+- [x] Nest three button elements within each of your div elements having the class name well.
