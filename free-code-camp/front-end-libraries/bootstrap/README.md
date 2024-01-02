@@ -191,3 +191,8 @@ We'll build a jQuery playground, which we'll soon put to use in our jQuery chall
 Now let's make sure all the content on your page is mobile-responsive.
 
 - [x] Let's nest your h3 element within a div element with the class container-fluid.
+
+## Create a Bootstrap Row
+Now we'll create a Bootstrap row for our inline elements.
+
+- [x] Create a div element below the h3 tag, with a class of row.
