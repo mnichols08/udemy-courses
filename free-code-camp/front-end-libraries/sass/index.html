@@ -15,27 +15,21 @@
 - [x]:Your mixin should have an @else if statement to check if $val is medium, and to set the border to 3px solid black.
 - [x]:Your mixin should have an @else if statement to check if $val is heavy, and to set the border to 6px solid black.
 - [x]:Your mixin should have an @else statement to set the border to none.
+Waiting:Your code should use the @for directive.
+Waiting:Your .text-1 class should have a font-size of 15px.
+Waiting:Your .text-2 class should have a font-size of 30px.
+Waiting:Your .text-3 class should have a font-size of 45px.
+Waiting:Your .text-4 class should have a font-size of 60px.
+Waiting:Your .text-5 class should have a font-size of 75px.
  -->
  <style type='text/scss'>
-    @mixin border-stroke($val){
-        @if $val == light {
-            border: 1px solid black;
-        } @else if $val == medium {
-            border: 3px solid black;
-        } @else if $val == heavy {
-            border: 6px solid black;
-        } @else {
-            border: none;
-        }
-    }
 
 
-    #box {
-      width: 150px;
-      height: 150px;
-      background-color: red;
-      @include border-stroke(medium);
-    }
-  </style>
-  
-  <div id="box"></div>
+
+ </style>
+ 
+ <p class="text-1">Hello</p>
+ <p class="text-2">Hello</p>
+ <p class="text-3">Hello</p>
+ <p class="text-4">Hello</p>
+ <p class="text-5">Hello</p>
