@@ -20,7 +20,7 @@ In this case, we've already added it for you to this page behind the scenes. Not
 
 - [x] To get started, we should nest all of our HTML (except the link tag and the style element) in a div element with the class container-fluid.
 
-- Make Images Mobile Responsive
+- [x] Make Images Mobile Responsive
   First, add a new image below the existing one. Set its src attribute to https://cdn.freecodecamp.org/curriculum/cat-photo-app/running-cats.jpg.
 
 It would be great if this image could be exactly the width of our phone's screen.
@@ -120,3 +120,12 @@ By using the inline span element, you can put several elements on the same line,
 Here's how you would do this for the p element that has the text Top 3 things cats hate:
 
 `<p>Top 3 things cats <span class="text-danger">hate:</span></p>`
+
+## Create a Custom Heading
+We will make a simple heading for our Cat Photo App by putting the title and relaxing cat image in the same row.
+
+Remember, Bootstrap uses a responsive grid system, which makes it easy to put elements into rows and specify each element's relative width. Most of Bootstrap's classes can be applied to a div element.
+
+[x] Nest your first image and your h2 element within a single `<div class="row">` element. Nest your h2 element within a `<div class="col-xs-8">` and your image in a `<div class="col-xs-4">` so that they are on the same line.
+
+Notice how the image is now just the right size to fit along the text?
