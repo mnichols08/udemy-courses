@@ -204,3 +204,13 @@ Here's how you would target all the odd elements with class target and give them
 
 `$(".target:odd").addClass("animated shake");`
 - [x] Try selecting all the even target elements and giving them the classes of animated and shake. Remember that even refers to the position of elements with a zero-based system in mind.
+
+## Use jQuery to Modify the Entire Page
+We're done playing with our jQuery playground. Let's tear it down!
+
+jQuery can target the body element as well.
+
+Here's how we would make the entire body fade out: `$("body").addClass("animated fadeOut");`
+
+But let's do something more dramatic. 
+- [x] Add the classes animated and hinge to your body element.
