@@ -1,0 +1,64 @@
+<!-- User Story #
+- [x]:Your code should have a Sass variable declared for $text-color with a value of red.
+- [x]:Your code should use the $text-color variable to change the color for the .blog-post and h2 items.
+- [x]:Your .blog-post element should have a color of red.
+- [x]:Your h2 elements should have a color of red.
+- [x]:Your code should re-organize the CSS rules so the h1 and p are nested in the .blog-post parent element.
+- [x]:Your code should declare a mixin named border-radius which has a parameter named $radius.
+- [x]:Your code should include the -webkit-border-radius vendor prefix that uses the $radius parameter.
+- [x]:Your code should include the -moz-border-radius vendor prefix that uses the $radius parameter.
+- [x]:Your code should include the -ms-border-radius vendor prefix that uses the $radius parameter.
+- [x]:Your code should include the general border-radius rule that uses the $radius parameter.
+- [x]:Your code should call the border-radius mixin using the @include keyword, setting it to 15px.
+- [x]:Your code should declare a mixin named border-stroke which has a parameter named $val.
+- [x]:Your mixin should have an @if statement to check if $val is light, and to set the border to 1px solid black.
+- [x]:Your mixin should have an @else if statement to check if $val is medium, and to set the border to 3px solid black.
+- [x]:Your mixin should have an @else if statement to check if $val is heavy, and to set the border to 6px solid black.
+- [x]:Your mixin should have an @else statement to set the border to none.
+- [x]:Your code should use the @for directive.
+- [x]:Your .text-1 class should have a font-size of 15px.
+- [x]:Your .text-2 class should have a font-size of 30px.
+- [x]:Your .text-3 class should have a font-size of 45px.
+- [x]:Your .text-4 class should have a font-size of 60px.
+- [x]:Your .text-5 class should have a font-size of 75px.
+- [x]:Your code should use the @each directive.
+- [x]:Your .blue-bg class should have a background-color of blue.
+- [x]:Your .black-bg class should have a background-color of black.
+- [x]:Your .red-bg class should have a background-color of red.
+- [x]:Your code should use the @while directive.
+- [x]:Your code should use an index variable which starts at an index of 1.
+- [x]:Your code should increment the counter variable.
+- [x]:Your .text-1 class should have a font-size of 15px.
+- [x]:Your .text-2 class should have a font-size of 30px.
+- [x]:Your .text-3 class should have a font-size of 45px.
+- [x]:Your .text-4 class should have a font-size of 60px.
+- [x]:Your .text-5 class should have a font-size of 75px.
+- [x]:Your code should use the @import directive, and should not include the underscore in the file name.
+- [x]:Your info-important class should have a background-color set to magenta.
+- [x]:Your info-important class should use @extend to inherit the styling from the info class.
+ -->
+ <style type='text/scss'>
+    h3{
+      text-align: center;
+    }
+    .info{
+      width: 200px;
+      border: 1px solid black;
+      margin: 0 auto;
+    }
+  .info-important{
+    @extend .info;
+    background-color: magenta;
+  }
+  
+  
+  
+  </style>
+  <h3>Posts</h3>
+  <div class="info-important">
+    <p>This is an important post. It should extend the class ".info" and have its own CSS styles.</p>
+  </div>
+  
+  <div class="info">
+    <p>This is a simple post. It has basic styling and can be extended for other uses.</p>
+  </div>
