@@ -131,3 +131,10 @@ jQuery also has a similar function called .text() that only alters text without 
 - [x] View our news article for `<em>` to learn the difference between `<i>` and `<em>` and their uses.
 
 Note that while the `<i>` tag has traditionally been used to emphasize text, it has since been adopted for use as a tag for icons. The `<em>` tag is now widely accepted as the tag for emphasis. Either will work for this challenge.
+
+## Remove an Element Using jQuery
+Now let's remove an HTML element from your page using jQuery.
+
+jQuery has a function called .remove() that will remove an HTML element entirely.
+
+- [x] Remove the #target4 element from the page by using the .remove() function.
