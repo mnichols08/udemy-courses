@@ -105,9 +105,7 @@ html {
   box-sizing: border-box;
 }
 
-*,
-*::before,
-*::after {
+*, *::before, *::after {
   box-sizing: inherit;
 }
 
@@ -170,7 +168,7 @@ html {
 }
 
 @media (max-width: 1199px) and (min-width: 769px) {
-  #piano {
+#piano {
     width: 675px;
   }
   .keys {

@@ -1,0 +1,36 @@
+/* I find it fun to add transparency and gradient effects together. It reminds me of the Pandora Website */
+#image {
+  border-radius: 0.8em;
+}
+ul {
+  font-size: 14px;
+}
+img#profile_thumbnail {
+  display: grid;
+  align-content: center;
+  justify-content: center;
+}
+body {
+  margin: 2em 0 3em 0; /*Lowers the top and bottom of the page by 60px*/
+  background: linear-gradient(#1000ff6e, #00ff2b6b),
+    url(http://img.wennermedia.com/social/rs-248116-rodney_mullen_filming_liminal-a9686954-dcfc-4db9-8e87-edbb24cfd702.jpg); /* Transparent Green to Purple Gradient, with a background image of Rodney Mullen doing a casper on his skateboard. */
+  background-size: cover;
+} /* Sets the background to cover the entire page */
+#main {
+  background: linear-gradient(#f8f8f9fa, #f8f9fa);
+  opacity: 0.75;
+} /* Applies 75% Opacity to my container */
+img#image.card-img-top {
+  border-radius: 8px;
+} /* Allows me to change the image from css rather than editing HTML */
+
+img#profile_thumbnail {
+  float: none;
+  width: 75px;
+} /* Only way I could figure out how to make an image smaller than col-xs-1 */
+.row footer {
+  background: #333;
+  text-align: center;
+  z-index: -1;
+  height: 3em;
+}
