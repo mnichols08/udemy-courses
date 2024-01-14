@@ -77,3 +77,11 @@ Step 19
 Your view has been switched to your new script.js file. Remember that you can use the tabs above to switch between files.
 
 Add your console.log("Hello World"); line to this file, and see it appear in your console.
+
+Step 20
+Remove your console.log("Hello World"); line to begin writing your project code.
+
+In JavaScript, a variable is used to hold a value. To use a variable, you must first declare it. For example, to declare a variable called camperbot, you would write:
+
+var camperbot;
+The var keyword tells JavaScript you are declaring a variable. Declare a variable called xp.
