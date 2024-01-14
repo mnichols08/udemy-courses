@@ -72,3 +72,8 @@ Step 18
 Before you start writing your project code, you should move it to its own file to keep things organized.
 
 Remove your console.log("Hello World"); line. Then give your now empty script element a src attribute set to ./script.js.
+
+Step 19
+Your view has been switched to your new script.js file. Remember that you can use the tabs above to switch between files.
+
+Add your console.log("Hello World"); line to this file, and see it appear in your console.
