@@ -29,3 +29,6 @@ Welcome to Dragon Repeller. You must defeat the dragon that is preventing people
 
 Step 8
 Now we need some quick styling. Start by giving the body a background-color set to #0a0a23.
+
+Step 9
+Give the #text element a background-color of #0a0a23, a color of #ffffff, and 10px of padding on all sides.
