@@ -47,3 +47,6 @@ Give your #monsterStats element the same border and padding as your #stats eleme
 
 Step 13
 For now, hide your #monsterStats element with the display property. Do not change any of the other styling.
+
+Step 14
+Next, give your .stat elements a padding-right of 10px.
