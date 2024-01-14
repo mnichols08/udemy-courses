@@ -67,3 +67,8 @@ The developer console will include errors that are produced by your code, but yo
 Add a console.log("Hello World"); line between your script tags. Then click the "Console" button to open the console. You should see the text Hello World.
 
 Note how the line ends with a semi-colon. It is common practice in JavaScript to end your code lines with semi-colons.
+
+Step 18
+Before you start writing your project code, you should move it to its own file to keep things organized.
+
+Remove your console.log("Hello World"); line. Then give your now empty script element a src attribute set to ./script.js.
