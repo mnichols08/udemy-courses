@@ -55,3 +55,6 @@ Step 15
 Finally, you will need to add some styles for your buttons. Start by setting the cursor property to pointer. Then set the text color to #0a0a23 and the background-color to #feac32.
 
 Then set the background-image property to linear-gradient(#fecc4c, #ffac33). Lastly, set the border to 3px solid #feac32.
+
+Step 16
+Now you can start writing your JavaScript. Begin by creating a script element. This element is used to load JavaScript into your HTML file. You should use an opening `<script>` and closing `</script>` tag.
