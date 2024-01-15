@@ -4,14 +4,17 @@ By Omni Academy on Udemy
 ## How Does Scrum Work?
 Scrum works by taking a problem and breaking it down into smaller chunks.
 
-## Product Backlog
-A collection of all tasks that must be achieved for a MVP to be achieved.
+### Scrum Artifacts
+- #### Product Backlog
+A collection of all tasks which must be completed to reach MVP
+- #### Sprint Backlog
+Tasks which are of the highest importance will make their way into the Sprint Backlog
+- #### Increment
+The time in which the team sets out to work on a project.
 
 ### Scrum Events
 - #### Sprint Planning
 During this time, the Scrum Team get together to discuss which tasks to prioritize.
-- #### Sprint Backlog
-Tasks which are of the highest importance will make their way into the Sprint Backlog
 - #### Sprint
 A period of time where developers focus on delivering value and achieving a set of goals.
 - #### Daily Scrum
