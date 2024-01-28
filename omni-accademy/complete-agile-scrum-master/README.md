@@ -29,3 +29,6 @@ A meeting when the team gets together to discuss the things that went well or co
 - Product Owner - Goal is to maximize value of product
 - Developers
 - Scrum Master 
+
+Scrum is a mechanism to **optimize** the value **delivery system**.
+What is to be done, and how to do it?
