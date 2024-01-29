@@ -75,11 +75,11 @@ What is to be done, and how to do it?
   <ins>Accountabilities</ins>
   Typically, 10 or fewer members
 - Scrum Master
-  \*Faciliatator
+  - Faciliatator
   - Causes Impediment removal
 - Product Owner
   - Value maximizer
-- Developers \* Create any aspect of a usable increment each Sprint
+- Developers Create any aspect of a usable increment each Sprint
   <ins>Self-managed</ins>
 - Internally decide who does **what**, **when**, and **how**.
   <ins>Cross-functional</ins>
