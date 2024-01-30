@@ -121,4 +121,4 @@ If not, mutually defined by Scrum Teams.
 #### Increment
 * Can only be composed of "Done" Work
 
-##### [Notes](./PSM1-2021.md)
+##### [Notes](./notes.md)
