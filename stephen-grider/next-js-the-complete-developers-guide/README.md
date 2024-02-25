@@ -10,3 +10,4 @@ They are considered to be content-driven sites. They are not reliant upon JS to 
 - We will see many features and techniques that look useless, complex, or hard to use.
 - They exist for a reason! That reason is to allow us to make static sites.
 
+- [Project i ](./projects/project-i/)
