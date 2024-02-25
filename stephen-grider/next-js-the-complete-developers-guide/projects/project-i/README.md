@@ -66,17 +66,22 @@ Right way we start to notice some difficult challenges. Some are more straightfo
     3. Inside of the component, above the `<div>Home Page</div>`, add a `<Link href="/performance">Performance</Link><Link href="/reliability">Reliability</Link><Link href="/scale">Scale</Link>`
 
 #### Common UI in Next JS with Layouts
+
     1. Navigate to the `globals.css` file and remove everything except for the first three lines
     2. Navigate to the `layout.tsx` file and inspect the file.
     3. Everything inside of the `layout.tsx` file is considered to be a `parent` of the `/app/page.tsx`
         a. This makes it the perfect location to move our "navbar" that was more or less just created.
         b. Place your `routes` inside of the `app` folder
         c. Place everything else outside of the `app` folder.
-    4. Utilize the `@` indicator at the start of a folder to indicate that we want to get the next directory. 
+    4. Utilize the `@` indicator at the start of a folder to indicate that we want to get the next directory.
         a. eg. instead of `../../../../../components/something/page` we can use `@/components/something`
+
 ### Adding Image Files
+
     1. Place your static images inside of the `public` folder
     2. To show an image using the `<Image>` component we firs thave to import the component
         a. `import Image from 'next/image`
         b. `import homeImg from 'public/home.jpg'`
-        c. `<Image src={homeImg} alt="car factory" />
+        c. `<Image src={homeImg} alt="car factory" fill style={{objectFit: 'cover'}}/>
+    3. Layout shifting is what happens when an images loads after the text on screen in rendered
+        a. We can prevent this by passing in sizes. This is done by default if we are using local images
