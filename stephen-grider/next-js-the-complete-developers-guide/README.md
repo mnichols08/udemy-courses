@@ -3,4 +3,6 @@ Tip to learn Next.js quickly:
 Background:
 Traditionally React.js is for making highly interactive or dynamic application like airBnb, instagram, tiktok. 
 These rely heavily on data fetching with JSON
-Tons of websites do not require heavy interaction or dynamic data fetching. 
+Tons of websites do not require heavy interaction or dynamic data fetching. Such as blogs, news sites, Wikis, Educational, etc.
+They are considered to be content-driven sites. They are not reliant upon JS to handle updating data on demand.
+
