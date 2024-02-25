@@ -73,4 +73,10 @@ Right way we start to notice some difficult challenges. Some are more straightfo
         b. Place your `routes` inside of the `app` folder
         c. Place everything else outside of the `app` folder.
     4. Utilize the `@` indicator at the start of a folder to indicate that we want to get the next directory. 
-        a. eg. instead of `../../../../../components/something/page.tsx` we can use `@/components/something
+        a. eg. instead of `../../../../../components/something/page` we can use `@/components/something`
+### Adding Image Files
+    1. Place your static images inside of the `public` folder
+    2. To show an image using the `<Image>` component we firs thave to import the component
+        a. `import Image from 'next/image`
+        b. `import homeImg from 'public/home.jpg'`
+        c. `<Image src={homeImg} alt="car factory" />
