@@ -32,12 +32,16 @@ Right way we start to notice some difficult challenges. Some are more straightfo
 | Change default import Alias? | No      | Allows you to impot files using absolute imports rather than relative imports                                                                                                                      |
 
 ### Project Instructions
+
 #### Initial setup
+
     1. Create a new next app. `npx create-next-app@latest`
     2. This creates a new folder named whatever we called the project name.
     3. cd into this folder and start up the development server by running `npm run dev`
     4. We should now have a default next app running in the browser.
+
 #### Clean your Slate
+
     1. **The `src/app` folder is a super special folder** - The files and folders you place in here determine what routes exist in your app.
         a. Files specifically called `page.tsx` placed in here (or in nested folders) define a route the user can visit. There will be a lot of `page.tsx` files.
         b. These file must have a 'export default' of a React component
@@ -47,7 +51,26 @@ Right way we start to notice some difficult challenges. Some are more straightfo
         b. Replace it with a `<div>Home Page</div>`
         c. Remove the import statements on the top lines
     3. - To determine how we access a page, we use the folder that the `page.tsx` file is located
-        a. Folder can be as deep as we need. 
+        a. Folder can be as deep as we need.
 
+#### Create App Page Routes
 
+    1. Create three new folders. `performance`, `reliability`, and `scale`.
+        a. Create a `page.tsx` file inside of each folder.
+        b. They must export by default a React component
 
+#### Link Between Pages
+
+    1. Locate the `app/page.tsx`
+    2. Import the Link component. `import Link from 'next/link'`
+    3. Inside of the component, above the `<div>Home Page</div>`, add a `<Link href="/performance">Performance</Link><Link href="/reliability">Reliability</Link><Link href="/scale">Scale</Link>`
+
+#### Common UI in Next JS with Layouts
+    1. Navigate to the `globals.css` file and remove everything except for the first three lines
+    2. Navigate to the `layout.tsx` file and inspect the file.
+    3. Everything inside of the `layout.tsx` file is considered to be a `parent` of the `/app/page.tsx`
+        a. This makes it the perfect location to move our "navbar" that was more or less just created.
+        b. Place your `routes` inside of the `app` folder
+        c. Place everything else outside of the `app` folder.
+    4. Utilize the `@` indicator at the start of a folder to indicate that we want to get the next directory. 
+        a. eg. instead of `../../../../../components/something/page.tsx` we can use `@/components/something
