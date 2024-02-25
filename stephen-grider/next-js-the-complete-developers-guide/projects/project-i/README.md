@@ -85,3 +85,15 @@ Right way we start to notice some difficult challenges. Some are more straightfo
         c. `<Image src={homeImg} alt="car factory" fill style={{objectFit: 'cover'}}/>
     3. Layout shifting is what happens when an images loads after the text on screen in rendered
         a. We can prevent this by passing in sizes. This is done by default if we are using local images
+    4. Table for How Images are receiving properties
+    | Page           | Properties |
+    | -------------- | ---------- |
+    | Home           | props      |
+    | ScalePage      | props      |
+    | ReliabilityPage| props      |
+    | PerformancePage| props      |
+
+#### 
+    1 . Make a new file inside of the components folder called `hero.tsx`
+    2. import type StaticImageData from next/image `import type {StaticImageData} from 'next/image'
+    3. 
