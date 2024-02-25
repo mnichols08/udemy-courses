@@ -30,3 +30,19 @@ Right way we start to notice some difficult challenges. Some are more straightfo
 | Use 'src/' directory         | No      | Places all of your Typescript code inside of a folder called 'src'. Highly recommended - makes it easier to organize code in your project. \*This needs to be enabled by switching from no to yes! |
 | Use the App Router?          | Yes     | You might not see this question. Enables the use of the latest featuers of Next                                                                                                                    |
 | Change default import Alias? | No      | Allows you to impot files using absolute imports rather than relative imports                                                                                                                      |
+
+### Project Instructions
+#### Initial setup
+    1. Create a new next app. `npx create-next-app@latest`
+    2. This creates a new folder named whatever we called the project name.
+    3. cd into this folder and start up the development server by running `npm run dev`
+    4. We should now have a default next app running in the browser.
+#### Clean your Slate
+    1. Inside of the src folder there is a file called page.tsx;
+        a. Remove the JSX coming from page.tsx return statement;
+        b. Replace it with a `<div>Home Page</div>`
+        c. Remove the import statements on the top lines
+        
+
+
+
