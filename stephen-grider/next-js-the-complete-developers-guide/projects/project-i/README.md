@@ -38,11 +38,16 @@ Right way we start to notice some difficult challenges. Some are more straightfo
     3. cd into this folder and start up the development server by running `npm run dev`
     4. We should now have a default next app running in the browser.
 #### Clean your Slate
-    1. Inside of the src folder there is a file called page.tsx;
+    1. **The `src/app` folder is a super special folder** - The files and folders you place in here determine what routes exist in your app.
+        a. Files specifically called `page.tsx` placed in here (or in nested folders) define a route the user can visit. There will be a lot of `page.tsx` files.
+        b. These file must have a 'export default' of a React component
+        c. The name of the component does not make a big difference.
+    2. Inside of this folder there is a file called page.tsx;
         a. Remove the JSX coming from page.tsx return statement;
         b. Replace it with a `<div>Home Page</div>`
         c. Remove the import statements on the top lines
-        
+    3. - To determine how we access a page, we use the folder that the `page.tsx` file is located
+        a. Folder can be as deep as we need. 
 
 
 
