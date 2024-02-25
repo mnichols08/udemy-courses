@@ -8,4 +8,5 @@ They are considered to be content-driven sites. They are not reliant upon JS to 
 
 - One of the primary goals of Next is to expand the use of React to static sites
 - We will see many features and techniques that look useless, complex, or hard to use.
--They exist for a reason!
+- They exist for a reason! That reason is to allow us to make static sites.
+
