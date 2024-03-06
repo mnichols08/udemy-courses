@@ -58,3 +58,18 @@ HTML - What is it, how it works, where did it come from?
 <h2>Choosing a Location</h2>
 <p>When looking for jobs in design and development, consider each work location and how it <strong>matches your needs</strong>.</p>
 ```
+```
+h1 {
+  font-family: arial;
+  color: darkorange;
+  text-align: center;
+  font-weight: bold;
+}
+
+p {
+  color: green;
+  font-size: 28px;
+  font-family: "Georgia";
+  text-align: justify;
+}
+```
