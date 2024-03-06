@@ -73,3 +73,20 @@ p {
   text-align: justify;
 }
 ```
+```
+/* Start typing your CSS below! */
+h1,h2{
+	font-style: italic;
+}
+h1 {
+font-family: "Tahoma";
+}
+
+h2 {
+font-family: "Georgia";
+}
+
+p {
+font-family: "Times"
+}
+```
