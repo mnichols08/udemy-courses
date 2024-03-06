@@ -1,6 +1,6 @@
 # Welcome to Camp Skillcrush
 
-VIDEO TRANSCRIPT
+###### VIDEO TRANSCRIPT
 
 Hello! And welcome to Camp Skillcrush.
 
@@ -37,3 +37,7 @@ I’ll get into all of that in a minute but before I do, I wanna tell you about 
 In practice, this means that throughout your Skillcrush journey, even now as a camper, you’re going to have access to some of the friendliest, most helpful instructors, mentors, career coaches, and enrollment counselors in the business.
 
 So hop on over to the next step and start your Camp Skillcrush adventure.
+
+IF YOU'RE READY TO LEARN MORE, DOWNLOAD THE PROGRAM SYLLABUS!
+
+[Program Syllabus](./resources/BreakIntoTechProgramSyllabus_Feb2024A.pdf)
