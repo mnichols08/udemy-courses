@@ -41,3 +41,20 @@ So hop on over to the next step and start your Camp Skillcrush adventure.
 IF YOU'RE READY TO LEARN MORE, DOWNLOAD THE PROGRAM SYLLABUS!
 
 [Program Syllabus](./resources/BreakIntoTechProgramSyllabus_Feb2024A.pdf)
+
+HTML - What is it, how it works, where did it come from?
+
+```
+<h1>Wouldn't Take Nothing for My Journey Now</h1> 
+<p>Author: Maya Angelou</p>
+<p>Human beings are more alike than unalike, and what is true anywhere is true everywhere, yet I encourage travel to as many destinations as possible for the sake of education as well as pleasure...by demonstrating that all people cry, laugh, eat, worry, and die, it can introduce the idea that if we try to understand each other, we may even become friends.</p>
+```
+```
+<h1>Work Locations</h1>
+<h2>Remote</h2>
+<p>Remote work often means a company may or may not have a physical office, and you can work for the company from <em>virtually anywhere.</em></p>
+<h2>On-Site</h2>
+<p>On-site jobs are the most common type and require employees to <strong>be in the office physically.</strong></p>
+<h2>Choosing a Location</h2>
+<p>When looking for jobs in design and development, consider each work location and how it <strong>matches your needs</strong>.</p>
+```
