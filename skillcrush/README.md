@@ -90,3 +90,21 @@ p {
 font-family: "Times"
 }
 ```
+```
+const name = 'Mikey';
+console.log('Hi, my name is ' + name);
+```
+```
+var name = "Mikey";
+var cityBorn = "Brooksville, FL";
+var birthday = "October 4, 1989";
+function message(yourName,city,bday) {
+  return yourName + " was born on " + bday + " in " + city;
+}
+console.log(message(name,cityBorn,birthday));
+```
+
+All about UX
+User Experience
+UX is the study of user behavior and developing solutions that are intuitive and easy to use
+![User Experience Unicorn](./resources/UX-Unicorn.png)
