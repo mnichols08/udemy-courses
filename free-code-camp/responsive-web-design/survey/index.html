@@ -1,0 +1,706 @@
+<!--
+Objective: Build a CodePen.io app that is functionally similar to this: https://codepen.io/freeCodeCamp/full/VPaoNP.
+Fulfill the below user stories and get all of the tests to pass. Give it your own personal style.
+You can use HTML, JavaScript, and CSS to complete this project. Plain CSS is recommended because that is what the lessons have covered so far and you should get some practice with plain CSS. You can use Bootstrap or SASS if you choose. Additional technologies (just for example jQuery, React, Angular, or Vue) are not recommended for this project, and using them is at your own risk. Other projects will give you a chance to work with different technology stacks like React. We will accept and try to fix all issue reports that use the suggested technology stack for this project. Happy coding!
+-x-User Story #1: I can see a title with id="title" in H1 sized text.
+-x-User Story #2: I can see a short explanation with id="description" in P sized text.
+User Story #3: I can see a form with id="survey-form".
+User Story #4: Inside the form element, I am required to enter my name in a field with id="name".
+User Story #5: Inside the form element, I am required to enter an email in a field with id="email".
+User Story #6: If I enter an email that is not formatted correctly, I will see an HTML5 validation error.
+User Story #7: Inside the form, I can enter a number in a field with id="number".
+User Story #8: If I enter non-numbers in the number input, I will see an HTML5 validation error.
+User Story #9: If I enter numbers outside the range of the number input, I will see an HTML5 validation error.
+User Story #10: For the name, email, and number input fields inside the form I can see corresponding labels that describe the purpose of each field with the following ids: id="name-label", id="email-label", and id="number-label".
+User Story #11: For the name, email, and number input fields, I can see placeholder text that gives me a description or instructions for each field.
+User Story #12: Inside the form element, I can select an option from a dropdown that has a corresponding id="dropdown".
+User Story #13: Inside the form element, I can select a field from one or more groups of radio buttons. Each group should be grouped using the name attribute.
+User Story #14: Inside the form element, I can select several fields from a series of checkboxes, each of which must have a value attribute.
+User Story #15: Inside the form element, I am presented with a textarea at the end for additional comments.
+User Story #16: Inside the form element, I am presented with a button with id="submit" to submit all my inputs.
+You can build your project by forking this CodePen pen. Or you can use this CDN link to run the tests in any environment you like: https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js
+Once you're done, submit the URL to your working project with all its tests passing.
+Remember to use the Read-Search-Ask method if you get stuck.
+
+ -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hometown Survey</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+    />
+    <style>
+      input[type="radio"] {
+        text-align: center;
+        position: relative;
+        left: 1.5em;
+      }
+      input[value="yes"] {
+        left: 2.05em;
+      }
+      li.radio label {
+        min-width: 5em;
+        display: grid;
+        align-content: center;
+        justify-content: center;
+        margin-left: -0.055em;
+        text-align: center;
+      }
+
+      input[type="checkbox"] {
+        height: 1em;
+        width: 1em;
+        position: relative;
+        top: 0.15em;
+      }
+
+      body {
+        background: #ccc;
+      }
+      main.container.bg-light.border-information.border.border-5.rounded {
+        min-width: 200px;
+        overflow: hidden;
+        box-shadow: 0 0 10em 0px black;
+      }
+      input,
+      select,
+      select.dropdown,
+      textarea {
+        border-radius: 0.35em;
+      }
+      li {
+        list-style: none;
+      }
+      header {
+        text-shadow: 0 1em 1em black;
+        box-shadow: 0 0 12em 0px black;
+        position: relative;
+        z-index: -1;
+        text-align: center;
+        background: linear-gradient(
+          45deg,
+          hsl(125, 70%, 50%),
+          hsl(268, 100%, 50%),
+          hsl(142, 70%, 50%)
+        );
+        height: 10em;
+        color: hsl(120, 100%, 75%);
+        font-family: helvetica;
+        text-align: center;
+        margin-bottom: -3em;
+      }
+
+      ul.row.radio {
+        position: relative;
+        left: -2.9em;
+      }
+      label {
+        margin-left: 0.5em;
+      }
+      textarea#comments {
+        min-height: 5em;
+        max-height: 10em;
+      }
+
+      @media (min-width: 426px) and (max-width: 575px) {
+        .row header.col-12 {
+          position: relative;
+          top: -2.7em;
+          height: 12em;
+        }
+        main {
+          position: relative;
+          top: -2.7em;
+          padding-left: 2em;
+        }
+        footer {
+          position: absolute;
+          top: 0em;
+          height: 3em;
+        }
+      }
+      .row footer.col-12 {
+        background: #333;
+        text-align: center;
+        position: absolute;
+        z-index: -1;
+        top: 97.25em;
+      }
+      main {
+        padding-bottom: 2em;
+      }
+      @media (min-width: 576px) and (max-width: 767px) {
+        .row footer.col-12 {
+          top: 95em;
+          z-index: -1;
+          padding-top: 1.5em;
+          height: 4em;
+        }
+      }
+      @media (min-width: 550px) {
+        main.container.bg-light.border-information.border.border-5.rounded {
+          padding: 3em 4em 3em 4em;
+        }
+        label,
+        input,
+        select,
+        select.dropdown,
+        textarea,
+        option,
+        radio {
+          font-size: 1.15em;
+        }
+        ul#likeLeast {
+          display: grid;
+          position: relative;
+          top: 1em;
+          left: -1.5em;
+          grid-template-rows: 1fr 1fr 1fr;
+          grid-template-columns: repeat(auto-fill, minmax(18em, 2fr));
+        }
+      }
+      @media (min-width: 426px) and (max-width: 575px) {
+        h1,
+        p#description {
+          position: relative;
+          top: 1em;
+          line-height: 1.5em;
+        }
+        .row footer.col-12 {
+          top: 85em;
+          z-index: -1;
+          padding-top: 1.5em;
+          height: 4em;
+        }
+      }
+      hr.sub {
+        display: none;
+      }
+      @media (min-width: 321px) and (max-width: 425px) {
+        hr.sub.twn {
+          width: 6.75em;
+        }
+        hr.sub.ylt {
+          width: 9em;
+        }
+        hr.sub.exp {
+          width: 6.5em;
+          left: 0.151em;
+          top: -0.45em;
+        }
+        hr.sub.agn {
+          width: 10.5em;
+          top: -0.45em;
+          left: -0.01em;
+        }
+        hr.sub.mst {
+          width: 7.5em;
+          left: -0.6151em;
+          top: -0.45em;
+        }
+        hr.sub.lst {
+          width: 7.5em;
+          left: 0.151em;
+          top: -1.95em;
+        }
+        hr.sub.msa {
+          width: 9.5em;
+          left: 0.151em;
+          top: -0.45em;
+        }
+        hr.sub.eml {
+          width: 3.8em;
+          left: 0.41em;
+          top: -0.45em;
+        }
+        /*li.radio label{
+      display:grid;
+      position:relative;
+      left:-1em;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-columns: repeat( auto-fill, minmax(18em, 2fr));
+      }*/
+        input[type="radio"] {
+          li.radio label {
+            min-width: 5em;
+            display: grid;
+            align-content: center;
+            justify-content: center;
+            margin-left: -0.055em;
+            text-align: center;
+          }
+        }
+
+        .row footer.col-12 {
+          top: 197em;
+          z-index: -1;
+          padding-top: 1.5em;
+          height: 4em;
+        }
+
+        h1 {
+          font-size: 10vw;
+        }
+      }
+
+      @media (max-width: 320px) {
+        .row footer.col-12 {
+          top: 119.5em;
+          z-index: -1;
+          padding-top: 1.5em;
+          height: 4em;
+        }
+
+        html {
+          height: 100vh;
+          width: 94.8vw;
+        }
+        li.radio label {
+          text-align: center;
+          min-width: 5em;
+        }
+        header {
+          height: 10em;
+          margin-bottom: -3em;
+        }
+        h1 {
+          padding-top: 1em;
+          font-size: 9vw;
+        }
+        p#description {
+          position: relative;
+          top: -0.19 em;
+          line-height: 1.2em;
+        }
+        .col.notes {
+          position: relative;
+          top: 1em;
+          left: 1.5em;
+          text-align: justify;
+          font-size: 4vw;
+        }
+        span.text-danger {
+          position: relative;
+          left: 0.3em;
+          bottom: 0.3em;
+        }
+
+        hr.sub {
+          margin-left: 1em;
+          border-top: 0.101em dotted red;
+          top: -0.75em;
+          left: 0.5em;
+          height: 0.1em;
+          text-align: center;
+          position: relative;
+          margin: 0.1em;
+        }
+        hr.sub.twn {
+          width: 6.75em;
+        }
+        hr.sub.ylt {
+          width: 9em;
+        }
+        hr.sub.exp {
+          width: 6.5em;
+          left: 0.151em;
+          top: -0.45em;
+        }
+        hr.sub.agn {
+          width: 10.5em;
+          top: -0.45em;
+          left: -0.01em;
+        }
+        hr.sub.mst {
+          width: 7.5em;
+          left: -0.6151em;
+          top: -0.45em;
+        }
+        hr.sub.lst {
+          width: 7.5em;
+          left: 0.151em;
+          top: -1.95em;
+        }
+        hr.sub.msa {
+          width: 9.5em;
+          left: 0.151em;
+          top: -0.45em;
+        }
+        hr.sub.eml {
+          width: 3.8em;
+          left: 0.41em;
+          top: -0.45em;
+        }
+      }
+      @media (min-width: 768px) and (max-width: 980px) {
+        .row footer.col-12 {
+          background: #333;
+          height: 3.5em;
+          text-align: center;
+          position: absolute;
+          padding-top: 1em;
+          z-index: -1;
+        }
+      }
+
+      textarea#comments {
+        min-height: 5em;
+        max-height: 10em;
+      }
+      .fas.fa-heart.red {
+        color: hsl(0, 100%, 50%);
+      }
+      hr.sub {
+        margin-left: 1em;
+        border-top: 0.101em dotted red;
+        top: -0.75em;
+        left: 0.5em;
+        height: 0.1em;
+        text-align: center;
+        position: relative;
+        margin: 0.1em;
+      }
+
+      @media (min-width: 768px) {
+        hr.sub.exp {
+          width: 22.5em;
+          top: -0.65em;
+        }
+        hr.sub {
+          margin-left: 1em;
+          border-top: 0.101em dotted red;
+          top: -0.75em;
+          left: 0.5em;
+          height: 0.1em;
+          text-align: center;
+          position: relative;
+          margin: 0.1em;
+        }
+        hr.sub.agn {
+          width: 27.5em;
+          top: -0.55em;
+        }
+        hr.sub.mst {
+          width: 23.5em;
+          left: -0.3em;
+          top: -0.55em;
+        }
+        hr.sub.lst {
+          width: 24.5em;
+          left: 0.5em;
+          top: -2.25em;
+        }
+        hr.sub.msa {
+          width: 10.5em;
+          left: 0.3em;
+          top: -0.45em;
+        }
+        hr.sub.eml {
+          width: 3.75em;
+          left: 0.7em;
+          top: -0.45em;
+        }
+      }
+      @media (min-width: 550px) and (max-width: 767px) {
+        hr.sub.agn {
+          width: 3.8em;
+          top: -0.55em;
+        }
+      }
+
+      button {
+        margin: 4.5em 2.5em 1.5em 2.5em;
+        box-shadow: 0 0 25em black;
+      }
+      /*option[value="student"] {margin-left:-2em;position:relative;left:-2em;}*/
+      @media (max-width: 980px) {
+        input[value="do"] {
+          left: 0em;
+          min-width: 6.2em;
+          margin-left: -0.055em;
+          text-align: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <header class="col-12">
+          <h1 id="title">Hometown Survey</h1>
+          <p id="description">
+            Let's gather peoples <del>thoughts</del> {data} on their home town.
+          </p>
+        </header>
+      </div>
+
+      <main
+        class="container bg-light border-information border border-5 rounded"
+      >
+        <div class="row">
+          <p class="col notes">
+            Items indicated by <span class="text-danger">*</span> are required.
+          </p>
+        </div>
+        <hr />
+        <form id="survey-form" method="GET" action="#getyourownform">
+          <div class="row">
+            <label id="name-label" for="name" class="col"
+              ><span class="text-danger">*</span> Hometown:
+            </label>
+          </div>
+          <hr class="sub twn" />
+          <div class="col">
+            <input
+              autofocus
+              type="location"
+              name="name"
+              id="name"
+              class="col col-left"
+              placeholder="Where are you from?"
+              required
+            />
+          </div>
+          <hr />
+          <div class="row">
+            <label id="number-label" for="number" class="col"
+              ><span class="text-danger">*</span> Years Lived There:
+            </label>
+          </div>
+          <hr class="sub ylt" />
+          <div class="col">
+            <input
+              autofocus
+              type="number"
+              name="number"
+              id="number"
+              min="1"
+              max="125"
+              class="col"
+              placeholder="How many years?"
+              required
+            />
+          </div>
+          <hr />
+          <div class="row">
+            <label for="travelAmt" class="col"
+              >How much of the world have you explored?</label
+            >
+          </div>
+          <hr class="sub exp" />
+          <div class="col">
+            <select id="dropdown" name="travelAmt" class="dropdown col">
+              <option disabled value>Choose an option.</option>
+              <option value="novice">Very little</option>
+              <option value="apprentice">Local Travel</option>
+              <option value="journeyman">I get around</option>
+              <option value="master">Globetrotter</option>
+              <option value="other">Space Traveller</option>
+            </select>
+          </div>
+          <hr />
+          <div class="row">
+            <label for="homeTown" class="col col-12 hometown"
+              ><span class="text-danger">*</span> Would you ever want live in
+              your hometown again?</label
+            >
+          </div>
+          <hr class="sub agn" />
+          <ul class="row radio">
+            <div class="col">
+              <li class="radio">
+                <label
+                  >Absolutely! <br /><input
+                    name="radio-buttons"
+                    value="yes"
+                    type="radio"
+                    class=""
+                /></label>
+              </li>
+            </div>
+            <hr />
+            <div class="col">
+              <li class="radio">
+                <label
+                  >No way. <br /><input
+                    name="radio-buttons"
+                    value="no"
+                    type="radio"
+                /></label>
+              </li>
+            </div>
+            <div class="col">
+              <li class="radio">
+                <label
+                  >I do currently. <br /><input
+                    name="radio-buttons"
+                    value="do"
+                    type="radio"
+                /></label>
+              </li>
+            </div>
+          </ul>
+          <hr />
+          <div class="row">
+            <label for="topRated" class="col"
+              >What do you like most about your hometown?
+            </label>
+          </div>
+          <div class="col">
+            <hr class="sub mst" />
+            <select id="topRated" name="topRated" class="dropdown col">
+              <option disabled>Select an option</option>
+              <option value="scenery" selected value>Scenery</option>
+              <option value="nightlife">Nightlife</option>
+              <option value="people">People</option>
+              <option value="thingsToDo">Things to Do</option>
+            </select>
+          </div>
+          <hr />
+          <div class="row">
+            <label for="likeLeast" class="col"
+              >Things that you like least about your hometown<br />(Check all
+              that apply):
+            </label>
+          </div>
+          <hr class="sub lst" />
+          <div class="col">
+            <ul id="likeLeast" class="checkbox col">
+              <li class="checkbox col">
+                <label
+                  ><input name="prefer" value="1" type="checkbox" />Nothing ever
+                  changes</label
+                >
+              </li>
+              <li class="checkbox col">
+                <label
+                  ><input name="prefer" value="2" type="checkbox" />Boring - not
+                  much to do</label
+                >
+              </li>
+              <li class="checkbox col">
+                <label
+                  ><input
+                    name="prefer"
+                    value="3"
+                    type="checkbox"
+                  />Gossip</label
+                >
+              </li>
+              <li class="checkbox col">
+                <label
+                  ><input name="prefer" value="4" type="checkbox" />There isnt a
+                  skate park</label
+                >
+              </li>
+              <li class="checkbox col">
+                <label
+                  ><input name="prefer" value="5" type="checkbox" />Too many
+                  farms</label
+                >
+              </li>
+              <li class="checkbox col">
+                <label
+                  ><input name="prefer" value="6" type="checkbox" />Theft /
+                  Crime</label
+                >
+              </li>
+              <li class="checkbox col">
+                <label
+                  ><input name="prefer" value="7" type="checkbox" />Nowhere to
+                  Shop</label
+                >
+              </li>
+              <li class="checkbox col">
+                <label
+                  ><input name="prefer" value="8" type="checkbox" />Aren't any
+                  local coders</label
+                >
+              </li>
+              <li class="checkbox col">
+                <label
+                  ><input name="prefer" value="9" type="checkbox" />Old people
+                  stare at you</label
+                >
+              </li>
+              <li class="checkbox col">
+                <label
+                  ><input name="prefer" value="10" type="checkbox" />Not enough
+                  young people</label
+                >
+              </li>
+              <li class="checkbox col">
+                <label
+                  ><input name="prefer" value="10" type="checkbox" />There isn't
+                  a bar</label
+                >
+              </li>
+            </ul>
+          </div>
+          <hr />
+          <div class="row">
+            <label for="comments" class="col col-xs-12 col-sm-6"
+              >Did I miss anything?</label
+            >
+          </div>
+          <hr class="sub msa" />
+          <div class="col">
+            <textarea
+              id="comments"
+              class="input-field col"
+              name="comments"
+              placeholder="Enter anything else you might want to share here."
+            ></textarea>
+          </div>
+          <hr />
+          <div class="row">
+            <label id="email-label" for="email" class="col col-xs-12 col-sm-6"
+              ><span class="text-danger">*</span> Email:
+            </label>
+          </div>
+          <hr class="sub eml" />
+          <div class="col">
+            <input
+              autofocus
+              type="email"
+              name="email"
+              id="email"
+              class="col"
+              placeholder="Provide an email address"
+              required
+            />
+          </div>
+          <hr class="fnl" />
+          <div class="row ml-auto mx-auto text-center">
+            <button
+              id="submit"
+              type="submit"
+              class="btn btn-success btn-border btn-border-success col col-2 col-4 mx-auto ml-auto mx-auto text-center"
+            >
+              Submit
+            </button>
+          </div>
+        </form>
+      </main>
+      <div class="row">
+        <footer class="col-12">
+          <p>
+            <a href="https://codepen.io/mnichols08/" class="blank">
+              <i class="fas fa-code text-success"></i> with
+              <i class="fas fa-heart red"></i> by
+              <i class="fab fa-codepen text-warning">mnichols08</i>
+            </a>
+          </p>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>

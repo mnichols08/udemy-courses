@@ -1,0 +1,117 @@
+<!-- 
+Step 1
+Begin with the basic HTML structure. Add a DOCTYPE reference of html and an html element with its lang attribute set to en. Also, add a head and a body element within the html element.
+
+Step 2
+Within your head element, add a meta tag with the charset attribute of utf-8. Also add a title element with the text fCC Cat Painting.
+
+Step 3
+Add a link element within your head element. For that link element, set the rel attribute to stylesheet and the href to ./styles.css.
+
+Step 6
+Back in your HTML, create a main element. Inside that main element, add a div element with the class cat-head.
+
+Step 12
+fixed is a position property value that lets you make an element fixed to the page no matter where the user scrolls to on the page.
+
+You'll have to do some more markups to see how fixed positioning works. In your HTML, create a div element with the class box.
+
+Step 17
+Remove the div element with class box because you don't need it anymore.
+
+Step 19
+Now you should work on the cat's ears. There will be a right and a left ear, and inside each, there will be an inner ear.
+
+Inside your .cat-head element, create a div element with the class cat-ears.
+
+Step 20
+Inside your .cat-ears element, create two div elements with the classes cat-left-ear and cat-right-ear respectively.
+
+Step 21
+Inside your .cat-left-ear element, create another div element with the class cat-left-inner-ear.
+
+Step 22
+Inside your .cat-right-ear element, create another div element with the class cat-right-inner-ear.
+
+Step 40
+You will now start working on the cat's eyes. Like the ears, the eyes will have inner eyes.
+
+Create a div element with the class cat-eyes. Inside the cat-eyes element, create two div elements with the class cat-left-eye and cat-right-eye respectively.
+
+Step 41
+Inside the .cat-left-eye element, create another div element with the class cat-left-inner-eye.
+
+Step 42
+Inside the .cat-right-eye element, create another div element with the class cat-right-inner-eye.
+
+Step 53
+It's time to work on the nose. In your HTML, create a div element with the class cat-nose.
+
+Step 57
+Now you will start working on the mouth. There will be a right line and left line for the mouth.
+
+Create a div element with the class cat-mouth.
+
+Step 58
+Inside your .cat-mouth element, create a div element with the class cat-mouth-line-left and another div with the class cat-mouth-line-right.
+
+Step 65
+The last thing you will work on is the whiskers. There are going to be 6 of them, meaning there will be three on each side.
+
+Create a div element with the class cat-whiskers.
+
+Step 66
+Inside the .cat-whiskers element, create two div elements with the class cat-whiskers-left and cat-whiskers-right.
+
+Step 67
+Inside the .cat-whiskers-left element, create three div elements with the classes cat-whisker-left-top, cat-whisker-left-middle, and cat-whisker-left-bottom.
+
+Step 68
+Inside the .cat-whiskers-right element, create 3 div elements with the class cat-whisker-right-top, cat-whisker-right-middle, and cat-whisker-right-bottom.
+
+ -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>fCC Cat Painting</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main>
+      <div class="cat-head">
+        <div class="cat-ears">
+          <div class="cat-left-ear"><div class="cat-left-inner-ear"></div></div>
+          <div class="cat-right-ear">
+            <div class="cat-right-inner-ear"></div>
+          </div>
+          <div class="cat-eyes">
+            <div class="cat-left-eye">
+              <div class="cat-left-inner-eye"></div>
+            </div>
+            <div class="cat-right-eye">
+              <div class="cat-right-inner-eye"></div>
+            </div>
+          </div>
+        </div>
+        <div class="cat-nose"></div>
+        <div class="cat-mouth">
+          <div class="cat-mouth-line-left"></div>
+          <div class="cat-mouth-line-right"></div>
+        </div>
+        <div class="cat-whiskers">
+          <div class="cat-whiskers-left">
+            <div class="cat-whisker-left-top"></div>
+            <div class="cat-whisker-left-middle"></div>
+            <div class="cat-whisker-left-bottom"></div>
+          </div>
+          <div class="cat-whiskers-right">
+            <div class="cat-whisker-right-top"></div>
+            <div class="cat-whisker-right-middle"></div>
+            <div class="cat-whisker-right-bottom"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
