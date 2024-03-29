@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<base href="../../../" />
+		<script src="page.js"></script>
+		<link type="text/css" rel="stylesheet" href="page.css" />
+	</head>
+	<body>
+		<h1>[name]</h1>
+
+		<p class="desc">A class containing utility functions for data.</p>
+
+		<h2>Methods</h2>
+
+		<h3>[method:Number toHalfFloat]( [param:Number val] )</h3>
+		<p>
+			val -- A single precision floating point value.<br /><br />
+
+			Returns a half precision floating point value from the given single
+			precision floating point value.
+		</p>
+
+		<h3>[method:Number fromHalfFloat]( [param:Number val] )</h3>
+		<p>
+			val -- A half precision floating point value.<br /><br />
+
+			Returns a single precision floating point value from the given half
+			precision floating point value.
+		</p>
+
+
+		<h3>[method:Uint32Array toRGB9E5]( [param:Number r], [param:Number g], [param:Number b], [param:Uint32Array target] )</h3>
+		<p>
+			r -- A float representing the R channel.<br />
+			g -- A float representing the G channel.<br />
+			b -- A float representing the B channel.<br />
+			target -- An instance of `Uint32Array` with length `1`.<br /><br />
+
+			This method packs three floats into a single Uint32 value which is required for the `RGB9E5` texture format.
+		</p>
+
+		<h3>[method:Array fromRGB9E5]( [param:Uint32Array val], [param:Array target] )</h3>
+		<p>
+			val -- An instance of `Uint32Array` with length `1`.<br />
+			target -- An array holding the three unpacked floats.<br /><br />
+
+			This method unpacks three floats from a single Uint32 value holding a `RGB9E5` texel.
+		</p>
+
+		<h2>Source</h2>
+
+		<p>
+			[link:https://github.com/mrdoob/three.js/blob/master/src/[path].js src/[path].js]
+		</p>
+	</body>
+</html>
