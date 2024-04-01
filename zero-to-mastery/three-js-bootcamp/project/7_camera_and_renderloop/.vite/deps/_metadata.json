@@ -1,0 +1,23 @@
+{
+  "hash": "68c8f937",
+  "browserHash": "21c74b45",
+  "optimized": {
+    "three": {
+      "src": "../../node_modules/three/build/three.module.js",
+      "file": "three.js",
+      "fileHash": "aa36487a",
+      "needsInterop": false
+    },
+    "three/addons/controls/OrbitControls": {
+      "src": "../../node_modules/three/examples/jsm/controls/OrbitControls.js",
+      "file": "three_addons_controls_OrbitControls.js",
+      "fileHash": "34e22306",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-ARZIFTQA": {
+      "file": "chunk-ARZIFTQA.js"
+    }
+  }
+}
