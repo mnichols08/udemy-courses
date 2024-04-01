@@ -1,6 +1,6 @@
 # Complete Web Developer
 
-Below are the noters gathered while following along the [Complete Web Developer: Zero to Mastery](https://academy.zerotomastery.io/courses/enrolled/697434) course.
+Below are the notes gathered while following along the [Complete Web Developer: Zero to Mastery](https://academy.zerotomastery.io/courses/enrolled/697434) course.
 
 *************************************************************************************************************
 
