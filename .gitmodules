@@ -9,6 +9,4 @@
 [submodule "youtube/javascript-mastery/banking-app"]
 	path = youtube/javascript-mastery/banking-app
 	url = https://github.com/mnichols08/banking-app
-[submodule "youtube/javascript-mastery/youtube/javascript-mastery/banking-app"]
-	path = youtube/javascript-mastery/youtube/javascript-mastery/banking-app
-	url = https://github.com/mnichols08/banking-app
+
